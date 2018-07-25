@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
- * springbootww启动类
+ * springboot启动类
  *
  * @author 张权立
  * @date 2018/06/07
