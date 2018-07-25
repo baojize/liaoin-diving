@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: web-dev,dao-dev,elasticsearch-dev,redis-dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
