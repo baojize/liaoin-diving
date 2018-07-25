@@ -1,0 +1,11 @@
+spring:
+  http:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 900MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+server:
+  context-path: /
+  port: 80

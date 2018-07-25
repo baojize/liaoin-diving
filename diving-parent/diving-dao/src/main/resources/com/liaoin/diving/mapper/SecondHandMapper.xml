@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.SecondHandMapper">
+
+    <select id="findById" resultType="com.liaoin.diving.view.SecondHandView">
+
+    </select>
+    <select id="findAll" resultType="com.liaoin.diving.view.SecondHandView">
+        select * from t_content con
+        join t_second_hand sh
+        on con.second_hand_id = sh.id
+        where con.is_delete = 0
+        and sh.is_delete = 0
+        order by con.create_time desc
+    </select>
+    <select id="findByCategory" resultType="com.liaoin.diving.view.SecondHandView"></select>
+    <select id="findByBigCategory" resultType="com.liaoin.diving.view.SecondHandView">
+        select * from t_content con
+        join t_second_hand sh
+        on con.second_hand_id = sh.id
+        join t_category cg
+        on sh.category_id  =  cg.id
+        join t_big_category tb
+        on cg.big_category_id = tb.id
+        where tb.id = #{id}
+        and con.is_delete = 0
+        and cg.is_delete = 0
+        and tb.is_delete = 0
+        order by con.create_time desc
+
+    </select>
+</mapper>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.BannerMapper">
+    <select id="findActivityId" resultType="java.lang.Integer">
+        select activity_id from t_banner where  activity_id is not null order by create_time desc
+    </select>
+    <select id="findContentId" resultType="java.lang.Integer">
+        select content_id from t_banner where content_id is not null order by create_time desc
+    </select>
+</mapper>
