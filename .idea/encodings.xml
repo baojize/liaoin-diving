@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/alipay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aliyun-sms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-elasticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-service-activity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-service-community" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-service-field" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-service-file" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-service-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-service-shop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-service-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-service-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diving-parent/diving-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wxpay" charset="UTF-8" />
+  </component>
+</project>
