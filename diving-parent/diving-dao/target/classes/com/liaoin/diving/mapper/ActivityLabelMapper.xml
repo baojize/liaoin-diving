@@ -3,13 +3,9 @@
 <mapper namespace="com.liaoin.diving.mapper.ActivityLabelMapper">
     <resultMap id="typeac" type="com.liaoin.diving.entity.Activity">
         <id property="id" column="id"/>
-<<<<<<< HEAD
-
-=======
         <association property="activityCategory" javaType="com.liaoin.diving.entity.ActivityCategory">
 
         </association>
->>>>>>> 469ef0e675bd41e0818c26e13e762f192c79a293
     </resultMap>
 
     <delete id="del">
