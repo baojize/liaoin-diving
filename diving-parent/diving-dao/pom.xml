@@ -43,11 +43,19 @@
             <groupId>com.liaoin</groupId>
             <artifactId>diving-common</artifactId>
         </dependency>
+<<<<<<< HEAD
         <!--<dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper-spring-boot-starter</artifactId>
             <version>1.1.5</version>
         </dependency>-->
+=======
+        <!--<dependency>-->
+            <!--<groupId>tk.mybatis</groupId>-->
+            <!--<artifactId>mapper-spring-boot-starter</artifactId>-->
+            <!--<version>1.1.5</version>-->
+        <!--</dependency>-->
+>>>>>>> 9ef9084993716c13671753056645dd51cf2599d5
 
 
     </dependencies>

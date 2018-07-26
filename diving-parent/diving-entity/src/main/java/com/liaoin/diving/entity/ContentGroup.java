@@ -5,18 +5,13 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.Date;
 
-
-/**
- * 点赞列表
- */
 @Entity
-@Table(name = "m_content_user")
-@ApiModel("内容 用户关系表")
+@Table(name = "t_content_group")
+@ApiModel("内容 俱乐部 关系表")
 @Data
-public class ContentUser implements Serializable {
+public class ContentGroup {
 
     @Id
     @GeneratedValue
@@ -27,11 +22,8 @@ public class ContentUser implements Serializable {
     @ApiModelProperty(value = "内容ID")
     private Integer contentId;
 
-    @Column(name = "user_id")
-    @ApiModelProperty(value = "用户ID")
-    private Integer userId;
+    @Column(name = "group_id")
+    @ApiModelProperty(value = "俱乐部ID")
+    private Integer groupId;
 
-    @Column(name = "create_time")
-    @ApiModelProperty(value = "创建时间")
-    private Date createTime;
 }

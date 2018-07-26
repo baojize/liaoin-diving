@@ -124,8 +124,6 @@ public class Content implements Serializable {
     @ApiModelProperty(value = "评论列表", hidden = true)
     private List<Discussion> discussionList = new ArrayList<>();
 
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) {

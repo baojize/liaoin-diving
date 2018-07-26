@@ -92,6 +92,10 @@ public class User implements Serializable {
     @ApiModelProperty(name = "最新通知")  // 评论数量
     private Integer noticeNum;
 
+    @Column(name = "group_id")
+    @ApiModelProperty(name = "俱乐部ID")
+    private Integer groupId;
+
    /* @Column(name = "status")
     @ApiModelProperty(name = "最新数据状态, 0未读, 1 已读")
     private Integer status;*/
