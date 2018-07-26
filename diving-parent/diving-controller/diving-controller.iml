@@ -124,10 +124,6 @@
     <orderEntry type="module" module-name="diving-dao" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.46" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:druid:1.1.9" level="project" />
-    <orderEntry type="library" name="Maven: tk.mybatis:mapper-spring-boot-starter:1.1.5" level="project" />
-    <orderEntry type="library" name="Maven: tk.mybatis:mapper-spring-boot-autoconfigure:1.1.5" level="project" />
-    <orderEntry type="library" name="Maven: tk.mybatis:mapper:3.4.4" level="project" />
-    <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
     <orderEntry type="module" module-name="diving-service-field" />
     <orderEntry type="module" module-name="alipay" />
     <orderEntry type="library" name="Maven: com.alipay.sdk:alipay-sdk-java:3.0.1" level="project" />

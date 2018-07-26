@@ -1,4 +1,4 @@
-package com.liaoin.diving;
+package com.liaoin.diving.entity;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

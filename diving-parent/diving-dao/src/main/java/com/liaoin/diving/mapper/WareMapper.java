@@ -1,6 +1,6 @@
 package com.liaoin.diving.mapper;
 
-import com.liaoin.diving.Size;
+import com.liaoin.diving.entity.Size;
 import com.liaoin.diving.entity.Type;
 import com.liaoin.diving.entity.Ware;
 import org.apache.ibatis.annotations.Param;

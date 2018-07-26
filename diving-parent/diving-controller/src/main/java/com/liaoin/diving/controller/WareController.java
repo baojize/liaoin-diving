@@ -1,23 +1,15 @@
 package com.liaoin.diving.controller;
 
 import com.github.pagehelper.PageInfo;
-import com.liaoin.diving.Size;
-import com.liaoin.diving.common.PageBean;
 import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
 import com.liaoin.diving.entity.*;
-import com.liaoin.diving.service.GoodsService;
-import com.liaoin.diving.service.UserService;
 
 import com.liaoin.diving.service.WareService;
 import com.liaoin.diving.utils.IdUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.apache.http.protocol.HTTP;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
