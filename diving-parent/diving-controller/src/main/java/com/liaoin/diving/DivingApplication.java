@@ -16,7 +16,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @ServletComponentScan
 @EnableJpaRepositories(basePackages = {"com.liaoin.diving.dao"})
 @EnableElasticsearchRepositories(basePackages = {"com.liaoin.diving.search"})
-@MapperScan("com.liaoin.diving.mapper")
+@MapperScan({"com.liaoin.diving.mapper","com.liaoin.manager.dao.UserMapper"})
 public class DivingApplication {
 
     public static void main(String[] args) {

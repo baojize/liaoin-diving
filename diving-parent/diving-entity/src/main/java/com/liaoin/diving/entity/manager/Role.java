@@ -1,8 +1,7 @@
-package com.liaoin.diving;
+package com.liaoin.diving.entity.manager;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,17 +9,15 @@ import java.util.Date;
 
 /**
  * @author : huqingxi
- * @describe :
+ * @describe : 后台角色
  * @date 2018/06/07
  */
 @Entity
-@Table(name = "t_size")
-@ApiModel("商品尺寸实体")
-@Data
-public class Size implements Serializable {
+@Table(name = "t_role")
+@ApiModel("角色实体")
+public class Role implements Serializable{
     @Id
     @GeneratedValue
-    @ApiModelProperty("主键")
     private Integer id;
 
     @Column(name = "name")

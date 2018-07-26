@@ -6,7 +6,7 @@
     <delete id="del"></delete>
 
 
-    <select id="findSize" resultType="com.liaoin.diving.Size">
+    <select id="findSize" resultType="com.liaoin.diving.entity.Size">
         select size.* from t_size size
         join t_type_size ts
         on ts.size_id  = size.id

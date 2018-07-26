@@ -1,6 +1,5 @@
 package com.liaoin.diving.entity;
 
-import com.liaoin.diving.Size;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
