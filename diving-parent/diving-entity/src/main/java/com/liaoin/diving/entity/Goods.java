@@ -99,6 +99,19 @@ public class Goods implements Serializable {
     @ApiModelProperty("分类")
     private Category category;
 
+    /************************************************/
+    @Column(name = "amount")
+    @Field(index = FieldIndex.not_analyzed, store = true)
+    @ApiModelProperty("库存数量")
+    private Integer amount;
+
+    @Column(name = "is_related")
+    @Field(index = FieldIndex.not_analyzed, store = true)
+    @ApiModelProperty("是否为周边物品：1周边")
+    private String isRelated;
+
+    /************************************************/
+
 
     /*@ManyToOne(fetch = FetchType.EAGER, targetEntity = Template.class)
     @JoinColumn(name = "template_id")

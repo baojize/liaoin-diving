@@ -25,7 +25,14 @@ public interface UserManagerService {
 
     Integer update(Admin admin);
 
-    Admin findById();
+    Admin findById(Integer id);
 
     List<Admin> findAll();
+
+    /**
+     * 检查账号是否注册
+     * @param account
+     * @return
+     */
+    Integer checkAccount(String account);
 }

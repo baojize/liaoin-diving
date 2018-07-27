@@ -6,4 +6,7 @@
     <select id="login" resultType="com.liaoin.diving.entity.manager.Admin">
         select * from t_admin where account = #{account} and password  = #{password}
     </select>
+    <select id="findByAccount" resultType="com.liaoin.diving.entity.manager.Admin">
+        select * from t_admin where account = #{account}
+    </select>
 </mapper>

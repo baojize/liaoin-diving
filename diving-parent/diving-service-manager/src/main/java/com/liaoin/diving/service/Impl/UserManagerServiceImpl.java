@@ -4,6 +4,7 @@ import com.liaoin.diving.dao.UserManagerRepository;
 import com.liaoin.diving.entity.manager.Admin;
 import com.liaoin.diving.mapper.UserManagerMapper;
 import com.liaoin.diving.service.UserManagerService;
+import com.liaoin.diving.utils.UpdateUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,6 +26,7 @@ public class UserManagerServiceImpl implements UserManagerService {
     @Resource
     private UserManagerRepository userManagerRepository;
 
+
     @Override
     public Admin login(String account, String password) {
         Admin admin = userManagerMapper.login(account, password);
@@ -45,6 +47,10 @@ public class UserManagerServiceImpl implements UserManagerService {
 
     @Override
     public Integer del(Integer id) {
+        Admin dbAdmin = userManagerRepository.findOne(id);
+        if (Objects.isNull(dbAdmin)){
+            return 0;
+        }
         try {
             userManagerRepository.delete(id);
             return 1;
@@ -57,19 +63,37 @@ public class UserManagerServiceImpl implements UserManagerService {
     @Override
     public Integer update(Admin admin) {
         Admin dbAdmin = userManagerRepository.findOne(admin.getId());
+        admin.setAccount(dbAdmin.getAccount()); // 禁止修改账号
         if (Objects.isNull(dbAdmin)){
             return 0;
         }
-        return null;
+        UpdateUtils.copyNonNullProperties(admin, dbAdmin);
+        userManagerRepository.save(admin);
+        return 1;
     }
 
     @Override
-    public Admin findById() {
-        return null;
+    public Admin findById(Integer id) {
+        Admin dbAdmin = userManagerRepository.findOne(id);
+        if (Objects.isNull(dbAdmin)){
+            return null;
+        }
+        return dbAdmin;
     }
 
     @Override
     public List<Admin> findAll() {
-        return null;
+        List<Admin> adminList = userManagerRepository.findAll();
+        return adminList;
+    }
+
+    @Override
+    public Integer checkAccount(String account) {
+        //Admin dbAdmin = userManagerRepository.findByAccount(account);
+        Admin dbAdmin = userManagerMapper.findByAccount(account);
+        if (Objects.isNull(dbAdmin)){
+            return 0;
+        }
+        return 1;
     }
 }
