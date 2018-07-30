@@ -187,6 +187,15 @@ public class Activity implements Serializable{
     private List<ActivityProducts> activityProductsList = new ArrayList<>();
 
 
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = ActivityDetails.class)
+    @JsonIgnoreProperties({"activity"})
+    @JoinTable(name = "m_activity_details",
+            joinColumns = {@JoinColumn(name = "activity_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "details_id", referencedColumnName = "id")})
+    @ApiModelProperty(value = "细则列表")
+    private List<ActivityDetails> activityDetailsList = new ArrayList<>();
+
+
 
 
     /*@OneToMany(fetch = FetchType.LAZY, targetEntity = Broadcast.class, mappedBy = "activity")

@@ -3,13 +3,11 @@ package com.liaoin.diving.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.liaoin.diving.common.PageBean;
 import com.liaoin.diving.common.PageHelp;
+import com.liaoin.diving.dao.ActivityDetailContentRepository;
 import com.liaoin.diving.dao.ActivityProductsRepository;
 import com.liaoin.diving.dao.ActivityRepository;
 import com.liaoin.diving.dao.BroadcastRepository;
-import com.liaoin.diving.entity.Activity;
-import com.liaoin.diving.entity.ActivityLabel;
-import com.liaoin.diving.entity.ActivityProducts;
-import com.liaoin.diving.entity.Broadcast;
+import com.liaoin.diving.entity.*;
 import com.liaoin.diving.mapper.ActivityLabelMapper;
 import com.liaoin.diving.service.ActivityService;
 import org.springframework.data.domain.Page;
@@ -44,6 +42,8 @@ public class ActivityServiceImpl implements ActivityService {
     private BroadcastRepository broadcastRepository;
     @Resource
     private ActivityLabelMapper activityLabelMapper;
+    @Resource
+    private ActivityDetailContentRepository activityDetailContentRepository;
 
     @Override
     public void insert(Activity activity) {
@@ -71,16 +71,21 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Override
     public Activity findOne(Integer id) {
+       //获取活动细则的内容
         Activity activity = activityRepository.findOne(id);
-        if (Objects.isNull(activity)){
-            return null;
+        List<ActivityDetails> activityDetailsList = activity.getActivityDetailsList();
+        //遍历
+        for (ActivityDetails activityDetails : activityDetailsList) {
+            //获取当前细则ID
+            Integer detailsId = activityDetails.getId();
+            //通过活动ID和当前细则ID获取细则内容
+            ActivityDetailContent activityDetailContent = activityDetailContentRepository.findByActivity_IdAndActivityDetails_Id(id, detailsId);
+            //删除细则下内容集合的所有元素，装填匹配内容
+            if (!activityDetails.getActivityDetailContentList().isEmpty())
+                activityDetails.getActivityDetailContentList().clear();
+            activityDetails.getActivityDetailContentList().add(activityDetailContent);
         }
-        if (!"0".equals(activity.getIsDelete())){
-            return null;
-        }
-        List<ActivityLabel> labels = activityLabelMapper.findByActivityId(id);
-        activity.setActivityLabels(labels);
-        return  activity;
+        return activity;
     }
 
     @Override

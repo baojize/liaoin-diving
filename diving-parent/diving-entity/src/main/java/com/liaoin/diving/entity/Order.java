@@ -23,6 +23,9 @@ import java.util.Objects;
 public class Order implements Serializable {
 
     @Id
+    @Column(name = "id")
+    private Integer id;
+
     @Column(name = "order_id")
     @ApiModelProperty("订单编号")
     private String orderId;

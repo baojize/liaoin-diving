@@ -17,4 +17,5 @@ public interface UserManagerMapper {
     Admin login(@Param("account") String account, @Param("password") String password);
 
 
+    Admin findByAccount(String account);
 }

@@ -24,6 +24,11 @@
             <groupId>com.liaoin</groupId>
             <artifactId>diving-dao</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
 
 </project>

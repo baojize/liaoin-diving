@@ -47,7 +47,7 @@ public class ManagerFilter implements Filter {
         if (Objects.isNull(admin)){
             String method = req.getMethod();
             String requestURI = req.getRequestURI();
-            resp.sendError(HttpServletResponse.SC_FORBIDDEN, new String("非法访问".getBytes("iso-8859-1")) );
+            resp.sendError(HttpServletResponse.SC_MULTIPLE_CHOICES, new String("非法访问".getBytes("UTF-8")) );
             return;
         }
         chain.doFilter(req, resp);

@@ -21,4 +21,10 @@ public interface ActivityRepository extends JpaRepository<Activity, Integer>, Jp
     List<Activity> findRecommend();
 
     List<Activity> findByActivityCategory(Integer id);
+
+    /*List<Activity> findByNameLike(String name);*/
+
+   /* @Query(value = "update t_activity set is_broadcase = 1 where id = ?1", nativeQuery = true)
+    @Modifying
+    void setBroadcast(Integer id);*/
 }
