@@ -2,6 +2,7 @@ package com.liaoin.diving.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -20,6 +21,8 @@ public class Swagger2Config {
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.liaoin.diving.controller"))
+                //.apis(RequestHandlerSelectors.basePackage("com.liaoin.diving.controller"))
+                //.apis(RequestHandlerSelectors.withMethodAnnotation(RestController.class))
                 .paths(PathSelectors.any())
                 .build();
     }

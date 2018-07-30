@@ -10,6 +10,7 @@ import com.liaoin.diving.dao.UserRepository;
 import com.liaoin.diving.entity.*;
 import com.liaoin.diving.mapper.NoticeMapper;
 import com.liaoin.diving.mapper.UserMapper;
+import com.liaoin.diving.service.GroupService;
 import com.liaoin.diving.service.UserService;
 import com.liaoin.diving.utils.UpdateUtils;
 import com.liaoin.diving.view.NoticeView;
@@ -32,6 +33,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -48,6 +50,8 @@ public class UserServiceImpl implements UserService {
     private NoticeMapper noticeMapper;
     @Resource
     private UserMapper userMapper;
+    @Resource
+    private GroupService groupService;
 
     @Override
     public void insert(User user) {
@@ -57,6 +61,13 @@ public class UserServiceImpl implements UserService {
     @Override
     public void update(User user) {
         User one = userRepository.findOne(user.getId());
+        //判断是否修改俱乐部
+        if (!Objects.isNull(user.getGroupId())){
+            //新的添加
+            groupService.updateMemberNum(user.getGroupId(),1L);
+            //旧的删除
+            groupService.updateMemberNum(one.getGroupId(),-1L);
+        }
         UpdateUtils.copyNonNullProperties(user, one);
         userRepository.save(one);
     }

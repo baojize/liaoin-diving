@@ -1,8 +1,12 @@
 package com.liaoin.diving.service.impl;
 
+import com.liaoin.diving.dao.GroupFollowRepository;
 import com.liaoin.diving.dao.UserRepository;
+import com.liaoin.diving.entity.Group;
+import com.liaoin.diving.entity.GroupFollow;
 import com.liaoin.diving.entity.User;
 import com.liaoin.diving.service.FocusService;
+import com.liaoin.diving.service.GroupService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,6 +20,10 @@ public class FocusServiceImpl implements FocusService {
 
     @Resource
     private UserRepository userRepository;
+    @Resource
+    private GroupFollowRepository groupFollowRepository;
+    @Resource
+    private GroupService groupService;
 
     @Override
     public void focus(User loginUser, User focusUser) {
@@ -46,5 +54,24 @@ public class FocusServiceImpl implements FocusService {
     @Override
     public List<Integer> findFansIds(Integer userId) {
         return userRepository.findFansIds(userId);
+    }
+
+    @Override
+    public void groupFocus(User loginUser, Integer groupId) {
+        //从关系表中查出记录  如果有则删除，否则添加
+        GroupFollow groupFollow = groupFollowRepository.findByGroupIdAndAndUserId(groupId,loginUser.getId());
+        //判断是否存在
+        if (Objects.isNull(groupFollow)){
+            groupFollow = new GroupFollow();
+            //不存在，添加  更新俱乐部信息
+            groupFollow.setGroupId(groupId);
+            groupFollow.setUserId(loginUser.getId());
+            groupFollowRepository.save(groupFollow);
+            groupService.updateFansNum(groupId,1L);
+        }else {
+            //存在删除 更新俱乐部信息
+            groupFollowRepository.delete(groupFollow);
+            groupService.updateFansNum(groupId,-1L);
+        }
     }
 }

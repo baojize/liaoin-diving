@@ -57,5 +57,10 @@
     <select id="findUserUp" resultType="com.liaoin.diving.entity.Content">
         select * from  t_content where user_id = #{id} and is_delete = 0 order by create_time desc
     </select>
+    <select id="findCommentNum" resultType="java.lang.Integer">
+        select count(1)
+        from t_discussion
+        where content_id = #{id} and is_delete = 0
+    </select>
 
 </mapper>

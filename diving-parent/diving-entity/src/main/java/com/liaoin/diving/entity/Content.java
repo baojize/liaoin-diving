@@ -35,6 +35,9 @@ public class Content implements Serializable {
     @ApiModelProperty(value = "主键", hidden = true)
     private Integer id;
 
+    @ApiModelProperty(value = "副标题")
+    private String subtitle;
+
     @Column(name = "type")
     @Field(index = FieldIndex.not_analyzed, store = true)
     @ApiModelProperty("类型：1讨论，2动态，3二手，4问题")

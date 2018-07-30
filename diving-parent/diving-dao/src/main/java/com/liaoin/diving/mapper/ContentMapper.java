@@ -31,4 +31,10 @@ public interface ContentMapper {
 
     List<Theme> getTheme();
 
+    /**
+     * 通过contentId 查询评论数
+     * @param id
+     * @return
+     */
+    Integer findCommentNum(@Param("id") Integer id);
 }

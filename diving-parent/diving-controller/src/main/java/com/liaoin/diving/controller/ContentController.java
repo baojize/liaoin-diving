@@ -2,9 +2,11 @@ package com.liaoin.diving.controller;
 
 import com.liaoin.diving.common.PageBean;
 import com.liaoin.diving.common.Result;
+import com.liaoin.diving.dao.ContentGroupRepository;
 import com.liaoin.diving.entity.*;
 import com.liaoin.diving.entity.relationship.UserLike;
 import com.liaoin.diving.service.*;
+import com.liaoin.diving.vo.ContentVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -13,6 +15,7 @@ import io.swagger.models.auth.In;
 import jdk.nashorn.internal.objects.annotations.Getter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -62,6 +65,11 @@ public class ContentController {
     private UserLikeService userLikeService;
     @Resource
     private BannerService bannerService;
+    @Autowired
+    private GroupService groupService;
+    @Autowired
+    private ContentGroupRepository contentGroupRepository;
+
 
     @PostMapping("/insert")
     @ApiOperation("新增")
@@ -203,32 +211,63 @@ public class ContentController {
 
     @PostMapping("/publish/discuss")
     @ApiOperation("发布讨论")
-    public Result publishDiscuss(HttpSession session, @RequestBody Content content) {
+    public Result publishDiscuss(HttpSession session, @RequestBody ContentVo contentVo) {
         // 1.判断是否登录
         User loginUser = (User) session.getAttribute("loginUser");
         if (loginUser == null) {
             return new Result(300, "请登录", null);
         }
+        Content content = contentVo.getContent();
         // 2.封装数据
         content.setType("1");
-        content.setUser(loginUser);
-        contentService.insert(content);
+        if (Objects.isNull(contentVo.getGroupId())){
+            //groupId为空 保存为用户
+            content.setUser(loginUser);
+            contentService.insert(content);
+        }else {
+            //俱乐部发布
+            contentService.insert(content);
+            //更改俱乐部的发布量
+            groupService.updateReleaseNum(contentVo.getGroupId(),1L);
+            //维护content group 关系表
+            ContentGroup contentGroup = new ContentGroup();
+            contentGroup.setContentId(content.getId());
+            contentGroup.setGroupId(contentVo.getGroupId());
+            contentGroupRepository.save(contentGroup);
+
+        }
+
         return new Result(200, "发布成功", null);
     }
 
     @PostMapping("/publish/update")
     @ApiOperation("发布动态")
-    public Result publishUpdate(HttpSession session, @RequestBody Content content) {
+    public Result publishUpdate(HttpSession session, @RequestBody ContentVo contentVo) {
         // 1.判断是否登录
         User loginUser = (User) session.getAttribute("loginUser");
         if (loginUser == null) {
             return new Result(300, "请登录", null);
         }
-
+        Content content = contentVo.getContent();
         // 2.封装数据
         content.setType("2");
-        //绑定用户
-        content.setUser(loginUser);
+        if (Objects.isNull(contentVo.getGroupId())){
+            //groupId为空 保存为用户
+            //绑定用户
+            content.setUser(loginUser);
+            contentService.insert(content);
+        }else {
+            //俱乐部发布
+            contentService.insert(content);
+            //更改俱乐部的发布量
+            groupService.updateReleaseNum(contentVo.getGroupId(),1L);
+            //维护content group 关系表
+            ContentGroup contentGroup = new ContentGroup();
+            contentGroup.setContentId(content.getId());
+            contentGroup.setGroupId(contentVo.getGroupId());
+            contentGroupRepository.save(contentGroup);
+        }
+
 
         contentService.insert(content);
         return new Result(200, "发布成功", null);

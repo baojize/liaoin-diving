@@ -91,6 +91,11 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.44</version>
         </dependency>
+        <dependency>
+            <groupId>com.liaoin</groupId>
+            <artifactId>diving</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

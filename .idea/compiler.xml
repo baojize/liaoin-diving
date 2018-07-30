@@ -9,6 +9,7 @@
         <module name="alipay" />
         <module name="aliyun-sms" />
         <module name="code-generator" />
+        <module name="diving" />
         <module name="diving-common" />
         <module name="diving-controller" />
         <module name="diving-dao" />
@@ -33,6 +34,7 @@
       <module name="code-generator" target="1.8" />
       <module name="common-parent" target="1.8" />
       <module name="dao-1" target="1.8" />
+      <module name="diving" target="1.8" />
       <module name="diving-common" target="1.8" />
       <module name="diving-controller" target="1.8" />
       <module name="diving-dao" target="1.8" />
