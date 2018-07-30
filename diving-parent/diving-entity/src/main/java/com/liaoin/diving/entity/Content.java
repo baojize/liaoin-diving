@@ -58,6 +58,10 @@ public class Content implements Serializable {
     @ApiModelProperty(value = "阅读量", hidden = true)
     private Integer reading = 0;
 
+    @Column(name = "titile")
+    @ApiModelProperty(value = "标题")
+    private String title;
+
     @Column(name = "create_time")
     @Temporal(TemporalType.TIMESTAMP)
     @Field(index = FieldIndex.no, store = true)

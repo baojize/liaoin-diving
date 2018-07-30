@@ -67,7 +67,7 @@ public class GroupServiceImpl implements GroupService {
     @Override
     public List<Group> findList(PageHelp pageHelp) {
         PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
-        List<Group> groups = groupRepository.findAll();
+        List<Group> groups = groupMapper.findAll();
         return groups;
     }
 

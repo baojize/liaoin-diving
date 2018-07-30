@@ -65,7 +65,7 @@ public class Activity implements Serializable{
     @ApiModelProperty("是否上架：1上架")
     private String isSale;
 
-    @Column(name = "highlight")
+    /*@Column(name = "highlight")
     @ApiModelProperty(value = "亮点", hidden = true) // 1
     private String highlight;
 
@@ -95,16 +95,16 @@ public class Activity implements Serializable{
 
     @Column(name = "img_explain")  // 8
     @ApiModelProperty("图文说明")
-    private String imgExplain;
+    private String imgExplain;*/
 
     @Column(name = "price")
     @ApiModelProperty("价格")
     private Integer price;
 
     /*@ManyToOne(fetch = FetchType.EAGER, targetEntity = User.class)*/
-    @JoinColumn(name = "user_id")
+    /*@JoinColumn(name = "user_id")
     @ApiModelProperty("提供方")
-    private Integer user;
+    private Integer user;*/
 
     /*@JoinColumn(name = "stitle")
     @ApiModelProperty("小标题")

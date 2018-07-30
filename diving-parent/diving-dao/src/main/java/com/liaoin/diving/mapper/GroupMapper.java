@@ -20,4 +20,6 @@ public interface GroupMapper {
      * @return
      */
     List<ContentView> mobileFindList(@Param("id") Integer id);
+
+    List<Group> findAll();
 }

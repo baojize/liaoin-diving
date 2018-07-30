@@ -22,8 +22,8 @@ import java.util.Objects;
  */
 @RestController
 @RequestMapping("/manager/nav")
-@Api(tags = "[后台]首页导航管理")
-public class NavManagerController {
+@Api(tags = "首页导航模块")
+public class NavController {
     @Resource
     private NavService navService;
 

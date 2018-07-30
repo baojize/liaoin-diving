@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.CommodityOrderMapper">
+
+    <resultMap id="commodityOrderWithAddress" type="com.liaoin.diving.entity.CommodityOrder" autoMapping="true">
+        <id property="id" column="id"></id>
+        <association property="address" javaType="com.liaoin.diving.entity.Address" autoMapping="true" column="address_id" columnPrefix="b_">
+            <id property="id" column="id"></id>
+        </association>
+    </resultMap>
+
+    <select id="findAll" resultMap="commodityOrderWithAddress" parameterType="java.lang.Integer">
+        select a.id,a.commodity_id,a.is_delete,a.status,a.user_id,a.address_id,
+          b.id as b_id,b.is_delete as b_is_delete,b.receiver_address as b_receiver_address,b.receiver_mobile as b_receiver_mobile,
+            b.receiver_name as b_receiver_name,b.user_id as b_user_id,b.is_default as b_is_default,b.receiver_area as b_receiver_area
+        from t_commodity_order a
+          left join t_address b on a.address_id = b.id
+        <where>
+            <if test="userId != null and userId != 0">
+                and a.user_id = #{userId}
+            </if>
+        </where>
+    </select>
+
+</mapper>

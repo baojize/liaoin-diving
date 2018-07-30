@@ -73,6 +73,9 @@ public class ActivityServiceImpl implements ActivityService {
     public Activity findOne(Integer id) {
        //获取活动细则的内容
         Activity activity = activityRepository.findOne(id);
+        if (Objects.isNull(activity)){
+            return null;
+        }
         List<ActivityDetails> activityDetailsList = activity.getActivityDetailsList();
         //遍历
         for (ActivityDetails activityDetails : activityDetailsList) {
@@ -123,7 +126,7 @@ public class ActivityServiceImpl implements ActivityService {
                     if (activity.getEndTime() != null) {
                         list.add(cb.equal(root.get("endTime").as(java.util.Date.class), activity.getEndTime()));
                     }
-                    if (((activity.getExplain()) != null) && (!activity.getExplain().trim().equals(""))) {
+                    /*if (((activity.getExplain()) != null) && (!activity.getExplain().trim().equals(""))) {
                         list.add(cb.like(root.get("costExplain").as(String.class), "%" + activity.getExplain() + "%"));
                     }
                     if ((activity.getHighlight() != null) && (!activity.getHighlight().trim().equals(""))) {
@@ -131,7 +134,7 @@ public class ActivityServiceImpl implements ActivityService {
                     }
                     if ((activity.getImgExplain() != null) && (!activity.getImgExplain().trim().equals(""))) {
                         list.add(cb.like(root.get("imgExplain").as(String.class), "%" + activity.getImgExplain() + "%"));
-                    }
+                    }*/
                     if ((activity.getIphone() != null) && (!activity.getIphone().trim().equals(""))) {
                         list.add(cb.like(root.get("iphone").as(String.class), "%" + activity.getIphone() + "%"));
                     }
@@ -141,7 +144,7 @@ public class ActivityServiceImpl implements ActivityService {
                    /* if ((activity.getPlan() != null) && (!activity.getPlan().trim().equals(""))) {
                         list.add(cb.like(root.get("plan").as(String.class), "%" + activity.getPlan() + "%"));
                     }*/
-                   if (activity.getTrip() != null && "".equals(activity.getTrip()) ){
+                 /*  if (activity.getTrip() != null && "".equals(activity.getTrip()) ){
                        list.add(cb.like(root.get("trip").as(String.class), "%" + activity.getTrip() + "%"));
                    }
                     if (activity.getDiscribe() != null && "".equals(activity.getDiscribe()) ){
@@ -152,7 +155,7 @@ public class ActivityServiceImpl implements ActivityService {
                     }
                     if (activity.getOther() != null && "".equals(activity.getOther()) ){
                         list.add(cb.like(root.get("other").as(String.class), "%" + activity.getOther() + "%"));
-                    }
+                    }*/
 
                 }
                 // 逻辑删除条件
