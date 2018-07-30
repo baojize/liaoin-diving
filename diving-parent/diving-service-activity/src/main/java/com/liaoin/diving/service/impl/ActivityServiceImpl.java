@@ -235,7 +235,5 @@ public class ActivityServiceImpl implements ActivityService {
         List<Activity> activities = activityRepository.findRecommend();
         return activities;
     }
-
-
 }
 

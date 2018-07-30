@@ -1,6 +1,8 @@
 package com.liaoin.diving.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.liaoin.diving.common.PageBean;
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
 import com.liaoin.diving.entity.Goods;
 import com.liaoin.diving.entity.Order;
@@ -9,6 +11,7 @@ import com.liaoin.diving.entity.User;
 import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.service.UserService;
 
+import com.liaoin.diving.view.RecommendGoodsView;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -105,6 +108,21 @@ public class GoodsController {
             return new Result(300, "暂无数据", null);
         }
         return new Result(200, "查询成功", pageBean);
+    }
+
+    @GetMapping("/findRecommendGoods")
+    @ApiOperation("获取推荐商品信息，按照创建时间排序")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "start", value = "开始页", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true),
+    })
+    public Result findRecommendGoods(Integer start, Integer pageSize){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<RecommendGoodsView> goodsList = goodsService.findRecommendOrderByCreateTime(pageHelp);
+        if (goodsList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200,"查询成功",new PageInfo<>(goodsList));
     }
 }
 
