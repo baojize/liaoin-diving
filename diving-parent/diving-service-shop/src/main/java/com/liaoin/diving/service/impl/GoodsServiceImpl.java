@@ -146,7 +146,6 @@ public class GoodsServiceImpl implements GoodsService {
         return pageBean;
     }
 
-
     @Override
     public PageBean<Goods> findByCategory(Pageable pageable, List<Integer> ids) {
         List<Goods> goodsList = new ArrayList<>();
@@ -161,15 +160,23 @@ public class GoodsServiceImpl implements GoodsService {
         return pageBean;
     }
 
+    //获取推荐商品
     @Override
     public List<RecommendGoodsView> findRecommendOrderByCreateTime(PageHelp pageHelp) {
-        PageHelper.startPage(pageHelp.getStart(),pageHelp.getPageSize());
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
         List<RecommendGoodsView> goodsList = goodsMapper.findRecommendOrderByCreateTime();
         for (RecommendGoodsView recommendGoodsView : goodsList) {
             BigDecimal newMoney = recommendGoodsView.getPrice().multiply(recommendGoodsView.getDiscount());
             recommendGoodsView.setMoney(newMoney);
         }
         return goodsList;
+    }
+
+    //设置商品归属
+    @Override
+    public Integer setRecommendGoods(Integer[] ids, Integer mode, Integer symbol) {
+        Integer sign = goodsMapper.setRecommendGoodsByIds(ids, mode, symbol);
+        return sign;
     }
 }
 

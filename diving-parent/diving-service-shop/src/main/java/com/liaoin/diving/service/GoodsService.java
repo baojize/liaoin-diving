@@ -29,7 +29,21 @@ public interface GoodsService {
      */
     PageBean<Goods> findByCategory(Pageable pageable, List<Integer> ids);
 
-    //    List<RecommendGoodsView> findRecommendOrderByCreateTime();
+    /**
+     * 查询推荐商品 分页
+     *
+     * @param pageHelp
+     * @return
+     */
     List<RecommendGoodsView> findRecommendOrderByCreateTime(PageHelp pageHelp);
+
+    /**
+     * 设置推荐商品
+     *
+     * @param ids
+     * @param symbol
+     * @return
+     */
+    Integer setRecommendGoods(Integer[] ids, Integer mode, Integer symbol);
 }
 
