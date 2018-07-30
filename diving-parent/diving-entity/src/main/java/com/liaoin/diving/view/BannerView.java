@@ -13,6 +13,7 @@ import java.util.Date;
  */
 @Data
 public class BannerView implements Serializable{
+
     private Integer id;
     private Integer contentId;
     private String url;
@@ -20,4 +21,5 @@ public class BannerView implements Serializable{
     private Date createTime;
     private String type;
     private Integer activityId;
+    private Integer isHidden;
 }

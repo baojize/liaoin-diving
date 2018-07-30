@@ -1,7 +1,9 @@
 package com.liaoin.diving.service;
 
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.Banner;
 import com.liaoin.diving.entity.Content;
+import com.liaoin.diving.view.BannerView;
 
 import java.util.List;
 
@@ -28,5 +30,15 @@ public interface BannerService {
     Banner findByActivityId(Integer id);
 
     List<Integer> findActivityId();
+
     List<Integer> findContentId();
+
+    void updateBanner(Integer id, Integer isHidden);
+
+    Banner findBannerById(Integer id);
+
+    List<BannerView> findToActivity();
+
+
+
 }

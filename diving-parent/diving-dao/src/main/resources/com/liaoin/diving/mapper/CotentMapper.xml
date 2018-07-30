@@ -31,7 +31,7 @@
       order by banner.create_time desc
     </select>
     <select id="findAllBannerView" resultType="com.liaoin.diving.view.BannerView">
-    select banner.id ,con.id as content_id,img.url,banner.create_time,banner.title  from t_content con
+    select banner.id ,con.id as content_id,img.url,banner.create_time,banner.title,banner.is_hidden   from t_content con
     join t_banner banner
     on banner.content_id = con.id
     join m_content_image cim

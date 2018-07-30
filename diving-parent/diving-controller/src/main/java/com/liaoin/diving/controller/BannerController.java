@@ -32,7 +32,7 @@ import java.util.Objects;
  * @date 2018/06/07
  */
 @RestController
-@RequestMapping("/banner")
+@RequestMapping("/manager/banner")
 @Api(tags = "轮播图",value = "轮播图")
 public class BannerController {
     @Resource
@@ -46,9 +46,9 @@ public class BannerController {
     @ApiOperation("设置内容轮播图")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "contentId", value = "内容id", required = true),
-            @ApiImplicitParam(name = "title", value = "轮播图标题", required = true)
+            @ApiImplicitParam(name = "isHidden", value = "是否显示 0:不显示(默认), 1:显示", required = true)
     })
-    public Result contentBanner(Integer contentId, String title){
+    public Result contentBanner(Integer contentId, Integer isHidden){
         Content content = null;
         if (!Objects.isNull(contentId)){
             content = contentService.findOther(contentId);
@@ -66,8 +66,12 @@ public class BannerController {
         Banner banner = new Banner();
         banner.setContent(content);
         banner.setCreateTime(new Date());
-        banner.setTitle(title);
+        banner.setTitle(content.getTitle());
         banner.setType("活动");
+        if (Objects.isNull(isHidden)){
+            isHidden = 0;
+        }
+        banner.setIsHidden(isHidden); // 轮播图显示状态
         bannerService.add(banner);
         return new Result(200, "设置成功", null);
     }
@@ -77,9 +81,9 @@ public class BannerController {
     @ApiOperation("设置活动轮播图")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "activityId", value = "活动id", required = true),
-            @ApiImplicitParam(name = "title", value = "轮播图标题", required = true)
+            @ApiImplicitParam(name = "isHidden", value = "是否显示 0:不显示(默认), 1:显示", required = true)
     })
-    public Result activityBanner(Integer activityId, String title){
+    public Result activityBanner(Integer activityId, Integer isHidden){
         Activity activity = activityService.findOne(activityId);
         if (Objects.isNull(activity)){
             return new Result(300, "活动不存在", null);
@@ -93,9 +97,13 @@ public class BannerController {
         }
         Banner banner = new Banner();
         banner.setActivityId(activity.getId());
+        banner.setTitle(activity.getName());
         banner.setCreateTime(new Date());
-        banner.setTitle(title);
         banner.setType("活动");
+        if(Objects.isNull(isHidden)){
+            isHidden = 0;
+        }
+        banner.setIsHidden(isHidden); // 轮播图显示状态
         bannerService.add(banner);
         return new Result(200, "设置成功", null);
     }
@@ -107,18 +115,12 @@ public class BannerController {
             @ApiImplicitParam(name = "pageSize", value = "页大小")
     })
     @ApiOperation("获取轮播图")
-    public Result findAll(HttpSession session, Integer start, Integer pageSize){
-        User loginUser = (User)session.getAttribute("loginUser");
-        if (Objects.isNull(loginUser)){
-            return new Result(300, "请登录", null);
-        }
+    public Result findAll(Integer start, Integer pageSize){
+
+        List<BannerView> activitys = bannerService.findToActivity();
         PageHelp pageHelp = new PageHelp(start, pageSize, null);
-        /*List<Integer> contentIds = bannerService.findContentId();
-        List<Integer> activityIds = bannerService.findActivityId();*/
-
         List<BannerView> bannerList = contentService.findAllBanner(pageHelp);
-
-           return new Result(200, "查询成功", new PageInfo<>(bannerList));
+        return new Result(200, "查询成功", new PageInfo<>(bannerList));
     }
 
 
@@ -132,6 +134,26 @@ public class BannerController {
             e.printStackTrace();
             return new Result(300, "删除失败", null);
         }
+    }
+
+    @PostMapping("/updateBanner")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id", value = "bannerId", required = true),
+            @ApiImplicitParam(name = "isHidden", value = "是否显示", required = true)
+    })
+    @ApiOperation("修改轮播图显示状态")
+    public Result updateBanner(Integer id, Integer isHidden){
+        if (isHidden == 1){
+            Banner banner = bannerService.findBannerById(id);
+            if (Objects.isNull(banner)){
+                return new Result(300, "轮播图不存在", null);
+            }
+            if (banner.getIsHidden() == 1 ){
+                return new Result(300, "该轮播图已为显示状态", null);
+            }
+        }
+        bannerService.updateBanner(id, isHidden);
+        return new Result(200, "设置成功", null);
     }
 
 }

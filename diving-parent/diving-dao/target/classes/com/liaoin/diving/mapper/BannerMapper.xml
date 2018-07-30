@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.liaoin.diving.mapper.BannerMapper">
+    <update id="updateBanner">
+        update t_banner set is_hidden = #{hiddenId} where id = #{id}
+    </update>
     <select id="findActivityId" resultType="java.lang.Integer">
         select activity_id from t_banner where  activity_id is not null order by create_time desc
     </select>
     <select id="findContentId" resultType="java.lang.Integer">
         select content_id from t_banner where content_id is not null order by create_time desc
+    </select>
+    <select id="findBannerById" resultType="com.liaoin.diving.entity.Banner">
+        select * from t_banner where id = #{id}
+    </select>
+    <select id="findToActivity" resultType="com.liaoin.diving.view.BannerView">
+    select banner.id, banner.create_time,banner.title,banner.is_hidden,ac.id activity_id,ac.`name` from t_banner banner, (
+    	select * from t_activity activ where id in (
+	    	select ban.activity_id  from t_banner ban where activity_id is not null  order by create_time desc
+	    )
+      ) ac
+      where banner.activity_id = ac.id
     </select>
 </mapper>

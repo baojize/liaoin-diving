@@ -53,4 +53,8 @@ public class Banner implements Serializable {
     @Column(name = "type")
     @ApiModelProperty("类型")
     private String type;
+
+    @Column(name = "is_hidden")
+    @ApiModelProperty("是否显示 0:不显示, 1 :显示")
+    private Integer isHidden;
 }

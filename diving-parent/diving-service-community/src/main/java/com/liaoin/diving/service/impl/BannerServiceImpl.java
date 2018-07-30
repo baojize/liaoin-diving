@@ -1,10 +1,14 @@
 package com.liaoin.diving.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.dao.BannerRepository;
 import com.liaoin.diving.entity.Banner;
 import com.liaoin.diving.entity.Content;
 import com.liaoin.diving.mapper.BannerMapper;
 import com.liaoin.diving.service.BannerService;
+import com.liaoin.diving.view.BannerView;
+import net.bytebuddy.implementation.bytecode.Throw;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -77,4 +81,30 @@ public class BannerServiceImpl implements BannerService {
     public List<Integer> findContentId() {
         return bannerMapper.findContentId();
     }
+
+    @Override
+    public void updateBanner(Integer id, Integer hiddenId) {
+        try {
+            bannerMapper.updateBanner(id, hiddenId);
+            return;
+        } catch (Exception e) {
+            throw new RuntimeException("内部错误", e);
+        }
+    }
+
+    @Override
+    public Banner findBannerById(Integer id) {
+        Banner banner = bannerMapper.findBannerById(id);
+        return banner;
+    }
+
+
+    @Override
+    public List<BannerView> findToActivity() {
+
+        List<BannerView> bannerViews = bannerMapper.findToActivity();
+        return bannerViews;
+    }
+
+
 }

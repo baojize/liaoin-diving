@@ -21,7 +21,7 @@ import java.util.Objects;
  */
 @RestController
 @RequestMapping("/manager/user")
-@Api(tags = "后台用户模块")
+@Api(tags = "[后台]用户模块")
 public class UserManagerController {
     @Resource
     private UserManagerService userManagerService;
