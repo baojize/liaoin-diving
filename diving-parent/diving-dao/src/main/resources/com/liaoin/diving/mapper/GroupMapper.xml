@@ -28,4 +28,7 @@
         LEFT JOIN t_content_group cg on c.id = cg.content_id
         where cg.group_id = #{id}
     </select>
+    <select id="findAll" resultType="com.liaoin.diving.entity.Group">
+        select * from t_group
+    </select>
 </mapper>

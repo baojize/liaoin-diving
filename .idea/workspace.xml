@@ -1,6 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" readonly="true" id="905aadd2-bbcf-4b3f-acb4-5bddbdda00e8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipay" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/alipay/alipay.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipay/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipay/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/alipay/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/alipay/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/alipay/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/alipay/src/main/java/com/zhangquanli" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/alipay/src/main/java/com/zhangquanli/alipay" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/alipay/src/main/java/com/zhangquanli/alipay/AlipayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/aliyun-sms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com/zhangquanli" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com/zhangquanli/aliyun" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com/zhangquanli/aliyun/sms" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com/zhangquanli/aliyun/sms/AliyunSmsUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/code-generator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/dao" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/dao/ActivityProductsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service/ActivityProductsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service/impl/ActivityProductsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/pojo" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/pojo/ColumnClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/utils" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/utils/CodeGenerateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/utils/FreeMarkerTemplateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/code-generator-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates/Controller.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates/Repository.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates/ServiceImpl.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates/ServiceInterface.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-parent" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/common-parent/common-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/diving-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/CartOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/OrderConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageHelp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/diving-controller.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/DivingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/aspect" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/aspect/LoggerAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/CORSConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/DateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/ManagerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/TokenAuthorFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityDiscussionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityLabelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityProductsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/BannerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/BigCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/BrandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ContentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/DiscussionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/DivingFieldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/FocusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/LabelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/LevelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/NavController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/NotifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/OfficialController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/RingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SelectedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SpecController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SpecOptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/TemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/TopicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserCenterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/WareController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/file" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/file/FileUpload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/file/SingleFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/handler" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/handler/FinalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener/SystemAlipayListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener/SystemAliyunSmsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener/SystemHuanXinListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener/SystemWxpayListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/application-web-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/application-web-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/diving.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/fdfs_client.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static/angular-1.4.9.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static/diving.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/diving-dao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityDetailContentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityDiscussionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityLabelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityProductsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/BannerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/BigCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/BrandRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/BroadcastRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ContentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ContentUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/DiscussionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/DivingFieldRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/DivingTicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/EquipmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/GoodsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/LabelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/LevelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/NavRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/OfficialRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/PointsHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SecondHandRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SelectedRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SpecOptionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SpecRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemAlipayRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemAliyunSmsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemHuanXinRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemSmsTemplateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemWxpayRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/TemplateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ThemeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/TopicRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/UserLikeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/UserManagerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/WareOrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/WareRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/diving-elasticsearch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin/diving/search" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin/diving/search/ContentSearchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin/diving/search/GoodsSearchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/resources/application-elasticsearch-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/resources/application-elasticsearch-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/diving-entity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityDetailContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityDiscussion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Banner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/BigCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Broadcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ContentUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Discussion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/DivingField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/DivingTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Label.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Level.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Nav.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/NewMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Official.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/OfficialImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/OrderOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/PointsHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SecondHand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Spec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SpecOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SubFeuilleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemAlipay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemAliyunSms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemHuanXin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemSmsTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemWxpay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Theme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Using.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Ware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/WareOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/WareOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Waybill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/manager" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/manager/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/manager/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/DiscussionLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/TypeSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/UserLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/BannerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/LikeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/NoticeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/SecondHandView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/diving-redis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src/main/resources/application-redis-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src/main/resources/application-redis-pro.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/diving-service-activity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityDiscussionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityProductsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityDiscussionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityProductsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/diving-service-community.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ActivityLableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/BannerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/BroadcastService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/DiscussionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/NavService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/OfficialService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/SecondHandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/SelectedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ThemeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/TopicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/UserLikeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ActivityLableServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/BannerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/BroadcastServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ContentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/DiscussionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/NavServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/OfficialServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/SecondHandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/SelectedServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ThemeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/TopicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/UserLikeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/diving-service-field.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/DivingFieldService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/DivingTicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/impl/DivingFieldServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/impl/DivingTicketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/diving-service-file.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/diving-service-search.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/ContentSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/GoodsSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/impl/ContentSearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/impl/GoodsSearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/diving-service-shop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/BigCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/PayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/SpecOptionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/SpecService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/TemplateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/WareService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/BigCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/PayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/SpecOptionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/SpecServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/TemplateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/WareServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/diving-service-system.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/SystemAlipayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/SystemAliyunSmsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/SystemHuanXinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/SystemWxpayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl/SystemAlipayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl/SystemAliyunSmsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl/SystemHuanXinServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl/SystemWxpayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/diving-service-user.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/FocusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/LabelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/LevelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/FocusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/LabelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/LevelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/diving-utils.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/CookieUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/HttpClientUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/IdUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/MobileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/RandomUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/UpdateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/test" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/test/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/test/com/liaoin" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/test/com/liaoin/diving" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/test/com/liaoin/diving/test" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/test/com/liaoin/diving/test/UtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wxpay" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/wxpay/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wxpay/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/wxpay/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay/WxpayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wxpay/wxpay.iml" afterDir="false" />
+=======
     <list default="true" readonly="true" id="fe052969-eb86-416e-854c-daac963ef2ee" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alipay" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alipay/src" />
@@ -521,16 +1040,32 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay/MyConfig.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay/WxpayUtils.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wxpay/wxpay.iml" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
     </list>
-    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-shop/target/" />
+    <ignored path="$PROJECT_DIR$/wxpay/target/" />
     <ignored path="$PROJECT_DIR$/diving-parent/diving-dao/target/" />
-    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-system/target/" />
-    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-field/target/" />
-    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-user/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-redis/target/" />
+    <ignored path="$PROJECT_DIR$/common-parent/target/" />
+    <ignored path="$PROJECT_DIR$/aliyun-sms/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-shop/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-elasticsearch/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-controller/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-entity/target/" />
     <ignored path="$PROJECT_DIR$/diving-parent/diving-service-community/target/" />
+    <ignored path="$PROJECT_DIR$/alipay/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-field/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-utils/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-activity/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-common/target/" />
+    <ignored path="$PROJECT_DIR$/code-generator/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-system/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-search/target/" />
     <ignored path="$PROJECT_DIR$/diving-parent/target/" />
+    <ignored path="$PROJECT_DIR$/diving-parent/diving-service-user/target/" />
     <ignored path="$PROJECT_DIR$/diving-parent/diving-service-file/target/" />
     <ignored path="$PROJECT_DIR$/diving-parent/diving-service-manager/target/" />
+<<<<<<< HEAD
+=======
     <ignored path="$PROJECT_DIR$/diving-parent/diving-service-activity/target/" />
     <ignored path="$PROJECT_DIR$/diving-parent/diving-controller/target/" />
     <ignored path="$PROJECT_DIR$/common-parent/target/" />
@@ -544,6 +1079,7 @@
     <ignored path="$PROJECT_DIR$/diving-parent/diving-service-search/target/" />
     <ignored path="$PROJECT_DIR$/wxpay/target/" />
     <ignored path="$PROJECT_DIR$/diving-parent/diving-utils/target/" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -552,6 +1088,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/diving$DivingApplication.coverage" NAME="DivingApplication Coverage Results" MODIFIED="1532935518703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.liaoin.diving.*</FILTER>
     </SUITE>
@@ -560,24 +1097,56 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="PortalManagerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java">
+=======
+    <SUITE FILE_PATH="coverage/aop$DivingApplication.ic" NAME="DivingApplication Coverage Results" MODIFIED="1532654884308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file leaf-file-name="CommodityOrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CommodityOrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="GoodsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GoodsController.java">
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="717">
               <caret line="193" column="34" lean-forward="true" selection-start-line="193" selection-start-column="34" selection-end-line="193" selection-end-column="34" />
               <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ActivityServiceImpl.java" pinned="false" current-in-tab="false">
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="PageHelp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageHelp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+=======
+      <file leaf-file-name="ActivityServiceImpl.java" pinned="false" current-in-tab="true">
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
               <caret line="133" column="24" lean-forward="false" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
               <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ActivityMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityMapper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -586,10 +1155,27 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="CommodityOrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/CommodityOrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+=======
+      <file leaf-file-name="GoodsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/GoodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="31" column="68" lean-forward="false" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+              <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ActivityMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -598,22 +1184,130 @@
               <folding>
                 <marker date="1532936656298" expanded="true" signature="291:364" ph="select * fro... t_activity" />
               </folding>
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="CommodityOrderServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/CommodityOrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1609">
+              <caret line="83" column="87" selection-start-line="83" selection-start-column="87" selection-end-line="83" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="GoodsServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/GoodsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="165" column="8" lean-forward="false" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+              <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="CommodityOrderMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/CommodityOrderMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="UserManagerController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="379">
               <caret line="105" column="6" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+=======
+      <file leaf-file-name="CommodityOrderMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/CommodityOrderMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+=======
+      <file leaf-file-name="PageHelp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageHelp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="AddressService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/AddressService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+=======
+      <file leaf-file-name="SelectedController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SelectedController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="58" column="66" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="66" />
+              <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="AddressServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/AddressServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="14" />
+=======
+      <file leaf-file-name="ContentServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ContentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="384" column="70" lean-forward="false" selection-start-line="384" selection-start-column="59" selection-end-line="384" selection-end-column="70" />
+              <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCenterController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserCenterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="55" column="59" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="55" selection-end-column="59" />
+=======
+      <file leaf-file-name="ContentService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ContentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
+              <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -621,15 +1315,49 @@
         <option value="Mybatis Mapper" />
       </list>
     </option>
+=======
+<<<<<<< HEAD
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>activityCategoryService</find>
+      <find>Group</find>
+      <find>activityCategory</find>
+      <find>group</find>
+      <find>commodity</find>
+      <find>groupList</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>commodityService</replace>
+      <replace>Commodity</replace>
+      <replace>commodity</replace>
+      <replace>commodityOrder</replace>
+      <replace>commodityList</replace>
+    </replaceStrings>
+=======
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getC</find>
+    </findStrings>
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/BannerMapper.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/BannerMapper.xml" />
         <option value="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/BannerService.java" />
@@ -658,7 +1386,73 @@
         <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityMapper.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityMapper.xml" />
+=======
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ContentGroupMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageHelp.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageSelect.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageHelpSelect.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/WareController.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/GroupConcern.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/User.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ContentFollow.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ContentFollowRepository.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/GroupFollow.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/GroupFollowMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Content.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GroupController.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ContentMapper.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/CotentMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/ContentView.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/vo/ContentVo.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/diving.json" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/GroupService.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Group.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ContentController.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/GroupFollowRepository.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/FocusController.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/FocusService.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/FocusServiceImpl.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecommendGoodsView.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/GoodsMapper.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/UserService.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/CommodityRepository.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/CommodityOrderRepository.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Commodity.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Address.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/GroupServiceImpl.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/GroupMapper.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/GroupMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/CommodityService.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/CommodityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/CommodityMapper.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/CommodityMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CommodityController.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityLabelMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/CommodityOrder.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/CommodityOrderService.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CommodityOrderController.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/CommodityOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/CommodityOrderMapper.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/CommodityOrderMapper.xml" />
+=======
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ImageMapper.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/GoodsMapper.xml" />
+        <option value="E:/apache-maven-3.5.3/repositories/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4.jar!/com/github/pagehelper/PageHelper.class" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageHelp.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GoodsController.java" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
         <option value="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
       </list>
     </option>
   </component>
@@ -668,34 +1462,86 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="5" />
     <option name="y" value="16" />
     <option name="width" value="1034" />
     <option name="height" value="1057" />
+=======
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+<<<<<<< HEAD
+        <option name="mavenHome" value="D:/maven/maven" />
+        <option name="userSettingsFile" value="D:\maven\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="diving-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1060" />
+=======
+        <option name="localRepository" value="E:\apache-maven-3.5.3\repositories" />
+        <option name="mavenHome" value="E:/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
   </component>
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+=======
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
+=======
               <item name="diving" type="b2602c69:ProjectViewProjectNode" />
               <item name="common-parent" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -716,21 +1562,35 @@
             </path>
             <path>
               <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="java" type="462c0819:PsiDirectoryNode" />
+=======
+<<<<<<< HEAD
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -739,11 +1599,13 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="liaoin" type="462c0819:PsiDirectoryNode" />
@@ -760,7 +1622,11 @@
               <item name="diving" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
+=======
               <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -784,25 +1650,25 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -810,11 +1676,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -869,10 +1737,11 @@
               <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -914,25 +1783,26 @@
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-entity" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-entity" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-entity" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -940,11 +1810,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-entity" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -982,7 +1854,7 @@
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-entity" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -994,39 +1866,45 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-service-activity" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-service-user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-service-activity" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-service-user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-service-activity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-service-activity" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-service-user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-service-activity" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-service-user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-service-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="com" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
             </path>
             <path>
               <item name="diving" type="b2602c69:ProjectViewProjectNode" />
@@ -1054,17 +1932,30 @@
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
               <item name="diving-service-activity" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="liaoin" type="462c0819:PsiDirectoryNode" />
               <item name="diving" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
             </path>
             <path>
-              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
               <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="diving-service-activity" type="462c0819:PsiDirectoryNode" />
+=======
+<<<<<<< HEAD
+              <item name="diving-service-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="diving-service-community" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -1148,6 +2039,7 @@
               <item name="diving-service-community" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="liaoin" type="462c0819:PsiDirectoryNode" />
@@ -1159,9 +2051,30 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+=======
+<<<<<<< HEAD
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../carview" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+=======
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -1243,6 +2156,24 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15820312" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.liaoin.diving.mapper" />
+      <recent name="com.liaoin.diving.view" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\diving\diving-parent\diving-dao\src\main\resources\com\liaoin\diving\mapper" />
+    </key>
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1256,6 +2187,9 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager">
+=======
   <component name="RunManager" selected="Application.DivingApplication">
     <configuration name="DivingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -1283,23 +2217,11 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -1308,31 +2230,18 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration name="DivingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="diving-controller" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liaoin.diving.DivingApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -1343,72 +2252,186 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.DivingApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.DivingApplication" />
+    </list>
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.DivingApplication" />
       </list>
     </recent_temporary>
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,SHOW_PROPERTIES" />
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
+<<<<<<< HEAD
     <configuration>C:\Users\Twor\AppData\Roaming\Subversion</configuration>
+=======
+    <configuration>C:\Users\win\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Allen\AppData\Roaming\Subversion</configuration>
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
+    <supportedVersion>125</supportedVersion>
+  </component>
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
   <component name="SvnFileUrlMappingImpl">
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
+<<<<<<< HEAD
           <option name="myVcsRoot" value="D:\MRHU\diving" />
           <option name="myCopyRoot" value="D:\MRHU\diving" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="D:\MRHU\diving" />
           <option name="myCopyRoot" value="D:\MRHU\diving\svn\潜水" />
+=======
+<<<<<<< HEAD
+          <option name="myVcsRoot" value="D:\workspace\diving\aop" />
+          <option name="myCopyRoot" value="D:\workspace\diving\aop" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\workspace\diving\aop" />
+          <option name="myCopyRoot" value="D:\workspace\diving\aop\svn\潜水" />
+=======
+          <option name="myVcsRoot" value="E:\diving" />
+          <option name="myCopyRoot" value="E:\diving" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\diving" />
+          <option name="myCopyRoot" value="E:\diving\svn\潜水" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
+<<<<<<< HEAD
           <option name="myVcsRoot" value="D:\MRHU\diving" />
           <option name="myCopyRoot" value="D:\MRHU\diving" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
           <option name="myVcsRoot" value="D:\MRHU\diving" />
           <option name="myCopyRoot" value="D:\MRHU\diving\svn\潜水" />
+=======
+<<<<<<< HEAD
+          <option name="myVcsRoot" value="D:\workspace\diving\aop" />
+          <option name="myCopyRoot" value="D:\workspace\diving\aop" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\workspace\diving\aop" />
+          <option name="myCopyRoot" value="D:\workspace\diving\aop\svn\潜水" />
+=======
+          <option name="myVcsRoot" value="E:\diving" />
+          <option name="myCopyRoot" value="E:\diving" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\diving" />
+          <option name="myCopyRoot" value="E:\diving\svn\潜水" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
         </SvnCopyRootSimple>
       </list>
     </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="905aadd2-bbcf-4b3f-acb4-5bddbdda00e8" name="Default" comment="" />
+      <created>1532566247877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532566247877</updated>
+      <workItem from="1532566250017" duration="25435000" />
+      <workItem from="1532653384424" duration="23313000" />
+      <workItem from="1532911573474" duration="18302000" />
+=======
       <changelist id="fe052969-eb86-416e-854c-daac963ef2ee" name="Default" comment="" />
       <created>1532930311697</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1532930311697</updated>
       <workItem from="1532930340804" duration="6785000" />
+=======
+      <updated>1532913260511</updated>
+      <workItem from="1532913269431" duration="6104000" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="19593000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="46925000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.195629" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.502947" side_tool="true" weight="0.2553305" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44553378" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32897604" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49705306" visible="true" weight="0.2553305" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+=======
+    <option name="totallyTimeSpent" value="6281000" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1445,6 +2468,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1455,11 +2479,55 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
       <option name="time" value="38" />
+=======
+      <option name="time" value="1" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay/MyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="310" column="40" selection-start-line="310" selection-start-column="40" selection-end-line="310" selection-end-column="40" />
+          <folding>
+            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="7" />
+=======
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityDiscussion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-302">
@@ -1488,6 +2556,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="301">
+          <caret line="36" selection-start-line="36" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/GroupFollow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ContentGroupRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/CommodityOrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="127" selection-start-line="6" selection-start-column="127" selection-end-line="6" selection-end-column="127" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityLabelMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/CommodityRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="112" selection-start-line="6" selection-start-column="112" selection-end-line="6" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+=======
+        <state relative-caret-position="351">
+          <caret line="104" column="6" lean-forward="false" selection-start-line="104" selection-start-column="4" selection-end-line="106" selection-end-column="27" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
           <folding />
         </state>
       </provider>
@@ -1521,6 +2647,7 @@
         <state relative-caret-position="593">
           <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
           <folding>
+<<<<<<< HEAD
             <marker date="1532912919213" expanded="true" signature="247:307" ph="update t_ban... " />
             <marker date="1532912919213" expanded="true" signature="394:483" ph="select activ... t_banner" />
             <marker date="1532912919213" expanded="true" signature="569:655" ph="select conte... t_banner" />
@@ -1530,11 +2657,152 @@
             <marker date="1532912919213" expanded="true" signature="1322:1981" ph="select * fro... id" />
             <marker date="1532912919213" expanded="true" signature="1360:1723" ph="select banne... t_content" />
             <marker date="1532912919213" expanded="true" signature="1736:1940" ph="SELECT banne... t_activity" />
+=======
+            <element signature="imports" expanded="false" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/BannerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/AddressMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/WareMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/UserManagerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="9" lean-forward="true" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/BannerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/FocusServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/aspect/LoggerAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityCategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="68" column="75" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/GroupMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/GroupMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/GroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="70" column="49" lean-forward="true" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/GroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="70" column="22" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="70" selection-end-column="22" />
+          <folding>
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/BannerMapper.java">
+=======
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/CommodityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Commodity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/BannerView.java">
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
@@ -1704,13 +2972,179 @@
         <state relative-caret-position="293">
           <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#14683#14684#0" expanded="false" />
             <element signature="e#14731#14732#0" expanded="false" />
+=======
+            <marker date="1532917400863" expanded="true" signature="1941:2064" ph="SELECT * FRO... t_goods" />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/CommodityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ContentService.java">
+=======
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/CommodityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="65" column="29" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="65" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/CommodityMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityLabelMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="85" lean-forward="true" selection-start-line="5" selection-start-column="85" selection-end-line="5" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/CommodityOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CommodityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="17" selection-start-line="17" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/NavController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SpecController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserCenterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="55" column="59" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="55" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/AddressServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/AddressService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CommodityOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/CommodityOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/CommodityOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1609">
+          <caret line="83" column="87" selection-start-line="83" selection-start-column="87" selection-end-line="83" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/CommodityOrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/CommodityOrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecommendGoodsView.java">
+>>>>>>> 90d555b0ea732e38dad5079e8f501c38173a4720
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
@@ -1930,6 +3364,7 @@
         <state relative-caret-position="379">
           <caret line="105" column="6" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
           <folding />
+>>>>>>> 0e8080fc4fe52fec094b502041b0d13d005ffe1b
         </state>
       </provider>
     </entry>
