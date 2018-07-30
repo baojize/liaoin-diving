@@ -53,13 +53,13 @@ public class Group implements Serializable {
     @ApiModelProperty(value = "地址")
     private String address;
 
-    @Transient
+//    @Transient
     @ApiModelProperty(value = "成员数量")
     private Long memberNum;
 
-    @Transient
+//    @Transient
     @ApiModelProperty(value = "粉丝数量")
-    private Integer fansNum;
+    private Long fansNum;
 
     @Transient
     @ApiModelProperty(value = "排名")
@@ -68,5 +68,10 @@ public class Group implements Serializable {
     @Transient
     @ApiModelProperty(value = "发布内容列表",hidden = true)
     private List<Content> contentList = new ArrayList<>();
+
+    @Transient
+    @ApiModelProperty(value = "头像地址",hidden = true)
+    private String imgUrl;
+
 
 }

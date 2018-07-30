@@ -10,7 +10,6 @@
     <file url="file://$PROJECT_DIR$/diving-parent/diving-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/diving-parent/diving-elasticsearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/diving-parent/diving-entity" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/diving-parent/diving-manager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/diving-parent/diving-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/diving-parent/diving-service-activity" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/diving-parent/diving-service-community" charset="UTF-8" />

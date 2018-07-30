@@ -44,7 +44,5 @@
             <artifactId>diving-common</artifactId>
         </dependency>
 
-
-
     </dependencies>
 </project>

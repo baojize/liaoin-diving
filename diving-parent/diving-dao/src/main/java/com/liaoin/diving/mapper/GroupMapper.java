@@ -1,6 +1,10 @@
 package com.liaoin.diving.mapper;
 
 import com.liaoin.diving.entity.Group;
+import com.liaoin.diving.view.ContentView;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface GroupMapper {
     /**
@@ -8,5 +12,12 @@ public interface GroupMapper {
      * @param id
      * @return
      */
-    Group mobileFindOne(Integer id);
+    Group mobileFindOne(@Param("id") Integer id);
+
+    /**
+     * 移动端查询 俱乐部下的 content 列表
+     * @param
+     * @return
+     */
+    List<ContentView> mobileFindList(@Param("id") Integer id);
 }

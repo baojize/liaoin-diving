@@ -132,8 +132,7 @@ public class ContentServiceImpl implements ContentService {
     @Override
     @Transactional
     public void like(Content content, User loginUser) {
-        //获取点赞列表
-//        List<User> likeList = content.getLikeList();
+
         ContentUser contentUser1 = contentUserRepository.findByContentIdAndUserId(content.getId(),loginUser.getId());
         List<ContentUser> likeList = contentUserRepository.findByContentId(content.getId());
         if (Objects.isNull(contentUser1)){
@@ -142,9 +141,14 @@ public class ContentServiceImpl implements ContentService {
             contentUser1.setUserId(loginUser.getId());
             contentUser1.setContentId(content.getId());
             contentUser1.setCreateTime(new Date());
-            //添加数据到数据库
+            //添加 关系 数据到数据库
             contentUserRepository.save(contentUser1);
+
             //获取文章用户
+            if(Objects.isNull(content.getUser())){
+                //是俱乐部发布
+                return;
+            }
             User upUser = userRepository.findOne(content.getUser().getId()); // 更新最新消息
             Integer likeNum = upUser.getLikeNum();
             if (Objects.isNull(likeNum)){
@@ -157,27 +161,6 @@ public class ContentServiceImpl implements ContentService {
             contentUserRepository.delete(contentUser1);
             likeList.remove(contentUser1);
         }
-
-
-//        if (likeList.contains(loginUser)) {
-//            likeList.remove(loginUser);
-//        } else {
-//            likeList.add(loginUser); // 点赞
-//            //获取文章用户
-//            User upUser = userRepository.findOne(content.getUser().getId()); // 更新最新消息
-//            Integer likeNum = upUser.getLikeNum();
-//            if (Objects.isNull(likeNum)){
-//                likeNum = 0;
-//            }
-//            upUser.setLikeNum(likeNum + 1);
-//            userRepository.save(upUser);
-//        }
-        //更新关系表 先删 再加
-//        contentRepository.save(content);
-//        int n = deleteRelationship(content.getId());
-//        saveRelationship(content.getId(),likeList);
-
-
     }
 
 

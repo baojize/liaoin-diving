@@ -9,6 +9,7 @@
         <module name="alipay" />
         <module name="aliyun-sms" />
         <module name="code-generator" />
+        <module name="diving" />
         <module name="diving-common" />
         <module name="diving-controller" />
         <module name="diving-dao" />
@@ -19,7 +20,6 @@
         <module name="diving-service-community" />
         <module name="diving-service-field" />
         <module name="diving-service-file" />
-        <module name="diving-service-manager" />
         <module name="diving-service-search" />
         <module name="diving-service-shop" />
         <module name="diving-service-system" />
@@ -34,19 +34,18 @@
       <module name="code-generator" target="1.8" />
       <module name="common-parent" target="1.8" />
       <module name="dao-1" target="1.8" />
+      <module name="diving" target="1.8" />
       <module name="diving-common" target="1.8" />
       <module name="diving-controller" target="1.8" />
       <module name="diving-dao" target="1.8" />
       <module name="diving-elasticsearch" target="1.8" />
       <module name="diving-entity" target="1.8" />
-      <module name="diving-manager" target="1.8" />
       <module name="diving-parent" target="1.8" />
       <module name="diving-redis" target="1.8" />
       <module name="diving-service-activity" target="1.8" />
       <module name="diving-service-community" target="1.8" />
       <module name="diving-service-field" target="1.8" />
       <module name="diving-service-file" target="1.8" />
-      <module name="diving-service-manager" target="1.8" />
       <module name="diving-service-search" target="1.8" />
       <module name="diving-service-shop" target="1.8" />
       <module name="diving-service-system" target="1.8" />

@@ -4,14 +4,13 @@ import com.github.pagehelper.PageInfo;
 import com.liaoin.diving.common.PageBean;
 import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
+import com.liaoin.diving.entity.Content;
 import com.liaoin.diving.entity.Group;
 import com.liaoin.diving.entity.User;
 import com.liaoin.diving.entity.Ware;
 import com.liaoin.diving.service.GroupService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import com.liaoin.diving.view.ContentView;
+import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -84,13 +83,32 @@ public class GroupController {
      * @return
      */
     @GetMapping("mobile/findOne")
-    public Result mobileFindOne(@RequestParam Integer id){
+    @ApiOperation("前端查询俱乐部详情")
+    public Result mobileFindOne(@ApiParam(value = "俱乐部ID",required = true) @RequestParam Integer id){
         Group group = groupService.mobileFindOne(id);
         if (group == null) {
             return new Result(300, "暂无数据", null);
         }
         return new Result(200, "查询成功", group);
     }
+
+    @GetMapping("mobile/findAll")
+    @ApiOperation("前端查询所有内容")
+    public Result mobileFindAll(HttpSession session, Integer start, Integer pageSize,
+                                @ApiParam(value = "俱乐部ID",required = true) @RequestParam Integer id){
+        User loginUser = (User)session.getAttribute("loginUser");
+        if (Objects.isNull(loginUser)){
+            return new Result(300, "请登录", null);
+        }
+        PageHelp pageHelp = new PageHelp(start, pageSize, id);
+        List<ContentView> contents = groupService.mobileFindList(pageHelp);
+        if (Objects.isNull(contents) || contents.size() == 0){
+            return new Result(200, "什么都没有", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(contents));
+    }
+
+
 
 
 
