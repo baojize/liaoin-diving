@@ -2,7 +2,21 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
+          <file>jar://E:/apache-maven-3.5.3/repositories/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar!/org/jboss/netty/container/spring/beans.xml</file>
+          <file>file://E:/apache-maven-3.5.3/repositories/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar</file>
+          <file>jar://E:/apache-maven-3.5.3/repositories/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0.jar!/springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class</file>
+          <file>file://E:/apache-maven-3.5.3/repositories/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0.jar</file>
+          <file>jar://E:/apache-maven-3.5.3/repositories/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0.jar!/springfox/documentation/schema/configuration/ModelsConfiguration.class</file>
+          <file>file://E:/apache-maven-3.5.3/repositories/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0.jar</file>
+          <file>jar://E:/apache-maven-3.5.3/repositories/io/springfox/springfox-swagger-common/2.8.0/springfox-swagger-common-2.8.0.jar!/springfox/documentation/swagger/configuration/SwaggerCommonConfiguration.class</file>
+          <file>file://E:/apache-maven-3.5.3/repositories/io/springfox/springfox-swagger-common/2.8.0/springfox-swagger-common-2.8.0.jar</file>
+          <file>jar://E:/apache-maven-3.5.3/repositories/io/springfox/springfox-swagger2/2.8.0/springfox-swagger2-2.8.0.jar!/springfox/documentation/swagger2/configuration/Swagger2DocumentationConfiguration.class</file>
+          <file>file://E:/apache-maven-3.5.3/repositories/io/springfox/springfox-swagger2/2.8.0/springfox-swagger2-2.8.0.jar</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
