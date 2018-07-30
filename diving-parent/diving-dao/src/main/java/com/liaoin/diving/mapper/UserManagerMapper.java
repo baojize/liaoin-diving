@@ -1,6 +1,7 @@
 package com.liaoin.diving.mapper;
 
 import com.liaoin.diving.entity.manager.Admin;
+import com.liaoin.diving.view.AdminConditionView;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -22,4 +23,6 @@ public interface UserManagerMapper {
     Admin findByAccount(String account);
 
     List<Admin> findAll();
+
+    List<Admin> condition(AdminConditionView admin);
 }

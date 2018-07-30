@@ -50,7 +50,7 @@ public class PortalManagerController {
 
     @GetMapping("/findAllNav   (按order排序)")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "start", value = "起始页 0开始", required = true),
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
             @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
     })
     @ApiOperation("查询所有记录[首页导航]")
@@ -122,7 +122,7 @@ public class PortalManagerController {
     @GetMapping("/findAllForum")
     @ApiOperation("查询所有推荐论坛[论坛推荐]")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "start", value = "起始页 0开始", required = true),
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
             @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
     })
     public Result findAllForum(Integer start, Integer pageSize){
@@ -173,7 +173,7 @@ public class PortalManagerController {
 /*********************************************************活动模块推荐curd******************************************************************/
     @GetMapping("/findOneAc")
     @ApiImplicitParam(name = "id", value = "编号", required = true)
-    @ApiOperation("查询一条记录[活动推荐]")
+    @ApiOperation("查询一条记录 [活动推荐]")
     public Result findOneAc(Integer id){
         RecoAcView reco= activityService.getOneReco(id);
         if (Objects.isNull(reco)){
@@ -182,13 +182,13 @@ public class PortalManagerController {
         return new Result(200, "查询成功", reco);
     }
 
-    @GetMapping("/findAllAc")
-    @ApiOperation("查询所有记录[活动推荐]")
+    @GetMapping("/findAllRecoAc")
+    @ApiOperation("查询所有推荐的活动  [活动推荐]")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "start", value = "起始页 0开始", required = true),
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
             @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
     })
-    public Result findAllAc(Integer start, Integer pageSize){
+    public Result findAllRecoAc(Integer start, Integer pageSize){
         PageHelp pageHelp = new PageHelp(start, pageSize, null);
         List<RecoAcView> activities = activityService.getReco(pageHelp);
         if (activities.isEmpty()){
@@ -197,5 +197,29 @@ public class PortalManagerController {
         return new Result(300, "查询成功", activities);
     }
 
+    @ApiOperation("查询所有活动(推荐的和未推荐的)  [活动推荐]")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
+    })
+    @GetMapping("/findAllAc")
+    public Result findAll(Integer start, Integer pageSize){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<RecoAcView> acViewList = activityService.findAll(pageHelp);
+        if (acViewList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(acViewList));
+    }
 
+    @PostMapping("/setAc")
+    @ApiImplicitParam(name = "id", value = "编号", required = true)
+    @ApiOperation("设置推荐活动[活动推荐]")
+    public Result setAc(Integer id ){
+        Integer back = activityService.setAc(id);
+        if (back != 1){
+            return new Result(300, "设置失败", null);
+        }
+        return new Result(200, "设置成功", null);
+    }
 }

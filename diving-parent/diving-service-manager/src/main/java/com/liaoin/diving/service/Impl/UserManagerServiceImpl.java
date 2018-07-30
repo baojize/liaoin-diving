@@ -7,6 +7,7 @@ import com.liaoin.diving.entity.manager.Admin;
 import com.liaoin.diving.mapper.UserManagerMapper;
 import com.liaoin.diving.service.UserManagerService;
 import com.liaoin.diving.utils.UpdateUtils;
+import com.liaoin.diving.view.AdminConditionView;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -66,6 +67,7 @@ public class UserManagerServiceImpl implements UserManagerService {
     public Integer update(Admin admin) {
         Admin dbAdmin = userManagerRepository.findOne(admin.getId());
         admin.setAccount(dbAdmin.getAccount()); // 禁止修改账号
+
         if (Objects.isNull(dbAdmin)){
             return 0;
         }
@@ -99,5 +101,12 @@ public class UserManagerServiceImpl implements UserManagerService {
             return 0;
         }
         return 1;
+    }
+
+    @Override
+    public List<Admin> condition(PageHelp pageHelp, AdminConditionView admin) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<Admin> conditions = userManagerMapper.condition(admin);
+        return conditions;
     }
 }

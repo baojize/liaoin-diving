@@ -7,6 +7,9 @@
 
         </association>
     </resultMap>
+    <update id="setAc">
+        update t_activity set is_recommend = 1 where id = #{id}
+    </update>
 
     <delete id="del">
         delete from t_activity_slable where id = #{id}

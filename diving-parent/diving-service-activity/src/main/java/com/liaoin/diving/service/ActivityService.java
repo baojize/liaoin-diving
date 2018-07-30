@@ -52,5 +52,19 @@ public interface ActivityService {
      * @return
      */
     RecoAcView getOneReco(Integer id);
+
+    /**
+     * 设置指定id活动为推荐活动
+     * @param id
+     */
+    Integer setAc(Integer id);
+
+    /**
+     * 查询所有记录
+     * @param pageHelp
+     * @return
+     */
+    List<RecoAcView> findAll(PageHelp pageHelp);
+
 }
 

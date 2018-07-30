@@ -1,11 +1,16 @@
 package com.liaoin.diving.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.liaoin.diving.common.PageBean;
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.dao.CategoryRepository;
 import com.liaoin.diving.dao.GoodsRepository;
 import com.liaoin.diving.entity.Goods;
+import com.liaoin.diving.mapper.GoodsMapper;
 import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.utils.UpdateUtils;
+import com.liaoin.diving.view.RecommendGoodsView;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
@@ -31,6 +36,9 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Resource
     private CategoryRepository categoryRepository;
+
+    @Resource
+    private GoodsMapper goodsMapper;
 
     @Override
     public void insert(Goods goods) {
@@ -142,7 +150,7 @@ public class GoodsServiceImpl implements GoodsService {
     @Override
     public PageBean<Goods> findByCategory(Pageable pageable, List<Integer> ids) {
         List<Goods> goodsList = new ArrayList<>();
-        Page<Goods> page = goodsRepository.findByCategory_IdIn(ids,pageable);
+        Page<Goods> page = goodsRepository.findByCategory_IdIn(ids, pageable);
 //        PageBean
         if (page.getTotalElements() == 0) {
             return null;
@@ -151,6 +159,17 @@ public class GoodsServiceImpl implements GoodsService {
         pageBean.setTotal(page.getTotalElements());
         pageBean.setRows(page.getContent());
         return pageBean;
+    }
+
+    @Override
+    public List<RecommendGoodsView> findRecommendOrderByCreateTime(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(),pageHelp.getPageSize());
+        List<RecommendGoodsView> goodsList = goodsMapper.findRecommendOrderByCreateTime();
+        for (RecommendGoodsView recommendGoodsView : goodsList) {
+            BigDecimal newMoney = recommendGoodsView.getPrice().multiply(recommendGoodsView.getDiscount());
+            recommendGoodsView.setMoney(newMoney);
+        }
+        return goodsList;
     }
 }
 

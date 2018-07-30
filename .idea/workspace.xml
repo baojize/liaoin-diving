@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java" line="110" mnemonic="2" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="fe052969-eb86-416e-854c-daac963ef2ee" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/alipay" />
@@ -396,6 +393,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/DiscussionLike.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/TypeSize.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/UserLike.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/AdminConditionView.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/BannerView.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/LikeView.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/NoticeView.java" />
@@ -554,7 +552,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/diving$DivingApplication.coverage" NAME="DivingApplication Coverage Results" MODIFIED="1532919514647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/diving$DivingApplication.coverage" NAME="DivingApplication Coverage Results" MODIFIED="1532935518703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.liaoin.diving.*</FILTER>
     </SUITE>
   </component>
@@ -563,67 +561,52 @@
       <file leaf-file-name="PortalManagerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+            <state relative-caret-position="717">
+              <caret line="193" column="34" lean-forward="true" selection-start-line="193" selection-start-column="34" selection-end-line="193" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActivityServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="114" column="60" lean-forward="true" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+            <state relative-caret-position="299">
+              <caret line="133" column="24" lean-forward="false" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityLabelMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityLabelMapper.java">
+      <file leaf-file-name="ActivityMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityLabelMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityLabelMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="38" column="125" lean-forward="false" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
+            <state relative-caret-position="338">
+              <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="19" />
               <folding>
-                <marker date="1532930858060" expanded="true" signature="499:545" ph="delete from " />
-                <marker date="1532930858060" expanded="true" signature="647:695" ph="select * fro... t_activity_slable" />
-                <marker date="1532930858060" expanded="true" signature="796:827" ph="select * fro... t_activity_slable" />
-                <marker date="1532930858060" expanded="true" signature="937:994" ph="select * fro... t_activity_slable" />
-                <marker date="1532930858060" expanded="true" signature="1097:1204" ph="select * fro... t_activity" />
-                <marker date="1532930858060" expanded="true" signature="1209:1476" ph="/*select ac.... " />
-                <marker date="1532930858060" expanded="true" signature="1573:1705" ph="select id,im... t_activity" />
-                <marker date="1532930858060" expanded="true" signature="1804:1950" ph="select id,im... t_activity" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecoAcView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecoAcView.java">
+      <file leaf-file-name="ActivityMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="104">
+              <caret line="4" column="81" lean-forward="true" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="81" />
+              <folding>
+                <marker date="1532936656298" expanded="true" signature="291:364" ph="select * fro... t_activity" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManagerController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserManagerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="105" column="6" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -635,14 +618,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Mybatis Mapper" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>subti</find>
-      <find>取消</find>
-    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -652,8 +630,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml" />
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/BannerMapper.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/BannerMapper.xml" />
         <option value="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/BannerService.java" />
@@ -667,17 +643,22 @@
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ContentMapper.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/CotentMapper.xml" />
         <option value="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecoAcView.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityLabelMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityService.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityLabelMapper.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/AdminConditionView.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-service-manager/src/main/java/com/liaoin/diving/service/UserManagerService.java" />
-        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserManagerController.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-manager/src/main/java/com/liaoin/diving/service/Impl/UserManagerServiceImpl.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/UserManagerMapper.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/UserManagerMapper.xml" />
-        <option value="$PROJECT_DIR$/diving-parent/diving-service-manager/src/main/java/com/liaoin/diving/service/Impl/UserManagerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecoAcView.java" />
-        <option value="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityLabelMapper.java" />
-        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityLabelMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserManagerController.java" />
         <option value="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java" />
-        <option value="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityService.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityMapper.java" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityMapper.xml" />
+        <option value="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -889,6 +870,48 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="liaoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="liaoin" type="462c0819:PsiDirectoryNode" />
+              <item name="diving" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diving" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="liaoin" type="462c0819:PsiDirectoryNode" />
+              <item name="diving" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="diving" type="b2602c69:ProjectViewProjectNode" />
@@ -1380,16 +1403,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532930311697</updated>
-      <workItem from="1532930340804" duration="766000" />
+      <workItem from="1532930340804" duration="6785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13574000" />
+    <option name="totallyTimeSpent" value="19593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3892473" sideWeight="0.5021322" order="5" side_tool="true" content_ui="tabs" />
@@ -1400,7 +1422,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21827957" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.555914" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6634409" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2311828" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1409,9 +1431,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17910448" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19083156" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1421,7 +1444,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1433,73 +1455,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="35" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/WareController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="134" column="54" lean-forward="true" selection-start-line="134" selection-start-column="54" selection-end-line="134" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/GoodsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityDetailContentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/NavController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="89" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Banner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service/ActivityProductsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/ManagerFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="48" column="99" lean-forward="true" selection-start-line="48" selection-start-column="99" selection-end-line="48" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityDiscussion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-302">
@@ -1545,20 +1505,6 @@
         <state relative-caret-position="575">
           <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1780,48 +1726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-manager/src/main/java/com/liaoin/diving/service/UserManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/UserManagerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <marker date="1532921133355" expanded="true" signature="299:375" ph="select * fro... t_admin" />
-            <marker date="1532921133355" expanded="true" signature="482:530" ph="select * fro... t_admin" />
-            <marker date="1532921133355" expanded="true" signature="631:652" ph="select * fro... t_admin" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/UserManagerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="107" column="8" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-manager/src/main/java/com/liaoin/diving/service/Impl/UserManagerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="89" column="32" lean-forward="false" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -1834,67 +1738,197 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-pro.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-676">
-          <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="30" />
+        <state relative-caret-position="483">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecoAcView.java">
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityLabelMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="38" column="125" lean-forward="false" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
-          <folding>
-            <marker date="1532930858060" expanded="true" signature="499:545" ph="delete from " />
-            <marker date="1532930858060" expanded="true" signature="647:695" ph="select * fro... t_activity_slable" />
-            <marker date="1532930858060" expanded="true" signature="796:827" ph="select * fro... t_activity_slable" />
-            <marker date="1532930858060" expanded="true" signature="937:994" ph="select * fro... t_activity_slable" />
-            <marker date="1532930858060" expanded="true" signature="1097:1204" ph="select * fro... t_activity" />
-            <marker date="1532930858060" expanded="true" signature="1209:1476" ph="/*select ac.... " />
-            <marker date="1532930858060" expanded="true" signature="1573:1705" ph="select id,im... t_activity" />
-            <marker date="1532930858060" expanded="true" signature="1804:1950" ph="select id,im... t_activity" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityLabelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+        <state relative-caret-position="130">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="724">
+          <caret line="66" column="47" lean-forward="true" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/WareController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserMsgController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1103">
+          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/manager/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/UserManagerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-manager/src/main/java/com/liaoin/diving/service/Impl/UserManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="108" column="67" lean-forward="true" selection-start-line="108" selection-start-column="67" selection-end-line="108" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-manager/src/main/java/com/liaoin/diving/service/UserManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="46" column="63" lean-forward="false" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/UserManagerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <marker date="1532936105567" expanded="true" signature="299:375" ph="select * fro... t_admin" />
+            <marker date="1532936105567" expanded="true" signature="482:530" ph="select * fro... t_admin" />
+            <marker date="1532936105567" expanded="true" signature="631:690" ph="select * fro... t_admin" />
+            <marker date="1532936105567" expanded="true" signature="631:716" ph="select * fro... t_admin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/AdminConditionView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityLabelMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <marker date="1532932033265" expanded="true" signature="500:555" ph="update t_act... " />
+            <marker date="1532932033265" expanded="true" signature="601:647" ph="delete from " />
+            <marker date="1532932033265" expanded="true" signature="749:797" ph="select * fro... t_activity_slable" />
+            <marker date="1532932033265" expanded="true" signature="898:929" ph="select * fro... t_activity_slable" />
+            <marker date="1532932033265" expanded="true" signature="1039:1096" ph="select * fro... t_activity_slable" />
+            <marker date="1532932033265" expanded="true" signature="1199:1306" ph="select * fro... t_activity" />
+            <marker date="1532932033265" expanded="true" signature="1311:1578" ph="/*select ac.... " />
+            <marker date="1532932033265" expanded="true" signature="1675:1807" ph="select id,im... t_activity" />
+            <marker date="1532932033265" expanded="true" signature="1906:2052" ph="select id,im... t_activity" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityLabelMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecoAcView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="81" lean-forward="true" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="81" />
+          <folding>
+            <marker date="1532936656298" expanded="true" signature="291:364" ph="select * fro... t_activity" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="114" column="60" lean-forward="true" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+        <state relative-caret-position="299">
+          <caret line="133" column="24" lean-forward="false" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="193" column="34" lean-forward="true" selection-start-line="193" selection-start-column="34" selection-end-line="193" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="105" column="6" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
           <folding />
         </state>
       </provider>

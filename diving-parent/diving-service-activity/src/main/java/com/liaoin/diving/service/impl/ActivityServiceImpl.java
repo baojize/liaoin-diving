@@ -9,6 +9,7 @@ import com.liaoin.diving.dao.ActivityRepository;
 import com.liaoin.diving.dao.BroadcastRepository;
 import com.liaoin.diving.entity.*;
 import com.liaoin.diving.mapper.ActivityLabelMapper;
+import com.liaoin.diving.mapper.ActivityMapper;
 import com.liaoin.diving.service.ActivityService;
 import com.liaoin.diving.view.RecoAcView;
 import org.springframework.data.domain.Page;
@@ -36,7 +37,6 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Resource
     private ActivityRepository activityRepository;
-
     @Resource
     private ActivityProductsRepository activityProductsRepository;
     @Resource
@@ -45,6 +45,9 @@ public class ActivityServiceImpl implements ActivityService {
     private ActivityLabelMapper activityLabelMapper;
     @Resource
     private ActivityDetailContentRepository activityDetailContentRepository;
+    @Resource
+    private ActivityMapper activityMapper;
+
 
     @Override
     public void insert(Activity activity) {
@@ -117,6 +120,18 @@ public class ActivityServiceImpl implements ActivityService {
             return null;
         }
         return reco;
+    }
+
+    @Override
+    public Integer setAc(Integer id) {
+        return activityLabelMapper.setAc(id);
+    }
+
+    @Override
+    public List<RecoAcView> findAll(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<RecoAcView > activities = activityMapper.findAll();
+        return activities;
     }
 
     @Override
@@ -252,7 +267,5 @@ public class ActivityServiceImpl implements ActivityService {
         List<Activity> activities = activityRepository.findRecommend();
         return activities;
     }
-
-
 }
 

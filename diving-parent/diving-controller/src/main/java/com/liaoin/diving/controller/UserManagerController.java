@@ -5,6 +5,7 @@ import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
 import com.liaoin.diving.entity.manager.Admin;
 import com.liaoin.diving.service.UserManagerService;
+import com.liaoin.diving.view.AdminConditionView;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -100,7 +101,7 @@ public class UserManagerController {
     @GetMapping("/findAll")
     @ApiOperation("查询所有记录")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "start", value = "起始页 0开始", required = true),
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
             @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
     })
     public Result findAll(Integer start, Integer pageSize){
@@ -110,5 +111,20 @@ public class UserManagerController {
             return new Result(300, "暂无数据", null);
         }
         return new Result(200, "查询成功", new PageInfo<Admin>(adminList));
+    }
+
+    @PostMapping("/condition")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
+    })
+    @ApiOperation("条件查询 根据条件模糊查询")
+    public Result condition(Integer start, Integer pageSize, @RequestBody AdminConditionView admin){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<Admin> admins = userManagerService.condition(pageHelp, admin);
+        if (admins.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(admins));
     }
 }

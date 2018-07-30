@@ -26,4 +26,6 @@ public interface ActivityLabelMapper {
     List<RecoAcView> getReco();
 
     RecoAcView getOneReco(Integer id);
+
+    Integer setAc(@Param("id") Integer id);
 }
