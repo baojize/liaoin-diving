@@ -1,5 +1,7 @@
 package com.liaoin.diving.controller;
 
+import com.github.pagehelper.PageInfo;
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
 import com.liaoin.diving.entity.manager.Admin;
 import com.liaoin.diving.service.UserManagerService;
@@ -97,11 +99,16 @@ public class UserManagerController {
     }
     @GetMapping("/findAll")
     @ApiOperation("查询所有记录")
-    public Result findAll(){
-        List<Admin> adminList = userManagerService.findAll();
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "start", value = "起始页 0开始", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
+    })
+    public Result findAll(Integer start, Integer pageSize){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<Admin> adminList = userManagerService.findAll(pageHelp);
         if (adminList.isEmpty()){
             return new Result(300, "暂无数据", null);
         }
-        return new Result(200, "查询成功", adminList);
+        return new Result(200, "查询成功", new PageInfo<Admin>(adminList));
     }
 }

@@ -32,6 +32,9 @@
     order by activity_time desc*/
 
     </select>
+    <select id="getReco" resultType="com.liaoin.diving.view.RecoAcView">
+        select id,img_url 'img',`name`,price,address from t_activity ac where is_recommend = 1 and is_delete = 0 order by activity_time desc
+    </select>
 
 
 </mapper>

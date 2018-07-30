@@ -1,5 +1,7 @@
 package com.liaoin.diving.service.Impl;
 
+import com.github.pagehelper.PageHelper;
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.dao.UserManagerRepository;
 import com.liaoin.diving.entity.manager.Admin;
 import com.liaoin.diving.mapper.UserManagerMapper;
@@ -82,8 +84,10 @@ public class UserManagerServiceImpl implements UserManagerService {
     }
 
     @Override
-    public List<Admin> findAll() {
-        List<Admin> adminList = userManagerRepository.findAll();
+    public List<Admin> findAll(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        //List<Admin> adminList = userManagerRepository.findAll();
+        List<Admin> adminList = userManagerMapper.findAll();
         return adminList;
     }
 

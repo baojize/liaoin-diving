@@ -4,6 +4,7 @@ import com.liaoin.diving.entity.Banner;
 import com.liaoin.diving.entity.Content;
 import com.liaoin.diving.entity.Theme;
 import com.liaoin.diving.view.BannerView;
+import com.liaoin.diving.view.RecoContentView;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -37,4 +38,13 @@ public interface ContentMapper {
      * @return
      */
     Integer findCommentNum(@Param("id") Integer id);
+
+    List<RecoContentView> getRecommend();
+
+
+    RecoContentView getRecommendById(@Param("id") Integer id);
+
+    Integer setReco(Integer id);
+
+    Content queryById(@Param("id") Integer id);
 }

@@ -1,5 +1,6 @@
 package com.liaoin.diving.service;
 
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.manager.Admin;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,7 +28,7 @@ public interface UserManagerService {
 
     Admin findById(Integer id);
 
-    List<Admin> findAll();
+    List<Admin> findAll(PageHelp pageHelp);
 
     /**
      * 检查账号是否注册

@@ -58,7 +58,7 @@ public class Content implements Serializable {
     @ApiModelProperty(value = "阅读量", hidden = true)
     private Integer reading = 0;
 
-    @Column(name = "titile")
+    @Column(name = "title")
     @ApiModelProperty(value = "标题")
     private String title;
 
@@ -81,6 +81,10 @@ public class Content implements Serializable {
     @Field(index = FieldIndex.no, store = true)
     private String isDelete = "0";
 
+    @Column(name = "show_img")
+    @ApiModelProperty("内容展示图片, 默认第一张")
+    private String showImg;
+
     @JsonIgnore
     @OneToMany(fetch = FetchType.EAGER, targetEntity = Banner.class)
     @ApiModelProperty(value = "内容")
@@ -91,6 +95,8 @@ public class Content implements Serializable {
     @JoinColumn(name = "second_hand_id")
     @ApiModelProperty("二手")
     private SecondHand secondHand;
+
+
 
     @ManyToOne(fetch = FetchType.EAGER, targetEntity = Topic.class)
     @JoinColumn(name = "topic_id")

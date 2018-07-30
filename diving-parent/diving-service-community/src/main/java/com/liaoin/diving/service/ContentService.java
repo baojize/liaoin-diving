@@ -5,6 +5,7 @@ import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.*;
 import com.liaoin.diving.entity.relationship.UserLike;
 import com.liaoin.diving.view.BannerView;
+import com.liaoin.diving.view.RecoContentView;
 import com.liaoin.diving.vo.NoticeVo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -94,6 +95,12 @@ public interface ContentService {
     List<Content> findUserUp(PageHelp pageHelp, Integer id);
 
 
+    List<RecoContentView> getRecommend(PageHelp pageHelp);
 
+    RecoContentView getRecommendById(Integer id);
+
+    Integer setReco(Integer id);
+
+    Content queryById(Integer id);
 }
 

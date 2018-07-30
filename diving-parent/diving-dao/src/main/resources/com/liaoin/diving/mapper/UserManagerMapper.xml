@@ -9,4 +9,7 @@
     <select id="findByAccount" resultType="com.liaoin.diving.entity.manager.Admin">
         select * from t_admin where account = #{account}
     </select>
+    <select id="findAll" resultType="com.liaoin.diving.entity.manager.Admin">
+        select * from t_admin
+    </select>
 </mapper>

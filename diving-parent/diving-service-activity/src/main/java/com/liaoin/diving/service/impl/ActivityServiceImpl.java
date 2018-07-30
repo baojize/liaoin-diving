@@ -10,6 +10,7 @@ import com.liaoin.diving.dao.BroadcastRepository;
 import com.liaoin.diving.entity.*;
 import com.liaoin.diving.mapper.ActivityLabelMapper;
 import com.liaoin.diving.service.ActivityService;
+import com.liaoin.diving.view.RecoAcView;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -100,6 +101,22 @@ public class ActivityServiceImpl implements ActivityService {
             activity.setActivityLabels(activityLabels);
         }
         return activities;
+    }
+
+    @Override
+    public List<RecoAcView> getReco(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<RecoAcView> activities = activityLabelMapper.getReco();
+        return activities;
+    }
+
+    @Override
+    public RecoAcView getOneReco(Integer id) {
+        RecoAcView reco = activityLabelMapper.getOneReco(id);
+        if (Objects.isNull(reco)){
+            return null;
+        }
+        return reco;
     }
 
     @Override

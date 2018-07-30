@@ -2,6 +2,7 @@ package com.liaoin.diving.mapper;
 
 import com.liaoin.diving.entity.Activity;
 import com.liaoin.diving.entity.ActivityLabel;
+import com.liaoin.diving.view.RecoAcView;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -22,4 +23,7 @@ public interface ActivityLabelMapper {
 
     List<Activity> findByCategory(@Param("id") Integer id);
 
+    List<RecoAcView> getReco();
+
+    RecoAcView getOneReco(Integer id);
 }
