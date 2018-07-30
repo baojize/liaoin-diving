@@ -11,6 +11,7 @@ import com.liaoin.diving.entity.*;
 import com.liaoin.diving.mapper.ActivityLabelMapper;
 import com.liaoin.diving.mapper.ActivityMapper;
 import com.liaoin.diving.service.ActivityService;
+import com.liaoin.diving.view.ActivityConditionView;
 import com.liaoin.diving.view.RecoAcView;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -132,6 +133,18 @@ public class ActivityServiceImpl implements ActivityService {
         PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
         List<RecoAcView > activities = activityMapper.findAll();
         return activities;
+    }
+
+    @Override
+    public List<Activity> condition(PageHelp pageHelp, ActivityConditionView activity) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<Activity> activities = activityMapper.condition(activity);
+        return activities;
+    }
+
+    @Override
+    public void cancelReco(Integer id) {
+        activityMapper.cancelReco(id);
     }
 
     @Override

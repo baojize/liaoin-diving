@@ -23,3 +23,7 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count=countSql
+logging:
+  level:
+    com.liaoin.diving.mapper: debug
+
