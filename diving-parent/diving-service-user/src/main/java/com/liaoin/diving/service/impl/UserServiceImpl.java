@@ -297,6 +297,20 @@ public class UserServiceImpl implements UserService {
         return userMapper.findFansNum(id);
     }
 
+    /**
+     * 更新积分
+     * @param id 用户ID
+     * @param num 积分更换值
+     * @return
+     */
+    @Override
+    public User updatePoints(Integer id, Integer num) {
+        User user = userRepository.findById(id);
+        int oldPoints = user.getPoints();
+        user.setPoints(oldPoints+num);
+        return userRepository.save(user);
+    }
+
 
 }
 

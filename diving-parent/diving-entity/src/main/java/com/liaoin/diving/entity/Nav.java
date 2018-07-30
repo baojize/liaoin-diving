@@ -26,9 +26,9 @@ public class Nav implements Serializable {
     @ApiModelProperty("图片url")
     private String Imgurl;
 
-    @Column(name = "uri")
+    /*@Column(name = "uri")
     @ApiModelProperty("链接uri")
-    private String uri;
+    private String uri;*/
 
     @Column(name = "name")
     @ApiModelProperty("名称")

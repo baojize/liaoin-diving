@@ -9,7 +9,10 @@ import com.liaoin.diving.dao.ActivityRepository;
 import com.liaoin.diving.dao.BroadcastRepository;
 import com.liaoin.diving.entity.*;
 import com.liaoin.diving.mapper.ActivityLabelMapper;
+import com.liaoin.diving.mapper.ActivityMapper;
 import com.liaoin.diving.service.ActivityService;
+import com.liaoin.diving.view.ActivityConditionView;
+import com.liaoin.diving.view.RecoAcView;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -35,7 +38,6 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Resource
     private ActivityRepository activityRepository;
-
     @Resource
     private ActivityProductsRepository activityProductsRepository;
     @Resource
@@ -44,6 +46,9 @@ public class ActivityServiceImpl implements ActivityService {
     private ActivityLabelMapper activityLabelMapper;
     @Resource
     private ActivityDetailContentRepository activityDetailContentRepository;
+    @Resource
+    private ActivityMapper activityMapper;
+
 
     @Override
     public void insert(Activity activity) {
@@ -100,6 +105,46 @@ public class ActivityServiceImpl implements ActivityService {
             activity.setActivityLabels(activityLabels);
         }
         return activities;
+    }
+
+    @Override
+    public List<RecoAcView> getReco(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<RecoAcView> activities = activityLabelMapper.getReco();
+        return activities;
+    }
+
+    @Override
+    public RecoAcView getOneReco(Integer id) {
+        RecoAcView reco = activityLabelMapper.getOneReco(id);
+        if (Objects.isNull(reco)){
+            return null;
+        }
+        return reco;
+    }
+
+    @Override
+    public Integer setAc(Integer id) {
+        return activityLabelMapper.setAc(id);
+    }
+
+    @Override
+    public List<RecoAcView> findAll(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<RecoAcView > activities = activityMapper.findAll();
+        return activities;
+    }
+
+    @Override
+    public List<Activity> condition(PageHelp pageHelp, ActivityConditionView activity) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<Activity> activities = activityMapper.condition(activity);
+        return activities;
+    }
+
+    @Override
+    public void cancelReco(Integer id) {
+        activityMapper.cancelReco(id);
     }
 
     @Override

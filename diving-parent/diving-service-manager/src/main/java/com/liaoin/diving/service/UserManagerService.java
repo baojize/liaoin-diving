@@ -1,6 +1,8 @@
 package com.liaoin.diving.service;
 
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.manager.Admin;
+import com.liaoin.diving.view.AdminConditionView;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -27,7 +29,7 @@ public interface UserManagerService {
 
     Admin findById(Integer id);
 
-    List<Admin> findAll();
+    List<Admin> findAll(PageHelp pageHelp);
 
     /**
      * 检查账号是否注册
@@ -35,4 +37,12 @@ public interface UserManagerService {
      * @return
      */
     Integer checkAccount(String account);
+
+    /**
+     * 条件查询
+     * @param pageHelp
+     * @param admin
+     * @return
+     */
+    List<Admin> condition(PageHelp pageHelp, AdminConditionView admin);
 }

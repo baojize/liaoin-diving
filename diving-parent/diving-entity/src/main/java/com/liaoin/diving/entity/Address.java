@@ -19,7 +19,7 @@ public class Address implements Serializable{
 
     @Id
     @GeneratedValue
-    @ApiModelProperty(value = "主键", hidden = true)
+    @ApiModelProperty(value = "主键")
     private Integer id;
 
     @Column(name = "receiver_name")

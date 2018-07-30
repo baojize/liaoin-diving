@@ -1,11 +1,14 @@
 package com.liaoin.diving.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.liaoin.diving.common.PageBean;
+import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
 import com.liaoin.diving.dao.ContentGroupRepository;
 import com.liaoin.diving.entity.*;
 import com.liaoin.diving.entity.relationship.UserLike;
 import com.liaoin.diving.service.*;
+import com.liaoin.diving.view.RecoContentView;
 import com.liaoin.diving.vo.ContentVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -320,34 +323,55 @@ public class ContentController {
 
 
     /**
-     * 批量推荐  , (批量改变所选id对应记录的is_recommend 的状态)
+     *
      * @return
      */
-    @PostMapping("/bacthReco")
-    @ApiOperation("批量推荐")
-    public Result bacthReco(@RequestBody Integer[] ids){
-        if (ids.length == 0){
-            return new Result(300,"请选择要推荐的内容",null);
+    @PostMapping("/recoContent")
+    @ApiOperation("推荐内容")
+    @ApiImplicitParam(name = "id", value = "主键", required = true)
+    public Result  recoContent( Integer id){
+        Content content = contentService.queryById(id);
+        if (Objects.isNull(content)){
+            return new Result(300, "内容不存在", null);
         }
-        contentService.bacthReco(ids);
+        if (!"2".equals(content.getType())){
+            return new Result(300, "只能设置[动态]为推荐", null);
+        }
+        if ("1".equals(content.getIsRecommend())){
+            return new Result(300, "改内容已设置推荐", null);
+        }
+        Integer integer = contentService.setReco(id);
+        if (integer != 1){
+            return new Result(300,"推荐失败",null);
+        }
         return new Result(200,"推荐成功",null);
     }
 
     /**
      *  查询  is_recommend =1(推荐) ,   type = 2 (动态)  ,  isdelete = 0(未逻辑删除)  的数据
-     * @param current
-     * @param size
+     * @param
+     * @param
      * @return
      */
     @PostMapping("/recommend")
-    @ApiOperation("内容推荐")
+    @ApiOperation("获取推荐内容")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "current",value = "当前页 0开始" ,dataType = "Integer", paramType = "query"),
-            @ApiImplicitParam(name = "size",value = "每页大小" ,dataType = "Integer", paramType = "query")
+            @ApiImplicitParam(name = "start",value = "当前页 0开始" ,dataType = "Integer", paramType = "query"),
+            @ApiImplicitParam(name = "pageSize",value = "每页大小" ,dataType = "Integer", paramType = "query")
     })
-    public Result recommend(Integer current,Integer size){
-        Page<Content> contentPage = contentService.recommend(current,size);
-        return new Result(200,"查询成功",contentPage);
+    public Result recommend(Integer start,Integer pageSize){
+        /*Page<Content> contentPage = contentService.recommend(current,size);
+        List<Content> contentList = new ArrayList<>(); // 倒序集合
+        for (int i = contentPage.getSize(); i > 0; i++){
+            contentList.add(contentPage.)
+        }*/
+        /*return new Result(200,"查询成功",contentPage);*/
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<RecoContentView> recommends = contentService.getRecommend(pageHelp);
+        if (recommends.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(recommends));
     }
 
 

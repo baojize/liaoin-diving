@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.liaoin.diving.mapper.ContentMapper">
+    <update id="setReco">
+        update t_content set is_recommend = 1 where id = #{id}
+    </update>
 
     <select id="findContentByThemeId" resultType="com.liaoin.diving.entity.Content">
       select * from t_content con
@@ -62,5 +65,15 @@
         from t_discussion
         where content_id = #{id} and is_delete = 0
     </select>
+    <select id="getRecommend" resultType="com.liaoin.diving.view.RecoContentView">
+        select id,title,subtitle,show_img,user_id from t_content where is_delete = 0 and type = 2 and is_recommend = 1 order by create_time desc
+    </select>
+    <select id="getRecommendById" resultType="com.liaoin.diving.view.RecoContentView">
+        select id,title,subtitle,show_img,user_id from t_content where is_delete = 0 and type = 2 and is_recommend = 1 and id = #{id} order by create_time desc
+    </select>
+    <select id="queryById" resultType="com.liaoin.diving.entity.Content">
+        select * from t_content where is_delete = 0 and  id  = #{id}
+    </select>
+
 
 </mapper>

@@ -106,5 +106,12 @@ public class BannerServiceImpl implements BannerService {
         return bannerViews;
     }
 
+    @Override
+    public List<BannerView> findAllBanner(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<BannerView> bannerViews = bannerMapper.findAllBanner();
+        return bannerViews;
+    }
+
 
 }

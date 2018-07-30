@@ -58,6 +58,14 @@ public interface UserService {
 
     Integer findFansNum(Integer id);
 
+    /**
+     * 更新积分
+     * @param id
+     * @param num
+     * @return 修改后的用户信息
+     */
+    User updatePoints(Integer id, Integer num);
+
    /* // 通知点赞
     void adLikeNum(User user);
     //通知关注

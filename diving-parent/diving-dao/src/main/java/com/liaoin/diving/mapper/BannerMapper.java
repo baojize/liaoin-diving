@@ -21,4 +21,5 @@ public interface BannerMapper {
 
     List<BannerView> findToActivity();
 
+    List<BannerView> findAllBanner();
 }

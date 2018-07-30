@@ -117,10 +117,11 @@ public class BannerController {
     @ApiOperation("获取轮播图")
     public Result findAll(Integer start, Integer pageSize){
 
-        List<BannerView> activitys = bannerService.findToActivity();
+        /*List<BannerView> activitys = bannerService.findToActivity();*/
         PageHelp pageHelp = new PageHelp(start, pageSize, null);
-        List<BannerView> bannerList = contentService.findAllBanner(pageHelp);
-        return new Result(200, "查询成功", new PageInfo<>(bannerList));
+        List<BannerView> bannerViews = bannerService.findAllBanner(pageHelp);
+        //List<BannerView> bannerList = contentService.findAllBanner(pageHelp);
+        return new Result(200, "查询成功", new PageInfo<>(bannerViews));
     }
 
 

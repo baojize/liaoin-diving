@@ -8,7 +8,9 @@ import com.liaoin.diving.entity.*;
 import com.liaoin.diving.entity.relationship.UserLike;
 import com.liaoin.diving.mapper.ContentMapper;
 import com.liaoin.diving.service.ContentService;
+import com.liaoin.diving.utils.UpdateUtils;
 import com.liaoin.diving.view.BannerView;
+import com.liaoin.diving.view.RecoContentView;
 import com.liaoin.diving.vo.NoticeVo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -57,7 +59,9 @@ public class ContentServiceImpl implements ContentService {
 
     @Override
     public void update(Content content) {
-        contentRepository.save(content);
+        Content one = contentRepository.findOne(content.getId());
+        UpdateUtils.copyNonNullProperties(content, one);
+        contentRepository.save(one);
     }
 
     @Override
@@ -411,6 +415,35 @@ public class ContentServiceImpl implements ContentService {
         return contentList;
     }
 
+    @Override
+    public List<RecoContentView> getRecommend(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<RecoContentView> contents = contentMapper.getRecommend();
+        return contents;
+    }
+
+    @Override
+    public RecoContentView getRecommendById(Integer id) {
+        RecoContentView reco = contentMapper.getRecommendById(id);
+        if (Objects.isNull(reco)){
+            return null;
+        }
+        return reco;
+    }
+
+    @Override
+    public Integer setReco(Integer id) {
+        return contentMapper.setReco(id);
+    }
+
+    @Override
+    public Content queryById(Integer id) {
+        Content content = contentMapper.queryById(id);
+        if (Objects.isNull(content)){
+            return null;
+        }
+        return content;
+    }
 
 
 }

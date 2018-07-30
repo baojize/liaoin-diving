@@ -39,6 +39,8 @@ public interface BannerService {
 
     List<BannerView> findToActivity();
 
+    List<BannerView> findAllBanner(PageHelp pageHelp);
+
 
 
 }

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.liaoin.diving.mapper.ActivityLabelMapper">
-    <resultMap id="typeac" type="com.liaoin.diving.entity.Activity">
+    <resultMap id="typeac" type="com.liaoin.diving.entity.Activity" autoMapping="true">
         <id property="id" column="id"/>
         <association property="activityCategory" javaType="com.liaoin.diving.entity.ActivityCategory">
 
         </association>
     </resultMap>
+    <update id="setAc">
+        update t_activity set is_recommend = 1 where id = #{id}
+    </update>
 
     <delete id="del">
         delete from t_activity_slable where id = #{id}
@@ -31,6 +34,12 @@
     and ac.is_delete = 0
     order by activity_time desc*/
 
+    </select>
+    <select id="getReco" resultType="com.liaoin.diving.view.RecoAcView">
+        select id,img_url 'img',`name`,price,address from t_activity ac where is_recommend = 1 and is_delete = 0 order by activity_time desc
+    </select>
+    <select id="getOneReco" resultType="com.liaoin.diving.view.RecoAcView">
+        select id,img_url 'img',`name`,price,address from t_activity ac where is_recommend = 1 and is_delete = 0 and id =#{id} order by activity_time desc
     </select>
 
 
