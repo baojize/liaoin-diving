@@ -5,12 +5,14 @@ import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
 import com.liaoin.diving.entity.Activity;
 import com.liaoin.diving.entity.Content;
+import com.liaoin.diving.entity.Goods;
 import com.liaoin.diving.entity.Nav;
 import com.liaoin.diving.service.ActivityService;
 import com.liaoin.diving.service.ContentService;
 import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.service.NavService;
 import com.liaoin.diving.view.ActivityConditionView;
+import com.liaoin.diving.view.EqConditionView;
 import com.liaoin.diving.view.RecoAcView;
 import com.liaoin.diving.view.RecoContentView;
 import io.swagger.annotations.Api;
@@ -106,12 +108,56 @@ public class PortalManagerController {
 
 /*********************************************************装备推荐curd******************************************************************/
 
-    @PostMapping("/setEq")
+    @PostMapping("/setEqReco")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
-    @ApiOperation("设置推荐装备")
-    public Result setEq(Integer id){
+    @ApiOperation("设置推荐装备 [推荐装备] ")
+    public Result setEqReco(Integer id){
         //return goodsService;
-        return null;
+        try {
+            goodsService.setReco(id);
+            return new Result(200, "设置成功", null);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(300, "设置失败", null);
+        }
+    }
+
+    @GetMapping("/getEqReco")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
+    })
+    @ApiOperation("查询所有推荐装备 [推荐装备]")
+    public Result getEqReco(Integer start, Integer pageSize){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<Goods> goodsList = goodsService.getReco(pageHelp);
+        if (goodsList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(goodsList));
+    }
+
+    @GetMapping("/cancelEqReco")
+    @ApiImplicitParam(name = "id", value = "主键", required = true)
+    @ApiOperation("取消推荐装备 [推荐装备]")
+    public Result cancelEqReco(Integer id){
+        try {
+            goodsService.cancelReco(id);
+            return new Result(200, "取消成功", null);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(300, "取消失败", null);
+        }
+    }
+
+    @PostMapping("/eqCondition")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
+    })
+    @ApiOperation("推荐装备条件查询")
+    public Result eqCondition(Integer start, Integer pageSize, @RequestBody EqConditionView view){
+
     }
 /*********************************************************论坛推荐curd******************************************************************/
     @GetMapping("/findOneForump")
@@ -140,7 +186,7 @@ public class PortalManagerController {
         return new Result(200, "查询成功", new PageInfo<>(recommends));
     }
 
-    @PostMapping("/setReco")
+    @PostMapping("/setConReco")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
     @ApiOperation("设置推荐论坛[论坛推荐]")
     public Result setReco(Integer id){
@@ -161,7 +207,7 @@ public class PortalManagerController {
         return new Result(200,"推荐成功",null);
     }
 
-    @PostMapping("/cancelReco")
+    @PostMapping("/cancelConReco")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
     @ApiOperation("取消推荐 [论坛推荐]")
     public Result cancelReco(Integer id){
@@ -218,7 +264,7 @@ public class PortalManagerController {
         return new Result(200, "查询成功", new PageInfo<>(acViewList));
     }
 
-    @PostMapping("/setAc")
+    @PostMapping("/setAcReco")
     @ApiImplicitParam(name = "id", value = "编号", required = true)
     @ApiOperation("设置推荐活动[活动推荐]")
     public Result setAc(Integer id ){
@@ -245,7 +291,7 @@ public class PortalManagerController {
         return new Result(200, "查询成功", new PageInfo<>(activities));
     }
 
-    @GetMapping("/cancelReco")
+    @GetMapping("/cancelAcReco")
     @ApiOperation("取消活动推荐[活动推荐]")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
     public Result cancelAcReco(Integer id){

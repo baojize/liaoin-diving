@@ -1,5 +1,6 @@
 package com.liaoin.diving.mapper;
 
+import com.liaoin.diving.entity.Goods;
 import com.liaoin.diving.view.RecommendGoodsView;
 
 import java.util.List;
@@ -11,4 +12,10 @@ import java.util.List;
  */
 public interface GoodsMapper {
     List<RecommendGoodsView> findRecommendOrderByCreateTime();
+
+    void setReco(Integer id);
+
+    List<Goods> getReco();
+
+    void cancelReco(Integer id);
 }

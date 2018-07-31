@@ -171,5 +171,26 @@ public class GoodsServiceImpl implements GoodsService {
         }
         return goodsList;
     }
+
+    /**
+     * 设置装备推荐
+     * @param id
+     */
+    @Override
+    public void setReco(Integer id) {
+        goodsMapper.setReco(id);
+    }
+
+    @Override
+    public List<Goods> getReco(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<Goods> goodsList = goodsMapper.getReco();
+        return goodsList;
+    }
+
+    @Override
+    public void cancelReco(Integer id) {
+        goodsMapper.cancelReco(id);
+    }
 }
 

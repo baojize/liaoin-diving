@@ -31,5 +31,26 @@ public interface GoodsService {
 
     //    List<RecommendGoodsView> findRecommendOrderByCreateTime();
     List<RecommendGoodsView> findRecommendOrderByCreateTime(PageHelp pageHelp);
+
+    /**
+     * 创建推荐装备
+     * @param id
+     */
+    void setReco(Integer id);
+
+    /**
+     * 取消推荐装备
+     * @param id
+     */
+    void cancelReco(Integer id);
+
+    /**
+     * 查询所有推荐装备
+     * @param pageHelp
+     * @return
+     */
+    List<Goods> getReco(PageHelp pageHelp);
+
+
 }
 
