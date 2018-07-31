@@ -54,6 +54,9 @@
         <if test="mode == 4">
             `is_sale`
         </if>
+        <if test="mode == 5">
+            `is_related`
+        </if>
         =
         <if test="symbol == 1">
             1

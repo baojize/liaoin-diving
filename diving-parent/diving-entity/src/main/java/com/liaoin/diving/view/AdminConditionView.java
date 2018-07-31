@@ -1,5 +1,6 @@
 package com.liaoin.diving.view;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -9,7 +10,10 @@ import lombok.Data;
  */
 @Data
 public class AdminConditionView {
+    @ApiModelProperty(value = "账号")
     private String account;
+    @ApiModelProperty(value = "昵称")
     private String nickname;
+    @ApiModelProperty(value = "电话")
     private String phone;
 }

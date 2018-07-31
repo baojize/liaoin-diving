@@ -42,6 +42,10 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public void insert(Order order) {
+        //计算价格
+
+        //设置订单号
+        order.setOrderId((new Date()).getTime()+"");
         orderRepository.save(order);
     }
 
