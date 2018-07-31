@@ -19,9 +19,6 @@ mybatis:
   type-aliases-package: com.liaoyin.diving.entity
   configuration:
     map-underscore-to-camel-case: true
-logging:
-  level:
-    com.liaoin.diving.mapper: debug
 
 # 分页配置
 pagehelper:
