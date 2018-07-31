@@ -26,7 +26,7 @@
     </resultMap>
 
     <resultMap id="GoodsView" type="com.liaoin.diving.view.RecommendGoodsView">
-        <id column="id" javaType="INTEGER" property="id" />
+        <id column="id" javaType="INTEGER" property="id"/>
         <collection property="imageList"
                     ofType="com.liaoin.diving.entity.Image"
                     column="id"
@@ -39,4 +39,35 @@
        WHERE
        is_recommend=1 AND is_sale=1 AND is_delete=0 ORDER BY create_time DESC
     </select>
+
+    <update id="setRecommendGoodsByIds">
+        UPDATE t_goods SET
+        <if test="mode == 1">
+            `is_delete`
+        </if>
+        <if test="mode == 2">
+            `is_home`
+        </if>
+        <if test="mode == 3">
+            `is_recommend`
+        </if>
+        <if test="mode == 4">
+            `is_sale`
+        </if>
+        <if test="mode == 5">
+            `is_related`
+        </if>
+        =
+        <if test="symbol == 1">
+            1
+        </if>
+        <if test="symbol == 0">
+            0
+        </if>
+        WHERE id IN
+        <foreach collection="ids" item="id" index="index"
+                 open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </update>
 </mapper>

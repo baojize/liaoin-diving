@@ -2,525 +2,212 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="905aadd2-bbcf-4b3f-acb4-5bddbdda00e8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alipay" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/alipay/alipay.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alipay/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alipay/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/alipay/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/alipay/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/alipay/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/alipay/src/main/java/com/zhangquanli" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/alipay/src/main/java/com/zhangquanli/alipay" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/alipay/src/main/java/com/zhangquanli/alipay/AlipayUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/aliyun-sms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com/zhangquanli" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com/zhangquanli/aliyun" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com/zhangquanli/aliyun/sms" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/aliyun-sms/src/main/java/com/zhangquanli/aliyun/sms/AliyunSmsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/code-generator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/dao" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/dao/ActivityProductsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service/ActivityProductsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/liaoin/diving/service/impl/ActivityProductsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/pojo" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/pojo/ColumnClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/utils" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/utils/CodeGenerateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/java/com/zhangquanli/utils/FreeMarkerTemplateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/code-generator-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates/Controller.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates/Repository.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates/ServiceImpl.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code-generator/src/main/resources/templates/ServiceInterface.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-parent" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/common-parent/common-parent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-parent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/diving-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/CartOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/OrderConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/PageHelp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-common/src/main/java/com/liaoin/diving/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/diving-controller.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/DivingApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/aspect" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/aspect/LoggerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/CORSConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/DateConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/ManagerFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/Swagger2Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/TokenAuthorFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityDiscussionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityLabelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ActivityProductsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/BannerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/BigCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/BrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/ContentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/DiscussionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/DivingFieldController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/FocusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/LabelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/LevelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/NavController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/NotifyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/OfficialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/RingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SelectedController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SpecController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SpecOptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/TemplateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/TopicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserCenterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/UserMsgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/WareController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/file" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/file/FileUpload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/file/SingleFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/handler" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/handler/FinalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener/SystemAlipayListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener/SystemAliyunSmsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener/SystemHuanXinListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/listener/SystemWxpayListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/application-web-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/application-web-pro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/diving.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/fdfs_client.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static/angular-1.4.9.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static/diving.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/resources/static/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/diving-dao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityCategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityDetailContentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityDiscussionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityLabelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityProductsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ActivityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/AddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/BannerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/BigCategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/BrandRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/BroadcastRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ContentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ContentUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/DiscussionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/DivingFieldRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/DivingTicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/EquipmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/GoodsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ImageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/LabelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/LevelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/NavRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/OfficialRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/PointsHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SecondHandRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SelectedRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SpecOptionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SpecRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemAlipayRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemAliyunSmsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemHuanXinRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemSmsTemplateRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/SystemWxpayRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/TemplateRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/ThemeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/TopicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/UserLikeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/UserManagerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/WareOrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/dao/WareRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-pro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/diving-elasticsearch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin/diving/search" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin/diving/search/ContentSearchRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/java/com/liaoin/diving/search/GoodsSearchRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/resources" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/resources/application-elasticsearch-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-elasticsearch/src/main/resources/application-elasticsearch-pro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/diving-entity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityDetailContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityDiscussion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ActivityProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Banner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/BigCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Broadcast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Content.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/ContentUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Discussion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/DivingField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/DivingTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Equipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Label.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Level.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Nav.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/NewMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Official.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/OfficialImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/OrderOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/PointsHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SecondHand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Spec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SpecOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SubFeuilleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemAlipay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemAliyunSms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemHuanXin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemSmsTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/SystemWxpay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Theme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Topic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Using.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Ware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/WareOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/WareOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Waybill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/manager" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/manager/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/manager/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/DiscussionLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/TypeSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/relationship/UserLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/AdminConditionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/BannerView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/LikeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/NoticeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecoAcView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/RecoContentView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/SecondHandView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-parent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/diving-redis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src/main/resources" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src/main/resources/application-redis-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-redis/src/main/resources/application-redis-pro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/diving-service-activity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityDiscussionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityProductsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityCategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityDiscussionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityProductsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/diving-service-community.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ActivityLableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/BannerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/BroadcastService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ContentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/DiscussionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/NavService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/OfficialService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/SecondHandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/SelectedService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/ThemeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/TopicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/UserLikeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ActivityLableServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/BannerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/BroadcastServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ContentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/DiscussionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ImageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/NavServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/OfficialServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/SecondHandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/SelectedServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/ThemeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/TopicServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-community/src/main/java/com/liaoin/diving/service/impl/UserLikeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/diving-service-field.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/DivingFieldService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/DivingTicketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/impl/DivingFieldServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-field/src/main/java/com/liaoin/diving/service/impl/DivingTicketServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/diving-service-file.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving/service/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-file/src/main/java/com/liaoin/diving/service/impl/ImageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/diving-service-search.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/ContentSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/GoodsSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/impl/ContentSearchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-search/src/main/java/com/liaoin/diving/service/impl/GoodsSearchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/diving-service-shop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/BigCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/BrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/PayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/SpecOptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/SpecService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/TemplateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/WareService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/BigCategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/BrandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/PayServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/SpecOptionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/SpecServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/TemplateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/WareServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/diving-service-system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/SystemAlipayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/SystemAliyunSmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/SystemHuanXinService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/SystemWxpayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl/SystemAlipayServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl/SystemAliyunSmsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl/SystemHuanXinServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-system/src/main/java/com/liaoin/diving/service/impl/SystemWxpayServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/diving-service-user.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/AddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/FocusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/LabelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/LevelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/AddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/FocusServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/LabelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/LevelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-service-user/src/main/java/com/liaoin/diving/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/diving-utils.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/CookieUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/HttpClientUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/IdUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/MobileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/RandomUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/diving-utils/src/main/java/com/liaoin/diving/utils/UpdateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/test" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/test/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/test/com/liaoin" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/test/com/liaoin/diving" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/test/com/liaoin/diving/test" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/diving-parent/test/com/liaoin/diving/test/UtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxpay" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/wxpay/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxpay/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/wxpay/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxpay/src/main/java/com/zhangquanli/wxpay/WxpayUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxpay/wxpay.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/GoodsClassify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/GoodsSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/view/ActivityConditionView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diving-parent/diving-entity/target/classes/com/liaoin/diving/view/ActivityConditionView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alipay_sdk_alipay_sdk_java_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_3_2_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_8_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_8_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_wxpay_wxpay_sdk_0_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_spatial4j_spatial4j_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_tdunning_t_digest_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_jsr166e_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_5_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_5_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_2_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_securesm_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_joda_joda_convert_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_elasticsearch_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_elasticsearch_2_1_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/entries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/wc.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/wc.db-journal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/PortalManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-controller/target/classes/com/liaoin/diving/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-controller/target/classes/com/liaoin/diving/controller/GoodsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-controller/target/classes/com/liaoin/diving/controller/PortalManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-controller/target/classes/com/liaoin/diving/controller/PortalManagerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/ActivityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/java/com/liaoin/diving/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/ActivityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/BannerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/BannerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/UserManagerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/com/liaoin/diving/mapper/UserManagerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/application-dao-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/application-dao-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/ActivityMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/ActivityMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/ActivityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/ActivityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/BannerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/BannerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/GoodsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/GoodsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/UserManagerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-dao/target/classes/com/liaoin/diving/mapper/UserManagerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/ActivityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/src/main/java/com/liaoin/diving/service/impl/ActivityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-activity/target/classes/com/liaoin/diving/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/target/classes/com/liaoin/diving/service/ActivityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-activity/target/classes/com/liaoin/diving/service/impl/ActivityServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/target/classes/com/liaoin/diving/service/impl/ActivityServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-activity/target/classes/com/liaoin/diving/service/impl/ActivityServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/target/classes/com/liaoin/diving/service/impl/ActivityServiceImpl$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-activity/target/classes/com/liaoin/diving/service/impl/ActivityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-activity/target/classes/com/liaoin/diving/service/impl/ActivityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/src/main/java/com/liaoin/diving/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-shop/target/classes/com/liaoin/diving/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/target/classes/com/liaoin/diving/service/GoodsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diving-parent/diving-service-shop/target/classes/com/liaoin/diving/service/impl/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/diving-parent/diving-service-shop/target/classes/com/liaoin/diving/service/impl/GoodsServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/wxpay/target/" />
     <ignored path="$PROJECT_DIR$/diving-parent/diving-dao/target/" />
@@ -565,10 +252,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommodityController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommodityController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CommodityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1058">
+            <state relative-caret-position="500">
               <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -637,9 +324,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application-dao-dev.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application-dao-dev.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="DivingTicket.java" pinned="false" current-in-tab="false">
@@ -677,6 +368,9 @@
       <replace>commodityOrder</replace>
       <replace>commodityList</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -751,12 +445,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="diving-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -769,7 +458,7 @@
     <option name="width" value="1940" />
     <option name="height" value="1060" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
@@ -784,33 +473,7 @@
           <expand>
             <path>
               <item name="aop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diving-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="diving-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
@@ -900,32 +563,6 @@
     <configuration>C:\Users\win\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
   </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\workspace\diving\aop" />
-          <option name="myCopyRoot" value="D:\workspace\diving\aop" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\workspace\diving\aop" />
-          <option name="myCopyRoot" value="D:\workspace\diving\aop\svn\潜水" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\workspace\diving\aop" />
-          <option name="myCopyRoot" value="D:\workspace\diving\aop" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\workspace\diving\aop" />
-          <option name="myCopyRoot" value="D:\workspace\diving\aop\svn\潜水" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="905aadd2-bbcf-4b3f-acb4-5bddbdda00e8" name="Default" comment="" />
@@ -936,12 +573,12 @@
       <workItem from="1532566250017" duration="25435000" />
       <workItem from="1532653384424" duration="23313000" />
       <workItem from="1532911573474" duration="25580000" />
-      <workItem from="1532997972512" duration="48000" />
+      <workItem from="1532997972512" duration="212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54251000" />
+    <option name="totallyTimeSpent" value="54415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -960,23 +597,23 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
-      <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49705306" visible="true" weight="0.25799572" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49705306" visible="true" weight="0.25746268" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -1284,27 +921,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CommodityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/DivingTicket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Equipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1350,7 +970,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-dao/src/main/resources/application-dao-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-entity/src/main/java/com/liaoin/diving/entity/Equipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/CommodityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

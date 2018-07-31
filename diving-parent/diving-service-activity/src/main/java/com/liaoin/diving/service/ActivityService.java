@@ -3,6 +3,7 @@ package com.liaoin.diving.service;
 import com.liaoin.diving.common.PageBean;
 import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.Activity;
+import com.liaoin.diving.view.ActivityConditionView;
 import com.liaoin.diving.view.RecoAcView;
 import org.springframework.data.domain.Pageable;
 
@@ -66,5 +67,18 @@ public interface ActivityService {
      */
     List<RecoAcView> findAll(PageHelp pageHelp);
 
+    /**
+     * 条件查询
+     * @param pageHelp
+     * @param activity
+     * @return
+     */
+    List<Activity> condition(PageHelp pageHelp, ActivityConditionView activity);
+
+    /**
+     * 取消活动推荐
+     * @param id
+     */
+    void cancelReco(Integer id);
 }
 

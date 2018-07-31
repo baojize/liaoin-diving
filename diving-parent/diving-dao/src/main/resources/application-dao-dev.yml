@@ -9,6 +9,9 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+logging:
+  level:
+    com.liaoin.diving.mapper: debug
 
 mybatis:
   mapper-locations: classpath*:com/liaoin/diving/mapper/*Mapper.xml
@@ -17,7 +20,7 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
 logging:
-  level:
+  level:x
     com.liaoin.diving.mapper: debug
 
 # 分页配置

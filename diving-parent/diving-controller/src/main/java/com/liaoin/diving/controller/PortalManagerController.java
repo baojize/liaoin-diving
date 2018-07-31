@@ -8,7 +8,9 @@ import com.liaoin.diving.entity.Content;
 import com.liaoin.diving.entity.Nav;
 import com.liaoin.diving.service.ActivityService;
 import com.liaoin.diving.service.ContentService;
+import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.service.NavService;
+import com.liaoin.diving.view.ActivityConditionView;
 import com.liaoin.diving.view.RecoAcView;
 import com.liaoin.diving.view.RecoContentView;
 import io.swagger.annotations.Api;
@@ -36,6 +38,8 @@ public class PortalManagerController {
     private ContentService contentService;
     @Resource
     private ActivityService activityService;
+    @Resource
+    private GoodsService goodsService;
 
     @GetMapping("/findOneNav")
     @ApiImplicitParam(name = "id", value = "编号", required = true)
@@ -99,14 +103,16 @@ public class PortalManagerController {
         }
     }
 
-/*********************************************************论坛推荐curd******************************************************************/
 
-    public Result findOne(){
+/*********************************************************装备推荐curd******************************************************************/
+
+    @PostMapping("/setEq")
+    @ApiImplicitParam(name = "id", value = "主键", required = true)
+    @ApiOperation("设置推荐装备")
+    public Result setEq(Integer id){
+        //return goodsService;
         return null;
     }
-/*********************************************************推荐装备curd******************************************************************/
-
-
 /*********************************************************论坛推荐curd******************************************************************/
     @GetMapping("/findOneForump")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
@@ -216,10 +222,40 @@ public class PortalManagerController {
     @ApiImplicitParam(name = "id", value = "编号", required = true)
     @ApiOperation("设置推荐活动[活动推荐]")
     public Result setAc(Integer id ){
+
         Integer back = activityService.setAc(id);
         if (back != 1){
             return new Result(300, "设置失败", null);
         }
         return new Result(200, "设置成功", null);
     }
+
+    @PostMapping("/acCondition")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
+    })
+    @ApiOperation("条件查询[活动推荐]")
+    public Result condition(Integer start, Integer pageSize,@RequestBody ActivityConditionView activity){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<Activity> activities = activityService.condition(pageHelp, activity);
+        if (activities.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(activities));
+    }
+
+    @GetMapping("/cancelReco")
+    @ApiOperation("取消活动推荐[活动推荐]")
+    @ApiImplicitParam(name = "id", value = "主键", required = true)
+    public Result cancelAcReco(Integer id){
+        RecoAcView reco = activityService.getOneReco(id);
+        if (Objects.isNull(reco)){
+            return new Result(300, "该活动不是推荐活动,无法取消", null);
+        }
+        activityService.cancelReco(id);
+        return new Result(200, "操作成功", null);
+    }
+
+
 }
