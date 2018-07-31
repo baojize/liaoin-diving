@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.GoodsMapper">
+    <resultMap id="Goods" type="com.liaoin.diving.entity.Goods">
+        <!--property：类里的属性 column：表里的列-->
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="amount" column="amount"></result>
+        <result property="price" column="price"></result>
+        <result property="money" column="money"></result>
+        <result property="discount" column="discount"></result>
+        <result property="introduction" column="introduction"></result>
+        <result property="orders" column="orders"></result>
+        <result property="isHome" column="is_home"></result>
+        <result property="isRecommend" column="is_recommend"></result>
+        <result property="isSale" column="is_sale"></result>
+        <result property="isDelete" column="is_delete"></result>
+        <result property="isRelated" column="is_related"></result>
+        <result property="createTime" column="create_time"></result>
+        <result property="updateTime" column="update_time"></result>
+        <result property="deleteTime" column="delete_time"></result>
+        <!--association : 多方关联的一方数据
+           property：多方类里对应的一方的属性 -->
+        <!--<association property="">
+        </association>-->
+    </resultMap>
+
+    <resultMap id="GoodsView" type="com.liaoin.diving.view.RecommendGoodsView">
+        <id column="id" javaType="INTEGER" property="id"/>
+        <collection property="imageList"
+                    ofType="com.liaoin.diving.entity.Image"
+                    column="id"
+                    select="com.liaoin.diving.mapper.ImageMapper.findImageByGoodsId"></collection>
+    </resultMap>
+
+    <select id="findRecommendOrderByCreateTime" resultMap="GoodsView">
+       SELECT t.*
+       FROM t_goods t
+       WHERE
+       is_recommend=1 AND is_sale=1 AND is_delete=0 ORDER BY create_time DESC
+    </select>
+
+    <update id="setRecommendGoodsByIds">
+        UPDATE t_goods SET
+        <if test="mode == 1">
+            `is_delete`
+        </if>
+        <if test="mode == 2">
+            `is_home`
+        </if>
+        <if test="mode == 3">
+            `is_recommend`
+        </if>
+        <if test="mode == 4">
+            `is_sale`
+        </if>
+        <if test="mode == 5">
+            `is_related`
+        </if>
+        =
+        <if test="symbol == 1">
+            1
+        </if>
+        <if test="symbol == 0">
+            0
+        </if>
+        WHERE id IN
+        <foreach collection="ids" item="id" index="index"
+                 open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </update>
+</mapper>

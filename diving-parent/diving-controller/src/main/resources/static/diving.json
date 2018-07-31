@@ -1,0 +1,200 @@
+// 发布讨论
+{
+	"theme": "潜水用蛙泳好还是自由泳好",
+	"text": "我的观点肯定是蛙泳",
+	"topic": {
+		"id": 1
+	},
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	]
+}
+
+// 发布动态
+{
+	"text": "今天学习自由潜水",
+	"topic": {
+		"id": 1
+	},
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	]
+}
+
+// 发布二手
+{
+	"secondHand": {
+		"brand": "李宁潜水眼镜",
+		"quality": "99新",
+		"price": "20.23",
+		"description": "这是一个很好的眼镜哦，戴了腰不痛腿不酸了。",
+		"category": {
+			"id": 1
+		}
+	},
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	]
+}
+
+// 发布问题
+{
+	"text": "应该如何学习潜水？",
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	]
+}
+
+// 评论内容
+{
+	"text": "潜水之前先学游泳，可以先从蛙泳开始学",
+	"content": {
+		"id": 8
+	}
+}
+
+// 回复用户的评论
+{
+	"text": "你的说法不对",
+	"content": {
+		"id": 8
+	},
+	"answerUser": {
+		"id": 4
+	}
+}
+
+// 新增规格
+{
+	"name": "颜色",
+	"specOptionList": [
+		{
+			"name": "红色"
+		},
+		{
+			"name": "黄色"
+		},
+		{
+			"name": "蓝色"
+		}
+	]
+}
+
+// 修改规格
+{
+	"id": 4,
+	"name": "颜色",
+	"specOptionList": [
+		{
+			"name": "黄色"
+		},
+		{
+			"name": "紫色"
+		}
+	]
+}
+
+// 新增商品
+{
+	"name": "潜水镜",
+	"price": "100.00",
+	"discount": "0.95",
+	"introduction": "<span>这是一张图片，防水防水！</span>",
+	"orders": 1,
+	"isHome": 0,
+	"isRecommend": 1,
+	"isSale": 1,
+	"brand": {
+		"id": 2
+	},
+	"imageList": [
+		{
+			"id": 18
+		},
+		{
+			"id": 19
+		}
+	],
+	"labelList": [
+		{
+			"id": 1
+		}
+	],
+	"specList": [
+		{
+			"id": 6
+		}
+	]
+}
+
+// 修改商品
+{
+	"id": 1,
+	"name": "潜水镜",
+	"price": "100.00",
+	"discount": "0.80",
+	"introduction": "<span>这是一张图片，防水防水！</span>",
+	"orders": 1,
+	"isHome": 1,
+	"isRecommend": 1,
+	"isSale": 1,
+	"category": {
+		"id": 1
+	},
+	"brand": {
+		"id": 3
+	},
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	],
+	"labelList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	]
+}
+
+// 修改阿里云短信系统参数
+{
+	"accessKeyId": "LTAItaK265JNO9Gg",
+	"accessKeySecret": "TebU68hKT834SZi8fIC32P3IZbI0EU",
+	"signName": "张权立",
+	"smsTemplateList": [
+		{
+			"templateName": "验证码",
+			"templateCode": "SMS_125015434"
+		},
+		{
+			"templateName": "宣传短信",
+			"templateCode": "SMS_125015435"
+		}
+	]
+}

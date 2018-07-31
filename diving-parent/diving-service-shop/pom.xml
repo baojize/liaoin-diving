@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>diving-service-shop</artifactId>
+    <packaging>jar</packaging>
+    <name>diving-service-shop</name>
+    <description>潜水项目商城服务</description>
+
+    <parent>
+        <artifactId>diving-parent</artifactId>
+        <groupId>com.liaoin</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.zhangquanli</groupId>
+            <artifactId>alipay</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zhangquanli</groupId>
+            <artifactId>wxpay</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.liaoin</groupId>
+            <artifactId>diving-utils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liaoin</groupId>
+            <artifactId>diving-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liaoin</groupId>
+            <artifactId>diving-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liaoin</groupId>
+            <artifactId>diving-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+    </dependencies>
+</project>

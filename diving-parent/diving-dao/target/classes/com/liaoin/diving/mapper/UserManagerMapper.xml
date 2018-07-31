@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.UserManagerMapper">
+
+
+    <select id="login" resultType="com.liaoin.diving.entity.manager.Admin">
+        select * from t_admin where account = #{account} and password  = #{password}
+    </select>
+    <select id="findByAccount" resultType="com.liaoin.diving.entity.manager.Admin">
+        select * from t_admin where account = #{account}
+    </select>
+    <select id="findAll" resultType="com.liaoin.diving.entity.manager.Admin">
+        select id,account,head,nickname,password,phone from t_admin order by create_time desc
+    </select>
+    <select id="condition" resultType="com.liaoin.diving.entity.manager.Admin">
+        select id,account,head,nickname,password,phone from t_admin
+        <where>
+            <if test="phone != null">
+               phone like concat('%',#{phone},'%')
+            </if>
+            <if test="account != null">
+                and account like concat('%',#{account},'%')
+            </if>
+            <if test="nickname != null">
+                and nickname like concat('%',#{nickname},'%')
+            </if>
+        </where>
+    </select>
+</mapper>
