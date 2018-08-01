@@ -113,5 +113,12 @@ public class BannerServiceImpl implements BannerService {
         return bannerViews;
     }
 
+    @Override
+    public List<BannerView> condition(BannerView bannerView, PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<BannerView> bannerViews = bannerMapper.condition(bannerView);
+        return bannerViews;
+    }
+
 
 }

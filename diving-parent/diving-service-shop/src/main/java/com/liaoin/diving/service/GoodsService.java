@@ -3,6 +3,7 @@ package com.liaoin.diving.service;
 import com.liaoin.diving.common.PageBean;
 import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.Goods;
+import com.liaoin.diving.view.EqConditionView;
 import com.liaoin.diving.view.RecommendGoodsView;
 import org.springframework.data.domain.Pageable;
 
@@ -38,12 +39,51 @@ public interface GoodsService {
     List<RecommendGoodsView> findRecommendOrderByCreateTime(PageHelp pageHelp);
 
     /**
-     * 设置推荐商品
+<<<<<<< HEAD
+     * 创建推荐装备
+     * @param id
+     */
+    void setReco(Integer id);
+
+    /**
+     * 取消推荐装备
+     * @param id
+     */
+    void cancelReco(Integer id);
+
+    /**
+     * 查询所有推荐装备
+     * @param pageHelp
+     * @return
+     */
+    List<Goods> getReco(PageHelp pageHelp);
+
+
+
+     /* 设置推荐商品
      *
      * @param ids
      * @param symbol
      * @return
      */
     Integer setRecommendGoods(Integer[] ids, Integer mode, Integer symbol);
+
+    /**
+     * 条件查询
+     * @return
+     */
+    List<Goods> condition(PageHelp pageHelp, EqConditionView condition);
+
+    /**
+     * 设置首页
+     * @param id
+     */
+    void setHome(Integer id);
+
+    /**
+     * 获取首页数据
+     * @param pageHelp
+     */
+    List<Goods> getEqHome(PageHelp pageHelp);
 }
 

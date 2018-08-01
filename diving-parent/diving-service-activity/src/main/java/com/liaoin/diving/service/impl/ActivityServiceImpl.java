@@ -11,6 +11,7 @@ import com.liaoin.diving.entity.*;
 import com.liaoin.diving.mapper.ActivityLabelMapper;
 import com.liaoin.diving.mapper.ActivityMapper;
 import com.liaoin.diving.service.ActivityService;
+import com.liaoin.diving.utils.UpdateUtils;
 import com.liaoin.diving.view.ActivityConditionView;
 import com.liaoin.diving.view.RecoAcView;
 import org.springframework.data.domain.Page;
@@ -57,7 +58,9 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Override
     public void update(Activity activity) {
-        activityRepository.save(activity);
+        Activity one = activityMapper.findById(activity.getId());
+        UpdateUtils.copyNonNullProperties(activity, one);
+        activityRepository.save(one);
     }
 
     @Override
@@ -145,6 +148,22 @@ public class ActivityServiceImpl implements ActivityService {
     @Override
     public void cancelReco(Integer id) {
         activityMapper.cancelReco(id);
+    }
+
+    @Override
+    public Activity findById(Integer id) {
+        Activity activity = activityMapper.findById(id);
+        if (Objects.isNull( activity )){
+            return  null;
+        }
+        return activity;
+    }
+
+    @Override
+    public List<Activity> getAcHome(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<Activity> activityList = activityMapper.getAcHome();
+        return activityList;
     }
 
     @Override

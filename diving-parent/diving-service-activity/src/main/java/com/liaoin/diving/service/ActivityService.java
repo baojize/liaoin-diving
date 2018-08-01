@@ -80,5 +80,19 @@ public interface ActivityService {
      * @param id
      */
     void cancelReco(Integer id);
+
+    /**
+     * 查询一条记录
+     * @param id
+     * @return
+     */
+    Activity findById(Integer id);
+
+    /**
+     * 查询首页活动
+     * @param pageHelp
+     * @return
+     */
+    List<Activity> getAcHome(PageHelp pageHelp);
 }
 

@@ -5,18 +5,17 @@ import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
 import com.liaoin.diving.entity.Activity;
 import com.liaoin.diving.entity.Content;
+import com.liaoin.diving.entity.Goods;
 import com.liaoin.diving.entity.Nav;
 import com.liaoin.diving.service.ActivityService;
 import com.liaoin.diving.service.ContentService;
 import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.service.NavService;
 import com.liaoin.diving.view.ActivityConditionView;
+import com.liaoin.diving.view.EqConditionView;
 import com.liaoin.diving.view.RecoAcView;
 import com.liaoin.diving.view.RecoContentView;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.*;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -30,7 +29,7 @@ import java.util.Objects;
  */
 @RestController
 @RequestMapping("/manager/portal/")
-@Api(tags = "后台门户管理")
+@Api(tags = "[后台]门户管理")
 public class PortalManagerController {
     @Resource
     private NavService navService;
@@ -52,7 +51,7 @@ public class PortalManagerController {
         return new Result(200, "查询成功", nav);
     }
 
-    @GetMapping("/findAllNav   (按order排序)")
+    @GetMapping("/findAllNav")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
             @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
@@ -104,15 +103,106 @@ public class PortalManagerController {
     }
 
 
+
 /*********************************************************装备推荐curd******************************************************************/
 
-    @PostMapping("/setEq")
+    @PostMapping("/setEqReco")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
-    @ApiOperation("设置推荐装备")
-    public Result setEq(Integer id){
+    @ApiOperation("设置推荐装备 [推荐装备] ")
+    public Result setEqReco(Integer id){
         //return goodsService;
-        return null;
+        try {
+            goodsService.setReco(id);
+            return new Result(200, "设置成功", null);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(300, "设置失败", null);
+        }
     }
+
+    @GetMapping("/getEqReco")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
+    })
+    @ApiOperation("查询所有推荐装备 [推荐装备]")
+    public Result getEqReco(Integer start, Integer pageSize){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<Goods> goodsList = goodsService.getReco(pageHelp);
+        if (goodsList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(goodsList));
+    }
+
+    @PostMapping("/cancelEqReco")
+    @ApiImplicitParam(name = "id", value = "主键", required = true)
+    @ApiOperation("取消推荐装备 [推荐装备]")
+    public Result cancelEqReco(Integer id){
+        try {
+            goodsService.cancelReco(id);
+            return new Result(200, "取消成功", null);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(300, "取消失败", null);
+        }
+    }
+
+    @PostMapping("/eqCondition")
+    @ApiOperation("推荐装备条件查询 [推荐装备]")
+    public Result eqCondition(@ApiParam(value = "起始页 1开始", required = true) @RequestParam(required = true) Integer start,
+                              @ApiParam(value = "页大小", required = true) @RequestParam(required = true) Integer pageSize,
+                              @RequestBody EqConditionView condition){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<Goods> goodsList = goodsService.condition(pageHelp, condition);
+        if (goodsList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(goodsList));
+    }
+
+    @PostMapping("/setEqHome")
+    @ApiOperation("设置装备首页 [装备推荐]")
+    public Result  setEqHome(@ApiParam(value = "主键", required = true) @RequestParam Integer id){
+        Goods goods = goodsService.findOne(id);
+        if ("1".equals(goods.getIsDelete())){
+            return new Result(300, "装备不存在", null);
+        }
+        try {
+            goodsService.setHome(id);
+            return new Result(200, "设置成功", null);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(300, "设置失败", null);
+        }
+    }
+
+    @PostMapping("/cancelEqHome")
+    @ApiOperation("取消装备首页 [装备推荐]")
+    public Result  cancelEqHome(@ApiParam(value = "主键") @RequestParam Integer id){
+        Goods goods = goodsService.findOne(id);
+        if ("1".equals(goods.getIsDelete())){
+            return new Result(300, "装备不存在", null);
+        }
+        if ("1".equals(goods.getIsHome())){
+            goods.setIsHome("0");
+            goodsService.update(goods);
+        }
+        return new Result(200, "取消成功", null);
+    }
+
+    @GetMapping("/getEqHome")
+    @ApiOperation("获取首页装备 [装备推荐]")
+    public Result getEqHome(@ApiParam(value = "起始页 1开始") @RequestParam Integer start,
+                            @ApiParam(value = "页大小") @RequestParam Integer pageSize){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<Goods> goodsList = goodsService.getEqHome(pageHelp);
+        if (goodsList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(goodsList));
+    }
+
 /*********************************************************论坛推荐curd******************************************************************/
     @GetMapping("/findOneForump")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
@@ -140,7 +230,7 @@ public class PortalManagerController {
         return new Result(200, "查询成功", new PageInfo<>(recommends));
     }
 
-    @PostMapping("/setReco")
+    @PostMapping("/setConReco")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
     @ApiOperation("设置推荐论坛[论坛推荐]")
     public Result setReco(Integer id){
@@ -161,7 +251,7 @@ public class PortalManagerController {
         return new Result(200,"推荐成功",null);
     }
 
-    @PostMapping("/cancelReco")
+    @PostMapping("/cancelConReco")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
     @ApiOperation("取消推荐 [论坛推荐]")
     public Result cancelReco(Integer id){
@@ -218,7 +308,7 @@ public class PortalManagerController {
         return new Result(200, "查询成功", new PageInfo<>(acViewList));
     }
 
-    @PostMapping("/setAc")
+    @PostMapping("/setAcReco")
     @ApiImplicitParam(name = "id", value = "编号", required = true)
     @ApiOperation("设置推荐活动[活动推荐]")
     public Result setAc(Integer id ){
@@ -245,7 +335,7 @@ public class PortalManagerController {
         return new Result(200, "查询成功", new PageInfo<>(activities));
     }
 
-    @GetMapping("/cancelReco")
+    @PostMapping("/cancelAcReco")
     @ApiOperation("取消活动推荐[活动推荐]")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
     public Result cancelAcReco(Integer id){
@@ -255,6 +345,36 @@ public class PortalManagerController {
         }
         activityService.cancelReco(id);
         return new Result(200, "操作成功", null);
+    }
+
+    @PostMapping("/setAcHome")
+    @ApiOperation("设置/取消活动首页 [活动推荐]")
+    public Result setAcHome(@ApiParam(value = "主键") @RequestParam Integer id){
+        Activity activity = activityService.findById(id);
+        if (Objects.isNull(activity)){
+            return new Result(300, "活动不存在", null);
+        }
+        if ("1".equals(activity.getIsHome())){
+            activity.setIsHome("0");
+            activityService.update(activity);
+            return new Result(200, "取消成功", null);
+        }else {
+            activity.setIsHome("1");
+            activityService.update(activity);
+            return new Result(200, "设置成功", null);
+        }
+    }
+
+    @GetMapping("/getAcHome")
+    @ApiOperation("获取活动首页 [活动推荐]")
+    public Result getAcHome(@ApiParam(value = "起始页 1开始") @RequestParam Integer start,
+                            @ApiParam(value = "页大小") @RequestParam Integer pageSize){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<Activity> activityList = activityService.getAcHome(pageHelp);
+        if (activityList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(activityList));
     }
 
 

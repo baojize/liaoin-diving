@@ -138,7 +138,7 @@ public class ActivityController {
         Banner banner = new Banner();
         banner.setCreateTime(new Date());
         banner.setActivityId(activity.getId());
-        banner.setType("活动");
+        banner.setType(2);
         bannerService.add(banner);
         return new Result(200, "设置成功", null);
     }

@@ -6,10 +6,7 @@ import com.liaoin.diving.common.Result;
 import com.liaoin.diving.entity.manager.Admin;
 import com.liaoin.diving.service.UserManagerService;
 import com.liaoin.diving.view.AdminConditionView;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.*;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -101,8 +98,8 @@ public class UserManagerController {
     @GetMapping("/findAll")
     @ApiOperation("查询所有记录")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
-            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
+            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true, dataType = "String", paramType = "query"),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true, dataType = "String", paramType = "query")
     })
     public Result findAll(Integer start, Integer pageSize){
         PageHelp pageHelp = new PageHelp(start, pageSize, null);
@@ -114,12 +111,10 @@ public class UserManagerController {
     }
 
     @PostMapping("/condition")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
-            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
-    })
     @ApiOperation("条件查询 根据条件模糊查询")
-    public Result condition(Integer start, Integer pageSize, @RequestBody AdminConditionView admin){
+    public Result condition(@ApiParam(value = "起始页 1开始")@RequestParam Integer start,
+                            @ApiParam(value = "页大小")@RequestParam Integer pageSize,
+                            @RequestBody AdminConditionView admin){
         PageHelp pageHelp = new PageHelp(start, pageSize, null);
         List<Admin> admins = userManagerService.condition(pageHelp, admin);
         if (admins.isEmpty()){

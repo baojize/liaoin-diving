@@ -1,6 +1,11 @@
 package com.liaoin.diving.view;
 
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -10,6 +15,7 @@ import lombok.Data;
  */
 @Data
 public class AdminConditionView {
+
     @ApiModelProperty(value = "账号")
     private String account;
     @ApiModelProperty(value = "昵称")

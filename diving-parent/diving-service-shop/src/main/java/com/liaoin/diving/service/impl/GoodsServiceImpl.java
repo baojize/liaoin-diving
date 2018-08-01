@@ -9,6 +9,7 @@ import com.liaoin.diving.entity.Goods;
 import com.liaoin.diving.mapper.GoodsMapper;
 import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.utils.UpdateUtils;
+import com.liaoin.diving.view.EqConditionView;
 import com.liaoin.diving.view.RecommendGoodsView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -172,11 +173,51 @@ public class GoodsServiceImpl implements GoodsService {
         return goodsList;
     }
 
+    /**
+     * 设置装备推荐
+     * @param id
+     */
+    @Override
+    public void setReco(Integer id) {
+        goodsMapper.setReco(id);
+    }
+
+    @Override
+    public List<Goods> getReco(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<Goods> goodsList = goodsMapper.getReco();
+        return goodsList;
+    }
+
+    @Override
+    public void cancelReco(Integer id) {
+        goodsMapper.cancelReco(id);
+    }
+
     //设置商品归属
     @Override
     public Integer setRecommendGoods(Integer[] ids, Integer mode, Integer symbol) {
         Integer sign = goodsMapper.setRecommendGoodsByIds(ids, mode, symbol);
         return sign;
+    }
+
+    @Override
+    public List<Goods> condition(PageHelp pageHelp, EqConditionView condition) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<Goods> goodsList = goodsMapper.condition(condition);
+        return goodsList;
+    }
+
+    @Override
+    public void setHome(Integer id) {
+        goodsMapper.setHome(id);
+    }
+
+    @Override
+    public List<Goods> getEqHome(PageHelp pageHelp) {
+        PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
+        List<Goods> goodsList = goodsMapper.getEqHome();
+        return goodsList;
     }
 }
 

@@ -557,7 +557,7 @@ public class ContentController {
         banner.setContent(content);
         banner.setCreateTime(new Date());
         //banner.setIsDelete(0);
-        banner.setType("动态");
+        banner.setType(1);
         bannerService.add(banner);
         return new Result(200, "设置成功", null);
     }

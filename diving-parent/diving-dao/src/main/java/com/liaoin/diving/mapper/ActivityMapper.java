@@ -17,4 +17,9 @@ public interface ActivityMapper {
     List<Activity> condition(ActivityConditionView activity);
 
     void cancelReco(Integer id);
+
+    Activity findById(Integer id);
+
+    List<Activity> getAcHome();
+
 }

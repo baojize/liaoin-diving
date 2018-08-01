@@ -38,7 +38,7 @@ public class NavController {
         return new Result(200, "查询成功", nav);
     }
 
-    @GetMapping("/findAll   (按order排序)")
+    @GetMapping("/findAllNav")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "start", value = "起始页 0开始", required = true),
             @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)

@@ -42,5 +42,5 @@ public interface BannerService {
     List<BannerView> findAllBanner(PageHelp pageHelp);
 
 
-
+    List<BannerView> condition(BannerView bannerView, PageHelp pageHelp);
 }

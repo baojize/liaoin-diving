@@ -1,5 +1,7 @@
 package com.liaoin.diving.mapper;
 
+import com.liaoin.diving.entity.Goods;
+import com.liaoin.diving.view.EqConditionView;
 import com.liaoin.diving.view.RecommendGoodsView;
 import org.apache.ibatis.annotations.Param;
 
@@ -18,6 +20,11 @@ public interface GoodsMapper {
      */
     List<RecommendGoodsView> findRecommendOrderByCreateTime();
 
+    void setReco(Integer id);
+
+    List<Goods> getReco();
+
+    void cancelReco(Integer id);
     /**
      * 设置商品归属
      * @param ids
@@ -26,5 +33,24 @@ public interface GoodsMapper {
      * @return
      */
     Integer setRecommendGoodsByIds(@Param("ids") Integer[] ids,@Param("mode") Integer mode, @Param("symbol") Integer symbol);
+
+    /**
+     * 条件查询
+     * @return
+     */
+    List<Goods> condition(EqConditionView conditon);
+
+    /**
+     * 设置首页
+     * @param id
+     */
+    void setHome(@Param("id") Integer id);
+
+    /**
+     * 获取首页数据
+     * @return
+     */
+    List<Goods> getEqHome();
+
 
 }

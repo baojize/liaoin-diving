@@ -28,4 +28,10 @@
             </if>
         </where>
     </select>
+    <select id="findById" resultType="com.liaoin.diving.entity.Activity">
+        select * from t_activity where is_delete = 0 and id = #{id}
+    </select>
+    <select id="getAcHome" resultType="com.liaoin.diving.entity.Activity">
+        select * from t_activity where is_delete = 0 and is_home = 1
+    </select>
 </mapper>

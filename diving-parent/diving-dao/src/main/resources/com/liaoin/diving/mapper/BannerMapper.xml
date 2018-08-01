@@ -38,4 +38,34 @@
     )df
     order by df.create_time desc
     </select>
+    <select id="condition" resultType="com.liaoin.diving.view.BannerView">
+
+    select *
+        from
+          (
+    select banner.id ,con.id as content_id,null as 'activity_id',img.url as url,banner.create_time,banner.title,banner.type,banner.is_hidden  from t_content con
+    join t_banner banner	on banner.content_id = con.id
+    join m_content_image cim	on cim.content_id = con.id
+    join t_image img	on  cim.image_id = img.id
+    where  con.is_delete = 0	and con.type = 2
+    GROUP BY con.id
+		UNION
+    SELECT banner.id,null,act.id as activity_id,act.img_url as url,banner.create_time,banner.title,banner.type,banner.is_hidden from t_activity act
+	JOIN t_banner banner on banner.activity_id = act.id
+	where act.is_delete = 0
+    )df
+    <where>
+        <if test="title != null">
+            `title` like concat('%',#{title},'%')
+        </if>
+        <if test="isHidden != null">
+            and `is_hidden` like concat('%',#{isHidden},'%')
+        </if>
+        <if test="type != null">
+            and `type` like concat('%',#{type},'%')
+        </if>
+    </where>
+    order by df.create_time desc
+
+    </select>
 </mapper>
