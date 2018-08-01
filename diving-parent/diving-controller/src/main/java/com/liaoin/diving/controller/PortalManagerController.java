@@ -120,6 +120,24 @@ public class PortalManagerController {
         }
     }
 
+    @GetMapping("/getAllEq")
+    @ApiOperation("查询所有装备 ")
+    public Result getAllEq(@ApiParam("") Integer start, Integer pageSize){
+        return null;
+    }
+
+    @PostMapping("/delEqreco")
+    @ApiOperation("删除推荐装备 [装备推荐]")
+    public Result delEqReco(Integer id){
+        Goods goods = goodsService.findOne(id);
+        if (Objects.isNull(goods)){
+            return new Result(300, "商品不存在", null);
+        }
+        goods.setIsDelete("1");
+        goodsService.update(goods);
+        return new Result(200, "删除成功", null);
+    }
+
     @GetMapping("/getEqReco")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "start", value = "起始页 1开始", required = true),
@@ -138,7 +156,7 @@ public class PortalManagerController {
     @PostMapping("/cancelEqReco")
     @ApiImplicitParam(name = "id", value = "主键", required = true)
     @ApiOperation("取消推荐装备 [推荐装备]")
-    public Result cancelEqReco(Integer id){
+    public Result cancelEqReco(@ApiParam(value = "主键") @RequestParam Integer id){
         try {
             goodsService.cancelReco(id);
             return new Result(200, "取消成功", null);
@@ -160,6 +178,8 @@ public class PortalManagerController {
         }
         return new Result(200, "查询成功", new PageInfo<>(goodsList));
     }
+
+
 
     @PostMapping("/setEqHome")
     @ApiOperation("设置装备首页 [装备推荐]")
@@ -202,6 +222,7 @@ public class PortalManagerController {
         }
         return new Result(200, "查询成功", new PageInfo<>(goodsList));
     }
+
 
 /*********************************************************论坛推荐curd******************************************************************/
     @GetMapping("/findOneForump")

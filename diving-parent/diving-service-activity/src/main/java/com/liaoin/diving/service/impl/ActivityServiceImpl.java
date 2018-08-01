@@ -167,6 +167,11 @@ public class ActivityServiceImpl implements ActivityService {
     }
 
     @Override
+    public void deleteById(Integer id) {
+        activityRepository.delete(id);
+    }
+
+    @Override
     public PageBean<Activity> pageQuery(Pageable pageable, Activity activity) {
         // 1.查询条件
         Specification<Activity> specification = new Specification<Activity>() {

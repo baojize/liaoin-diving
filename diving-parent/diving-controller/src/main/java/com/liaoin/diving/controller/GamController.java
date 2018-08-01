@@ -3,23 +3,19 @@ package com.liaoin.diving.controller;
 import com.github.pagehelper.PageInfo;
 import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.common.Result;
+import com.liaoin.diving.entity.CommunityNav;
 import com.liaoin.diving.entity.Content;
 import com.liaoin.diving.entity.SecondHand;
 import com.liaoin.diving.entity.User;
+import com.liaoin.diving.service.CommunityService;
 import com.liaoin.diving.service.ContentService;
 import com.liaoin.diving.service.SecondHandService;
 import com.liaoin.diving.service.UserService;
 import com.liaoin.diving.utils.RandomUtils;
 import com.liaoin.diving.view.SecondHandView;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.*;
 import org.springframework.data.domain.Page;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -43,6 +39,8 @@ public class GamController {
     private HttpSession session;
     @Resource
     private SecondHandService secondHandService;
+    @Resource
+    private CommunityService communityService;
 
     @GetMapping("/newest")
     @ApiOperation("社区-最新内容")
@@ -133,4 +131,16 @@ public class GamController {
     }
 
 
+    @PostMapping("/conditionNav")
+    @ApiOperation("导航栏条件查询")
+    public Result conditionNav(@ApiParam(value = "起始页 1开始", required = true) @RequestParam Integer start,
+                               @ApiParam(value = "页大小", required = true) @RequestParam Integer pageSize,
+                               @RequestBody CommunityNav nav){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<CommunityNav> navList = communityService.conditionNav(pageHelp, nav);
+        if (navList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(navList));
+    }
 }

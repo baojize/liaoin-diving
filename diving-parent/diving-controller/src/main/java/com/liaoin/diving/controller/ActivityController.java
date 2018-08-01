@@ -12,10 +12,7 @@ import com.liaoin.diving.service.ActivityLableService;
 import com.liaoin.diving.service.ActivityProductsService;
 import com.liaoin.diving.service.ActivityService;
 import com.liaoin.diving.service.BannerService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.*;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
@@ -46,6 +43,9 @@ public class ActivityController {
     @PostMapping("/insert")
     @ApiOperation("新增")
     public Result save(@RequestBody Activity activity) {
+        activity.setIsDelete("0");
+        activity.setIsHome("0");
+        activity.setIsRecommend("0");
         activityService.insert(activity);
         return new Result(200, "新增成功", null);
     }
@@ -54,15 +54,19 @@ public class ActivityController {
     @ApiOperation("修改")
     public Result update(@RequestBody Activity activity) {
        Activity fActivity =  activityService.findOne(activity.getId());
-
         activityService.update(activity);
         return new Result(200, "修改成功", null);
     }
 
     @PostMapping("/delete")
     @ApiOperation("删除")
-    public Result delete(@RequestBody Integer[] ids) {
-        activityService.delete(ids);
+    public Result delete(@ApiParam(value = "主键", type = "string") @RequestParam(name = "id") Integer id) {
+        Activity activity = activityService.findById(id);
+        if (Objects.isNull(activity)){
+            return new Result(300, "活动不存在", null);
+        }
+        activity.setIsDelete("1");
+        activityService.update(activity);
         return new Result(200, "删除成功", null);
     }
 

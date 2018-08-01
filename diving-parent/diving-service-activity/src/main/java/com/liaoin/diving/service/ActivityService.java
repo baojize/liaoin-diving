@@ -94,5 +94,7 @@ public interface ActivityService {
      * @return
      */
     List<Activity> getAcHome(PageHelp pageHelp);
+
+    void deleteById(Integer id);
 }
 
