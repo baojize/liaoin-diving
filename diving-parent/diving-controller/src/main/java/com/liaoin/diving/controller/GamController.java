@@ -44,6 +44,8 @@ public class GamController {
     @Resource
     private SecondHandService secondHandService;
 
+    //
+
     @GetMapping("/newest")
     @ApiOperation("社区-最新内容")
     public Result newest(){
@@ -75,7 +77,6 @@ public class GamController {
 
         List<Content> contentList = contentService.findFocusConten(pageHelp, ids);
         //Map<String, Object> focusConten = contentService.findFocusConten(focusList);
-
         return new Result(200, "查询成功", new PageInfo<>(contentList));
     }
 
@@ -107,19 +108,6 @@ public class GamController {
         }
         return new Result(200,"查找成功",randUser);
     }
-
-    /*@GetMapping("/secondHand")
-    @ApiOperation("社区-二手")
-    public Result secondHand(){
-        try {
-            List<SecondHand> secondHandList = contentService.findSecondHand();
-            return new Result(200, "查询成功", secondHandList);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return new Result(300, "查询失败", null);
-        }
-    }*/
-
 
     @GetMapping("/getAllSecondHand")
     @ApiImplicitParams({
