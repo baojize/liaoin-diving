@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.liaoin.diving.mapper.TopicMapper">
-    <select id="findById" resultType="com.liaoin.diving.entity.Topic">
-        select * from t_topic where id =#{id} and is_delete= 0
-    </select>
-</mapper>
