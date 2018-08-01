@@ -43,7 +43,7 @@ public class Ware implements Serializable {
     private BigDecimal price; //现价
 
     @Column(name = "discount")
-    @ApiModelProperty("现价")
+    @ApiModelProperty("折扣价")
     private Integer discount; //折扣
 
     @Column(name = "year")
@@ -67,39 +67,19 @@ public class Ware implements Serializable {
     private Date disEnd; // 折扣结束时间
 
     @Transient
-    @ApiModelProperty("商品尺寸列表")
+    @ApiModelProperty(value = "商品尺寸列表",hidden = true)
     private List<Size> sizeList = new ArrayList<>();
 
     @Transient
-    @ApiModelProperty("商品分类列表")
+    @ApiModelProperty(value = "商品分类列表",hidden = true)
     private List<Type> typeList = new ArrayList<>();
 
     @Transient
-    @ApiModelProperty("商品轮播图列表")
+    @ApiModelProperty(value = "商品轮播图列表",hidden = true)
     private List<Image> bannerList = new ArrayList<>();
 
     @Transient
-    @ApiModelProperty("商品介绍图列表")
+    @ApiModelProperty(value = "商品介绍图列表",hidden = true)
     private List<Image> describeList = new ArrayList<>();
-
-   /* @Column(name = "describe_img_id")
-    @ApiModelProperty("商品介绍图")
-    private Integer describeImg; //商品介绍图  -
-
-    @Column(name = "banner_img_id")
-    @ApiModelProperty("商品轮播图")
-    private Integer bannerImg; // 商品轮播图  -*/
-
-    /*@Column(name = "type_id")
-    @ApiModelProperty("商品分类")
-    private Integer type; // 商品分类 -
-
-    @Column(name = "size_id")
-    @ApiModelProperty("商品尺寸")
-    private Integer size; // 尺寸 -
-*/
-
-
-
 
 }

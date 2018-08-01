@@ -24,11 +24,11 @@ import java.util.Objects;
  * @describe :
  * @date 2018/06/07
  */
-/*@RestController
+@RestController
 @RequestMapping("/ware")
-@Api(tags = "商品模块new",value = "商品模块")*/
+@Api(tags = "商品模块new",value = "商品模块")
 public class WareController {
-    /*@Resource
+    @Resource
     private WareService wareService;
 
 
@@ -150,6 +150,6 @@ public class WareController {
             e.printStackTrace();
             return new Result(200,"操作失败", null);
         }
-    }*/
+    }
 
 }

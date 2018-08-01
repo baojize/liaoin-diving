@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.BadgeMapper">
+    <select id="findAll" resultType="com.liaoin.diving.entity.Badge">
+        select * from t_badge
+    </select>
+    <select id="findListWithUser" resultType="com.liaoin.diving.entity.Badge" parameterType="java.lang.Integer">
+        SELECT c.*
+        from t_badge_user a
+            LEFT JOIN t_badge c on a.badge_id = c.id
+        where a.user_id = #{id}
+    </select>
+</mapper>

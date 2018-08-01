@@ -23,6 +23,7 @@ import java.util.Objects;
 public class Order implements Serializable {
 
     @Id
+    @GeneratedValue
     @Column(name = "id")
     private Integer id;
 

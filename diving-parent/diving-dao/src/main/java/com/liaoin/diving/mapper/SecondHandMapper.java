@@ -1,6 +1,6 @@
 package com.liaoin.diving.mapper;
 
-import com.github.pagehelper.PageHelper;
+/*import com.github.pagehelper.PageHelper;*/
 import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.Content;
 import com.liaoin.diving.view.SecondHandView;
