@@ -21,6 +21,7 @@ import java.util.List;
 @ApiModel("商品类")
 @Table(name = "t_ware")
 public class Ware implements Serializable {
+
     @Id
     @GeneratedValue
     @ApiModelProperty("主键")
@@ -66,20 +67,33 @@ public class Ware implements Serializable {
     @ApiModelProperty("折扣结束时间")
     private Date disEnd; // 折扣结束时间
 
-    @Transient
-    @ApiModelProperty(value = "商品尺寸列表",hidden = true)
-    private List<Size> sizeList = new ArrayList<>();
+    @Column(name = "`describe`")
+    @ApiModelProperty("商品介绍")
+    private String describe;
 
     @Transient
+    @ApiModelProperty("商品类型")
+    private Integer typeId;
+
+    @Transient
+    @ApiModelProperty("商品尺寸")
+    private Integer sizeId;
+
+    @ManyToMany
     @ApiModelProperty(value = "商品分类列表",hidden = true)
     private List<Type> typeList = new ArrayList<>();
 
-    @Transient
+
+    @ManyToMany
     @ApiModelProperty(value = "商品轮播图列表",hidden = true)
     private List<Image> bannerList = new ArrayList<>();
 
     @Transient
+    @ApiModelProperty(value = "商品尺寸列表",hidden = true)
+    private List<Size> sizeList = new ArrayList<>();
+
+/*    @Transient
     @ApiModelProperty(value = "商品介绍图列表",hidden = true)
-    private List<Image> describeList = new ArrayList<>();
+    private List<Image> describeList = new ArrayList<>();*/
 
 }

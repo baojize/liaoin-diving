@@ -6,7 +6,9 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author : huqingxi
@@ -27,7 +29,9 @@ public class Size implements Serializable {
     @ApiModelProperty("名称")
     private String name;
 
-    @Column(name = "create_time")
-    @ApiModelProperty("创建时间")
-    private Date createTime;
+    @Column(name = "is_delete")
+    @ApiModelProperty(value = "是否删除：1删除")
+    private String isDelete;
+
+
 }

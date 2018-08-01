@@ -6,7 +6,9 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author : huqingxi
@@ -27,22 +29,12 @@ public class Type implements Serializable{
     @ApiModelProperty("名称")
     private String name;
 
-    @Column(name = "create_time")
-    @ApiModelProperty("创建时间")
-    private Date createTime;
+    @Column(name = "is_delete")
+    @ApiModelProperty(value = "是否删除：1删除")
+    private String isDelete;
 
-    @Column(name = "show_img_id")
-    @ApiModelProperty("展示图片")
-    private Integer showImg;
+    @ManyToMany
+    @ApiModelProperty(value = "尺寸")
+    private List<Size> sizeList = new ArrayList<>();
 
-    @Column(name = "url")
-    @ApiModelProperty("展示图片url")
-    private String url;
-
-    @Column(name = "ware_id")
-    private Integer ware;
-
-    /*@Column(name = "stock")
-    @ApiModelProperty("库存")
-    private Integer stock; // 库存*/
 }
