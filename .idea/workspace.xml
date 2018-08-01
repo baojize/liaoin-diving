@@ -578,8 +578,8 @@
       <file leaf-file-name="GamController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GamController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="46" column="6" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+            <state relative-caret-position="546">
+              <caret line="44" column="48" lean-forward="false" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -1028,7 +1028,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61534000" />
+    <option name="totallyTimeSpent" value="61702000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1547,8 +1547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/diving-parent/diving-controller/src/main/java/com/liaoin/diving/controller/GamController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="46" column="6" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        <state relative-caret-position="546">
+          <caret line="44" column="48" lean-forward="false" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
           <folding />
         </state>
       </provider>

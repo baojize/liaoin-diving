@@ -44,8 +44,6 @@ public class GamController {
     @Resource
     private SecondHandService secondHandService;
 
-    //
-
     @GetMapping("/newest")
     @ApiOperation("社区-最新内容")
     public Result newest(){
