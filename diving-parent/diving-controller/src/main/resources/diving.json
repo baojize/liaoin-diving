@@ -1,0 +1,539 @@
+//查询用户 修改用户  (除用户id,其他都非必填)
+{
+	"id" : 7,
+	"nickname" :"高斯林",
+	"image_id" : 1,
+	"signature": "这个人很神秘, 他什么都没留下",
+	"sex" : 1,
+	"birthday" : "2015-5-5",
+	"haunt" : "经常出没,台湾,香港等地",
+	"labelList" : [
+		{
+			"id": 2
+		}
+	],
+	"equipmentList" : [
+		{
+			"id": 1
+		}
+	]
+}
+//添加用户等级
+{
+	"id": 7,
+	"mobile": "18883156885",
+	"nickname": "测试用户6",
+	"sex": "0",
+	"birthday": null,
+	"signature": null,
+	"haunt": null,
+	"points": null,
+	"createTime": "2018-06-27 16:46:48",
+	"updateTime": "2018-06-27 16:46:48",
+	"level": {"id":1}
+}
+//添加用户标签
+{
+	"id": 7,
+	"mobile": "18883156885",
+	"nickname": "测试用户6",
+	"sex": "0",
+	"birthday": null,
+	"signature": null,
+	"haunt": null,
+	"points": null,
+	"createTime": "2018-06-27 16:46:48",
+	"updateTime": "2018-06-27 16:46:48",
+	"labelList": [
+		{
+			"id":1
+		}
+	]
+}
+// 发布讨论
+
+{
+	"groupId":1,
+	"content":
+	{
+		"theme": "潜水用蛙泳好还是自由泳好",
+		"text": "我的观点肯定是蛙泳",
+		"topic": {
+			"id": 1
+		},
+		"imageList": [
+			{
+				"id": 1
+			},
+			{
+				"id": 2
+			}
+		],
+		"labelList" : [
+			{"id" : 1}
+		]
+	}
+}
+
+// 发布动态
+{
+	"text": "今天学习自由潜水",
+	"topic": {
+		"id": 1
+	},
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	],
+	"labelList" : [
+		{"id" : 1}
+	]
+}
+
+// 发布二手
+{
+	"secondHand": {
+		"brand": "李宁潜水眼镜",
+		"quality": "99新",
+		"price": "20.23",
+		"description": "everyThing will be OK",
+		"category": {
+			"id": 1
+		}
+	},
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	]
+}
+
+// 发布问题
+{
+	"text": "应该如何学习潜水？",
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	]
+}
+
+// 评论内容  (当前登录用户去评论其他内容)
+{
+	"text": "天王盖地虎",
+	"content": {
+		"id": 8
+	}
+}
+
+// 回复用户的评论
+{
+	"text": "瞎jb吹",
+	"content": {
+		"id": 8
+	},
+	"answerUser": 4
+}
+
+// 新增规格
+{
+	"name": "颜色",
+	"specOptionList": [
+		{
+			"name": "红色"
+		},
+		{
+			"name": "黄色"
+		},
+		{
+			"name": "蓝色"
+		}
+	]
+}
+
+// 修改规格
+{
+	"id": 4,
+	"name": "颜色",
+	"specOptionList": [
+		{
+			"name": "黄色"
+		},
+		{
+			"name": "紫色"
+		}
+	]
+}
+
+// 新增商品
+{
+	"name": "潜水镜",
+	"price": "100.00",
+	"discount": "0.95",
+	"introduction": "<span>这是一张图片，防水防水！</span>",
+	"orders": 1,
+	"isHome": 0,
+	"isRecommend": 1,
+	"isSale": 1,
+	"category": {
+		"id": 1
+	},
+	"brand": {
+		"id": 2
+	},
+	"imageList": [
+		{
+			"id": 18
+		},
+		{
+			"id": 19
+		}
+	],
+	"labelList": [
+		{
+			"id": 1
+		}
+	]
+}
+
+// 修改商品
+{
+	"id": 2,
+	"name": "潜水镜",
+	"price": "100.00",
+	"discount": "0.80",
+	"introduction": "<span>这是一张图片，防水防水！</span>",
+	"orders": 1,
+	"isHome": 1,
+	"isRecommend": 1,
+	"isSale": 1,
+	"category": {
+		"id": 1
+	},
+	"brand": {
+		"id": 3
+	},
+	"imageList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	],
+	"labelList": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	]
+}
+
+// 修改阿里云短信系统参数
+{
+	"accessKeyId": "LTAItaK265JNO9Gg",
+	"accessKeySecret": "TebU68hKT834SZi8fIC32P3IZbI0EU",
+	"signName": "张权立",
+	"smsTemplateList": [
+		{
+			"templateName": "验证码",
+			"templateCode": "SMS_125015434"
+		}
+	]
+}
+
+// 修改支付宝支付系统参数
+{
+	"appId": "2016091400511336",
+	"notifyUrl": "http://www.zhangquanli.top",
+	"privateKey": "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBd3C795iHZXk10RqZr1OckWo+48H9yxn+jfG4YPQdtqzr2Nt+MiJDJq3Rb5wvTGrfrMX3yI4MhKkE9uBD5GBZfBr/eCf8iFFl0ouORnu8Mg9RUPirsh4MiLVGTlMzHVRMit2uR5UtV24ij4O+vYpShIV6qC9Gd4+NuUSw57Giys/gCn3sURXP9piVzeyhzp7sNFmM3L7hlGwoCwW/j89O+Syf8eD6YeeSHJnbD3NMfiMFqa56iN1o2oPQ4uhSPCvN4J4NpeLWesG61UCI8rWvXXSRb1gumjX7BmXWnUn7uxg0kveWBGSEXDx70Jq7AeThZgmiugz4djvOFuViF9afAgMBAAECggEAQ87TKm57fWkpdJ1Xj2oOCiBFdslpIsTe1YN2p0MEDK4MKZWWSMLVk2epIHDX8xP7mW367P/UGbsdamoE7IbM5lBDPislCLPWo7OJylIV6D47dCrHHZaORaJctsmZC59J/pHlZMIeHQg5x885Q882/fkIt5bfCvm4zNmUo9RxRDbon5XIXhbCO3bnvqDoLeHtX2EsTuZp2KRQOGKumxD6yzgN4aLIUtOlxFA9fAcaJ1jqCFKm0WV7VEWpb4b+gAMYdfVKQICykBF/5ydTQxuhCPn5Qig1Z36dP5H8RKiWjHOJ/uLwkonp1CpmqYkbhOl9CFUmDr/5+4JUBao8T91CwQKBgQD1/z1OEsccjsu1qT9qqL7Lf2NAEwFJo8sbbEXdiFZDYodxVQ7XDUaNLLB1OKxpiVTT2ett4OUgD8tRvHpFCWE5tW13C4X124JRqm69W92MXfbw97x9v4pi2UHNbnZnMdSRqPbpQglnaXeIYnctwVt/nlzdPpKwc3C8k/Ssz19orwKBgQDJVV+WeV4afINRxvI/BwOeievfiysi3kWvAxw155Ct9Uiu/e9BDbekwYCKaD+HOjjrTFLNVpxDsS7IopG3x7Y6l8uHl8qFY/SU+AvPW7m/rd7EBFFAH7Wb6uvCtLsIoBsaQY1OWb+D2M0W2Bv15u//YGPBYNq+Igz4Jm0urN8NEQKBgBZ/s7GyUfewr7z7r8snh9vA2OkBU/rSOj9V1cX/NDSRjGW3K9ZLZop+7dyqxEoav2Fo6vlvukUGbMga/uvVgcjvaQWcTjJAU1j4x4wWHNs7tNwxLFIr9JI54KTTV4z0p8Zyt7J50bZdlQsqRlAvARlY+JFbqbrts//rYFN12/oNAoGAJp2jWd8pd3cOUO8Ro5kazpuxjAzLV0K+ptS34nbpvxPevwGhlB6nbIhYuTNJjAxUwny/HPdRvYIMcRsNS+yYPSDEPtuUUoVbcf8pdLopJGSa54nUc7IhSSiD07KKdRsQV7be/XolS4qXu5vzsPR8b8TzHTIQgotRZX8pTdyGY6ECgYEAphIFTAIoiQlppA9G4bb0aolW5M70LE0xa1XKuilhji0+o7lCccKknXD+yH3f+wAfxtE5gk6oqWqixe1wImhHMGin72N806D36YiXXrUEfxLimki9L5RzOYZj7dRQ1or7Dn8cA5+86OKZYl4l6v7hEvJ43baxwmTzGiY0DRRRMaY=",
+	"publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwXdwu/eYh2V5NdEama9TnJFqPuPB/csZ/o3xuGD0Hbas69jbfjIiQyat0W+cL0xq36zF98iODISpBPbgQ+RgWXwa/3gn/IhRZdKLjkZ7vDIPUVD4q7IeDIi1Rk5TMx1UTIrdrkeVLVduIo+Dvr2KUoSFeqgvRnePjblEsOexosrP4Ap97FEVz/aYlc3soc6e7DRZjNy+4ZRsKAsFv4/PTvksn/Hg+mHnkhyZ2w9zTH4jBamueojdaNqD0OLoUjwrzeCeDaXi1nrButVAiPK1r110kW9YLpo1+wZl1p1J+7sYNJL3lgRkhFw8e9CauwHk4WYJoroM+HY7zhblYhfWnwIDAQAB",
+	"serverUrl": "https://openapi.alipaydev.com/gateway.do",
+	"subject": "潜水商城"
+}
+
+// 提交订单
+{
+	"num": 3,
+	"money": 350,
+	"postage": 20,
+	"amount": 370,
+	"message": "请帮我组装好",
+	"address": {
+		"id": 1
+	},
+	"orderOptionList": [
+		{
+			"goods": {
+				"id": 2
+			},
+			"num": 2,
+			"money": 160
+		},
+		{
+			"goods": {
+				"id": 3
+			},
+			"num": 1,
+			"money": 190
+		}
+	]
+}
+//潜水场
+{
+"id": 7,
+"name": "string",
+"suggest": "string",
+"address": "string",
+"phone": "string",
+"createTime": 1530249631000,
+"updateTime": null,
+"isDelete": "1",
+"image": null,
+"divingTicketList": [
+{
+"id": 1,
+"name": "string",
+"type": "string",
+"tips": "string",
+"price": 0,
+"discount": 0,
+"usingTime": "string",
+"buyTime": "string",
+"ticket": "string",
+"goDiving": "string",
+"usingRule": "string",
+"included": "string",
+"notIncluded": "string",
+"refundable": "string",
+"createTime": null,
+"updateTime": null,
+"isDelete": null
+}
+],
+"commentList": [
+{
+"id": 1,
+"name": "string",
+"type": "string",
+"tips": "string",
+"price": 0,
+"discount": 0,
+"usingTime": "string",
+"buyTime": "string",
+"ticket": "string",
+"goDiving": "string",
+"usingRule": "string",
+"included": "string",
+"notIncluded": "string",
+"refundable": "string",
+"createTime": null,
+"updateTime": null,
+"isDelete": null
+}
+	//新增活动评价
+	{
+		"text": "这是一条评论",
+		"createTime": 1530696249000,
+		"isDelete": "0",
+		"createUser": {"id" : 4},
+		"activity": {
+			"id": 1  }
+
+	}
+	//新增活动分类
+	 {
+		"name": "惊险",
+		"isDelete": "0",
+		"createTime": 1530608618000,
+		"updateTime": null
+	}
+//	新增活动
+	{
+		"id": 1,
+		"name": "海底世界",
+		"address": "重庆",
+		"iphone": "17602360801",
+		"highlight": "好看",
+		"price": 99,
+		"explain": "干什么",
+		"plan": "1.2.3.",
+		"crowd": "crowd",
+		"imgExplain": "<img>img</img>",
+		"beginTime": 1530695369000,
+		"endTime": 1532768978000,
+		"user": {
+			"id": 4
+		},
+		"image": {
+			"id": 1
+		},
+		"activityCategory": {
+			"id": 1
+		},
+		"labelList": [
+			{
+				"id": 1
+			}
+		],
+		"activityDiscussionArrayList": [
+			{"id" : 1}
+		],
+		"isDelete": "0"
+	}
+
+
+//新增话题
+	{
+		"img": "ski.jpg",
+		"name": "富士山看雪",
+		"text": "拦路雨偏似雪花,饮泣的你懂吗"
+	}
+
+//修改话题
+	{
+		"id" : 1,
+		"img": "ski.jpg",
+		"name": "富士山看雪",
+		"text": "拦路雨偏似雪花,饮泣的你懂吗"
+	}
+
+//话题查询
+	{
+		"id" : 1,
+		"name": "GOSKI电影日"
+	}
+
+
+//  购买商品
+	{
+		"orderOptionList" : [
+			{"goods":
+			{"id":1}, "num" :2
+			},
+			{"goods":
+			{"id":2}, "num":2
+			},
+			{"goods":
+			{"id":3}, "num":2
+			}
+
+		],
+		"message" : "不要发中通",
+
+
+	}
+
+
+
+// 发布官方消息
+	{
+		"pager": "这是一部真正的单板电影,准备好啤酒欣赏多厂合作的电影<<单板是如何炼成的>>,感受'多巴胺的魅力吧!'",
+		"discribe": "于2018年发布,知名运动媒体'西门庆',在2020年进行重发,浏览量达到惊人的130万人次",
+		"title": "GOSKI电影日: 多厂合作单板神片<单板是如何炼成的>",
+		"text": "本期goski电影日,带来2018年,由xxx发布的定影xxx",
+		"pagerImg" : "/upload/test.jpg",
+		"labels": [
+			{
+				"id" :1
+			},
+			{
+				"id" :2
+			}
+		]
+	}
+// 添加收货地址
+	{
+		"area": "重庆市渝北区辖区内",
+		"isDefault": 1,
+		"receiverAddress": "渝北区红旗河沟xxx街道",
+		"receiverMobile": "18879651234",
+		"receiverName": "古龙"
+	}
+
+
+// 购买商品
+	{
+		"address": 1,
+		"message": "发圆通差评!!!",
+		"wareOptionList": [
+			{
+				"money": 2000,
+				"num": 2,
+				"ware":  {
+					"id": 1,
+					"name": "女装大佬潜水器",
+					"stock": 10,
+					"oriprice": 10000,
+					"price": 1000,
+					"discount": 1,
+					"year": "2017-06-01 18:05:41",
+					"useObject": 1,
+					"using": 5,
+					"disBegin": "2018-07-01 18:02:36",
+					"disEnd": "2018-07-24 18:02:41",
+					"sizeList": [
+						{
+							"id": 1,
+							"name": "XS",
+							"createTime": "2018-07-11 18:12:07"
+						},
+						{
+							"id": 2,
+							"name": "S",
+							"createTime": "2018-07-09 18:12:35"
+						}
+					],
+					"typeList": [
+						{
+							"id": 1,
+							"name": "WHITE",
+							"createTime": "2018-07-23 18:06:05",
+							"showImg": null,
+							"url": "/upload/a.jpg",
+							"ware": null
+						},
+						{
+							"id": 2,
+							"name": "BLACK",
+							"createTime": "2018-07-12 18:07:37",
+							"showImg": null,
+							"url": "/upload/b.jpg",
+							"ware": null
+						},
+						{
+							"id": 3,
+							"name": "GREY MELANGE",
+							"createTime": "2018-07-11 18:07:50",
+							"showImg": null,
+							"url": "/upload/c.jpg",
+							"ware": null
+						}
+					],
+					"bannerList": [],
+					"describeList": []
+				}
+			}
+		]
+	}
+
+
+
+
+
+
+
+
+

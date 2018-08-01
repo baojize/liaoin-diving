@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.DiscussionMapper">
+
+
+    <update id="updateAgreeNum" >
+        update t_user set agree_num = #{agreeNum} where id = #{id}
+    </update>
+    <insert id="like" >
+        insert into t_discussion_like(create_time,discussion_id,user_id) values(#{createTime},#{disId},#{userId})
+    </insert>
+    <delete id="notLike" >
+        delete from t_discussion_like where id = #{id}
+    </delete>
+
+    <select id="findDisForContentId" resultType="com.liaoin.diving.entity.Discussion">
+        select * from t_discussion where content_id = #{contentId} and is_delete = 0 order by create_time desc
+    </select>
+
+    <select id="findDisForDisIdAndUserId" resultType="com.liaoin.diving.entity.Discussion">
+        select * from  t_discussion_like where discussion_id = #{disId} and user_id = #{userId}
+    </select>
+</mapper>
