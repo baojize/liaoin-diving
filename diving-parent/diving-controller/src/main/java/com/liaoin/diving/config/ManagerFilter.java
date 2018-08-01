@@ -45,8 +45,7 @@ public class ManagerFilter implements Filter {
         HttpSession session = req.getSession();
         Object admin =  session.getAttribute("admin");
         if (Objects.isNull(admin)){
-
-            resp.sendError(HttpServletResponse.SC_MULTIPLE_CHOICES, new String("非法访问".getBytes("UTF-8")) );
+            resp.sendError(HttpServletResponse.SC_MOVED_PERMANENTLY, new String("非法访问".getBytes("UTF-8")) );
             return;
         }
         chain.doFilter(req, resp);

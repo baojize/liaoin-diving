@@ -12,10 +12,12 @@ import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.service.UserService;
 
 import com.liaoin.diving.view.RecommendGoodsView;
+import com.sun.org.apache.regexp.internal.RE;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.auth.In;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +31,7 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("/goods")
-@Api(tags = "商品模块",value = "商品模块")
+@Api(tags = "商品模块", value = "商品模块")
 public class GoodsController {
     @Resource
     private GoodsService goodsService;
@@ -114,15 +116,28 @@ public class GoodsController {
     @ApiOperation("获取推荐商品信息，按照创建时间排序")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "start", value = "开始页", required = true),
-            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true),
+            @ApiImplicitParam(name = "pageSize", value = "页大小", required = true)
     })
-    public Result findRecommendGoods(Integer start, Integer pageSize){
+    public Result findRecommendGoods(Integer start, Integer pageSize) {
         PageHelp pageHelp = new PageHelp(start, pageSize, null);
         List<RecommendGoodsView> goodsList = goodsService.findRecommendOrderByCreateTime(pageHelp);
-        if (goodsList.isEmpty()){
+        if (goodsList.isEmpty()) {
             return new Result(300, "暂无数据", null);
         }
-        return new Result(200,"查询成功",new PageInfo<>(goodsList));
+        return new Result(200, "查询成功", new PageInfo<>(goodsList));
+    }
+
+    @PostMapping("setGoodsBelongTo")
+    @ApiOperation("设置商品归属,传入id数组、归属和设置/取消标示")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "mode", value = "设置/取消归属       归属：1删除/2首页/3推荐/4上架5周边       如：是否推荐/是否首页...", required = true),
+            @ApiImplicitParam(name = "symbol", value = "设置/取消标示 标示：1设置/0取消", required = true)
+    })
+    public Result setRecommendGoods(@RequestBody Integer[] ids, Integer mode, Integer symbol) {
+        Integer sign = goodsService.setRecommendGoods(ids, mode, symbol);
+        if (sign == 0) {
+            return new Result(500, "设置失败", null);
+        }
+        return new Result(200, "设置成功", null);
     }
 }
-

@@ -145,4 +145,6 @@ public class GamController {
         List<SecondHandView> all = secondHandService.findByBigCategory(pageHelp, id);
         return new Result(200, "查询成功", new PageInfo<>(all));
     }
+
+
 }

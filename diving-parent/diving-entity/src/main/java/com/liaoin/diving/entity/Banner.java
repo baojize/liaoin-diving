@@ -51,8 +51,8 @@ public class Banner implements Serializable {
     private Integer activityId;
 
     @Column(name = "type")
-    @ApiModelProperty("类型")
-    private String type;
+    @ApiModelProperty("类型 1:动态,  2: 活动")
+    private Integer type;
 
     @Column(name = "is_hidden")
     @ApiModelProperty("是否显示 0:不显示, 1 :显示")

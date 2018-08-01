@@ -12,10 +12,7 @@ import com.liaoin.diving.service.BannerService;
 import com.liaoin.diving.service.ContentService;
 import com.liaoin.diving.view.BannerView;
 import com.sun.org.apache.regexp.internal.RE;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.*;
 import org.hibernate.annotations.Parameter;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,7 +30,7 @@ import java.util.Objects;
  */
 @RestController
 @RequestMapping("/manager/banner")
-@Api(tags = "轮播图",value = "轮播图")
+@Api(tags = "[后台]轮播图",value = "轮播图")
 public class BannerController {
     @Resource
     private ContentService contentService;
@@ -67,7 +64,7 @@ public class BannerController {
         banner.setContent(content);
         banner.setCreateTime(new Date());
         banner.setTitle(content.getTitle());
-        banner.setType("活动");
+        banner.setType(1);
         if (Objects.isNull(isHidden)){
             isHidden = 0;
         }
@@ -99,7 +96,7 @@ public class BannerController {
         banner.setActivityId(activity.getId());
         banner.setTitle(activity.getName());
         banner.setCreateTime(new Date());
-        banner.setType("活动");
+        banner.setType(2);
         if(Objects.isNull(isHidden)){
             isHidden = 0;
         }
@@ -155,6 +152,19 @@ public class BannerController {
         }
         bannerService.updateBanner(id, isHidden);
         return new Result(200, "设置成功", null);
+    }
+
+    @PostMapping("/condition")
+    @ApiOperation("条件模糊查询  提供查询字段 title type isHidden")
+    public Result condition(@ApiParam(value = "起始页 1开始", required = true) @RequestParam Integer start,
+                            @ApiParam(value = "页大小", required = true) @RequestParam Integer pageSize,
+                            @RequestBody BannerView bannerView){
+        PageHelp pageHelp = new PageHelp(start, pageSize, null);
+        List<BannerView> bannerViewList = bannerService.condition(bannerView, pageHelp);
+        if (bannerViewList.isEmpty()){
+            return new Result(300, "暂无数据", null);
+        }
+        return new Result(200, "查询成功", new PageInfo<>(bannerViewList));
     }
 
 }
