@@ -19,7 +19,7 @@ public class WareOrder implements Serializable{
 
     @Id
     @Column(name = "order_id")
-    @ApiModelProperty(value = "订单编号", hidden = true)
+    @ApiModelProperty(value = "订单编号")
     private String orderId;
 
     @Column(name = "num")  // WareOption 数量

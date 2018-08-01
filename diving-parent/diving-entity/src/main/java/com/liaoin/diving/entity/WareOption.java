@@ -35,9 +35,4 @@ public class WareOption implements Serializable {
     @Column(name = "is_delete")
     @ApiModelProperty(value = "是否删除：1删除", hidden = true)
     private String isDelete;
-
-
-
-
-
 }
