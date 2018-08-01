@@ -16,7 +16,7 @@ logging:
 mybatis:
   mapper-locations: classpath*:com/liaoin/diving/mapper/*Mapper.xml
   executor-type: simple
-  type-aliases-package : com.liaoyin.diving.entity
+  type-aliases-package: com.liaoyin.diving.entity
   configuration:
     map-underscore-to-camel-case: true
 
@@ -25,5 +25,9 @@ pagehelper:
   helper-dialect: mysql
   reasonable: true
   support-methods-arguments: true
+<<<<<<< HEAD
   params: count=countSql
 
+=======
+  params: count=countSql
+>>>>>>> 719b782e7acf225c89734f82a6759ad91337fe96
