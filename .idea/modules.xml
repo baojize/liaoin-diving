@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/aliyun-sms/aliyun-sms.iml" filepath="$PROJECT_DIR$/aliyun-sms/aliyun-sms.iml" />
       <module fileurl="file://$PROJECT_DIR$/code-generator/code-generator.iml" filepath="$PROJECT_DIR$/code-generator/code-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-parent/common-parent.iml" filepath="$PROJECT_DIR$/common-parent/common-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/diving-parent/dao-1/dao-1.iml" filepath="$PROJECT_DIR$/diving-parent/dao-1/dao-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-manager/diving.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-manager/diving.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-common/diving-common.iml" filepath="$PROJECT_DIR$/diving-parent/diving-common/diving-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-controller/diving-controller.iml" filepath="$PROJECT_DIR$/diving-parent/diving-controller/diving-controller.iml" />
@@ -17,17 +16,13 @@
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-redis/diving-redis.iml" filepath="$PROJECT_DIR$/diving-parent/diving-redis/diving-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-activity/diving-service-activity.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-activity/diving-service-activity.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-community/diving-service-community.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-community/diving-service-community.iml" />
-      <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-divingField/diving-service-divingField.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-divingField/diving-service-divingField.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-field/diving-service-field.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-field/diving-service-field.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-file/diving-service-file.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-file/diving-service-file.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-search/diving-service-search.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-search/diving-service-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-shop/diving-service-shop.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-shop/diving-service-shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-system/diving-service-system.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-system/diving-service-system.iml" />
-      <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-test/diving-service-test.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-test/diving-service-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-service-user/diving-service-user.iml" filepath="$PROJECT_DIR$/diving-parent/diving-service-user/diving-service-user.iml" />
-      <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-servicediving-field.iml" filepath="$PROJECT_DIR$/diving-parent/diving-servicediving-field.iml" />
       <module fileurl="file://$PROJECT_DIR$/diving-parent/diving-utils/diving-utils.iml" filepath="$PROJECT_DIR$/diving-parent/diving-utils/diving-utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/diving-parent/divingservicedivingField.iml" filepath="$PROJECT_DIR$/diving-parent/divingservicedivingField.iml" />
       <module fileurl="file://$PROJECT_DIR$/wxpay/wxpay.iml" filepath="$PROJECT_DIR$/wxpay/wxpay.iml" />
     </modules>
   </component>

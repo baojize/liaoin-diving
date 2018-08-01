@@ -32,7 +32,6 @@ public class WareController {
     private WareService wareService;
 
 
-
     @PostMapping("/add")
     @ApiOperation("添加商品")
     public Result add(HttpSession session, @RequestBody Ware ware){
@@ -43,6 +42,7 @@ public class WareController {
         wareService.add(ware);
         return new Result(200, "添加成功", null);
     }
+
     @PostMapping("/del") // 物理删除
     @ApiImplicitParam(name = "id", value = "商品id", required = true)
     @ApiOperation("删除商品")
@@ -54,6 +54,7 @@ public class WareController {
         wareService.del(id);
         return new Result(200, "删除成功", null);
     }
+
     @PostMapping("/update")
     @ApiOperation("修改商品")
     public Result update(HttpSession session, @RequestBody Ware ware){
@@ -64,6 +65,7 @@ public class WareController {
         wareService.upload(ware);
         return new Result(200, "修改成功", null);
     }
+
     @GetMapping("/findById")
     @ApiImplicitParam(name = "id", value = "商品id")
     @ApiOperation("根据主键查询")
@@ -93,6 +95,7 @@ public class WareController {
         }
         return new Result(200, "查询成功", new PageInfo<>(wareList));
     }
+
     @GetMapping("/relation")
     @ApiOperation("查询尺寸类型所对应的库存")
     public Result findRelation(HttpSession session, Integer typeId, Integer sizeId){
@@ -119,11 +122,11 @@ public class WareController {
         for (WareOption wareOption: wareOptionList){
             Ware ware = wareOption.getWare();
             Ware dbWare = wareService.findById(ware.getId());
-            if (ware.getId() != dbWare.getId()){
+            if (ware.getId() != dbWare.getId()) {
                 return new Result(300, "交易错误", null);
             }
             BigDecimal totalMoney = dbWare.getPrice().multiply(wareOption.getNum()); // 计算出的总价
-            if (wareOption.getMoney().compareTo(totalMoney) != 0){
+            if (wareOption.getMoney().compareTo(totalMoney) != 0) {
                 return new Result(300, "交易错误", null);
             }
             orderMoney = orderMoney.add(totalMoney); // 累加总价

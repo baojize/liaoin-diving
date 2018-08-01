@@ -110,4 +110,11 @@
     <update id="setHome">
         update t_goods set is_home = 1 where id = #{id}
     </update>
+
+    <select id="findGoodsForBuyNow" resultMap="BuyNowView">
+        SELECT t.id,t.price,t.discount,t.money
+        FROM
+        t_goods t
+        WHERE t.id = 1
+    </select>
 </mapper>

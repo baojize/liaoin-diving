@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.GoodsSizeMapper">
+
+    <select id="findGoodsSizeByGoodsId" resultType="com.liaoin.diving.entity.GoodsSize">
+        SELECT gs.id,gs.amount,gs.name
+        FROM t_goods_size gs
+        JOIN t_goods_classify gc
+        ON gc.id=gs.goods_classify_id
+        WHERE gc.id = #{id}
+    </select>
+</mapper>

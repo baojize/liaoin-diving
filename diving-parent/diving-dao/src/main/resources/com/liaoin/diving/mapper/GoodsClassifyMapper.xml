@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liaoin.diving.mapper.GoodsClassifyMapper">
+    <resultMap id="GoodsClassify" type="com.liaoin.diving.entity.GoodsClassify">
+        <id column="id" javaType="INTEGER" property="id"></id>
+        <collection property="goodsSizeList"
+                    ofType="com.liaoin.diving.entity.GoodsSize"
+                    column="id"
+                    select="com.liaoin.diving.mapper.GoodsSizeMapper.findGoodsSizeByGoodsId">
+        </collection>
+    </resultMap>
+    <insert id="addOneGoodsClassify">
+        INSERT INTO `diving`.`t_goods_classify` (`goods_id`, `is_delete`, `name`)
+        VALUES (#{goodsId}, #{isDelete}, #{name})
+    </insert>
+    <update id="setOneGoodsClassify">
+
+    </update>
+    <select id="findGoodsClassifyByGoodsId" resultMap="GoodsClassify">
+          SELECT *
+          FROM
+          t_goods_classify gc
+          WHERE gc.goods_id = #{id}
+    </select>
+</mapper>

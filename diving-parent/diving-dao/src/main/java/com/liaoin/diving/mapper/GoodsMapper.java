@@ -1,6 +1,7 @@
 package com.liaoin.diving.mapper;
 
 import com.liaoin.diving.entity.Goods;
+import com.liaoin.diving.view.BuyNowView;
 import com.liaoin.diving.view.EqConditionView;
 import com.liaoin.diving.view.RecommendGoodsView;
 import org.apache.ibatis.annotations.Param;
@@ -58,5 +59,13 @@ public interface GoodsMapper {
      * @return
      */
     List<Goods> findAll();
+
+
+    /**
+     * 立即抢购
+     * @param id
+     * @return
+     */
+    BuyNowView findGoodsForBuyNow(@Param("goods_id")Integer id);
 
 }

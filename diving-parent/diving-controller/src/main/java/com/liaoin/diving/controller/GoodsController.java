@@ -11,6 +11,7 @@ import com.liaoin.diving.entity.User;
 import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.service.UserService;
 
+import com.liaoin.diving.view.BuyNowView;
 import com.liaoin.diving.view.RecommendGoodsView;
 import com.sun.org.apache.regexp.internal.RE;
 import io.swagger.annotations.Api;
@@ -139,5 +140,15 @@ public class GoodsController {
             return new Result(500, "设置失败", null);
         }
         return new Result(200, "设置成功", null);
+    }
+
+    @GetMapping("/findGoodsForBuyNow")
+    @ApiOperation(">立即抢购< 传入当前商品id")
+    public Result findGoodsForBuyNow(Integer id) {
+        BuyNowView goods = goodsService.findGoodsForBuyNow(id);
+        if (goods == null) {
+            return new Result(500, "查询失败", null);
+        }
+        return new Result(200, "查询成功", goods);
     }
 }

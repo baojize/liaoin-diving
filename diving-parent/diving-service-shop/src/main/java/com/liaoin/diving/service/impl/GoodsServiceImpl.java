@@ -6,9 +6,13 @@ import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.dao.CategoryRepository;
 import com.liaoin.diving.dao.GoodsRepository;
 import com.liaoin.diving.entity.Goods;
+import com.liaoin.diving.entity.GoodsClassify;
+import com.liaoin.diving.mapper.GoodsClassifyMapper;
 import com.liaoin.diving.mapper.GoodsMapper;
+import com.liaoin.diving.mapper.GoodsSizeMapper;
 import com.liaoin.diving.service.GoodsService;
 import com.liaoin.diving.utils.UpdateUtils;
+import com.liaoin.diving.view.BuyNowView;
 import com.liaoin.diving.view.EqConditionView;
 import com.liaoin.diving.view.RecommendGoodsView;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +44,13 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Resource
     private GoodsMapper goodsMapper;
+
+    @Resource
+    private GoodsClassifyMapper goodsClassifyMapper;
+
+    @Resource
+    private GoodsSizeMapper goodsSizeMapper;
+
 
     @Override
     public void insert(Goods goods) {
@@ -225,6 +236,28 @@ public class GoodsServiceImpl implements GoodsService {
         PageHelper.startPage(pageHelp.getStart(), pageHelp.getPageSize());
         List<Goods> goodsList = goodsMapper.findAll();
         return goodsList;
+    }
+
+    //立即抢购
+    @Override
+    public BuyNowView findGoodsForBuyNow(Integer id) {
+        BuyNowView goods = goodsMapper.findGoodsForBuyNow(id);
+        if (goods == null) {
+            return null;
+        }
+        return goods;
+    }
+
+    //添加一个商品分类
+    @Override
+    public Integer addOneGoodsClassify(Integer goodsId, GoodsClassify goodsClassify) {
+        if (goodsId == null) {
+            return null;
+        }
+        goodsClassify.setGoodsId(goodsId);
+        goodsClassify.setIsDelete(0);
+        Integer sign = goodsClassifyMapper.addOneGoodsClassify(goodsClassify);
+        return sign;
     }
 }
 

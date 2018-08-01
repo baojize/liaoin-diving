@@ -3,6 +3,8 @@ package com.liaoin.diving.service;
 import com.liaoin.diving.common.PageBean;
 import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.Goods;
+import com.liaoin.diving.entity.GoodsClassify;
+import com.liaoin.diving.view.BuyNowView;
 import com.liaoin.diving.view.EqConditionView;
 import com.liaoin.diving.view.RecommendGoodsView;
 import org.springframework.data.domain.Pageable;
@@ -39,7 +41,23 @@ public interface GoodsService {
     List<RecommendGoodsView> findRecommendOrderByCreateTime(PageHelp pageHelp);
 
     /**
-<<<<<<< HEAD
+     * 查询立即抢购的商品
+     *
+     * @return
+     */
+    BuyNowView findGoodsForBuyNow(Integer id);
+
+    /**
+     * 增加一个商品的商品分类
+     *
+     * @param goodsClassify
+     * @return
+     */
+    Integer addOneGoodsClassify(Integer goodsId, GoodsClassify goodsClassify);
+
+
+
+    /**
      * 创建推荐装备
      * @param id
      */
@@ -92,5 +110,8 @@ public interface GoodsService {
      * @return
      */
     List<Goods> findAll(PageHelp pageHelp);
+
+
+
 }
 
