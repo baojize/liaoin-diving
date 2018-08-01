@@ -25,9 +25,4 @@ pagehelper:
   helper-dialect: mysql
   reasonable: true
   support-methods-arguments: true
-<<<<<<< HEAD
   params: count=countSql
-
-=======
-  params: count=countSql
->>>>>>> 719b782e7acf225c89734f82a6759ad91337fe96

@@ -434,8 +434,8 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.DivingApplication" />
       <item itemvalue="Spring Boot.DivingApplication" />
+      <item itemvalue="Application.DivingApplication" />
     </list>
     <recent_temporary>
       <list>
