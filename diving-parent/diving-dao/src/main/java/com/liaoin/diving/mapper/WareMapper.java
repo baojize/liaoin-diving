@@ -3,6 +3,7 @@ package com.liaoin.diving.mapper;
 import com.liaoin.diving.entity.Size;
 import com.liaoin.diving.entity.Type;
 import com.liaoin.diving.entity.Ware;
+import com.liaoin.diving.view.WareView;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -30,5 +31,9 @@ public interface WareMapper {
     Integer findStock4TypeAndSize(@Param("typeId") Integer typeId, @Param("sizeId") Integer sizeId);
 
     Integer findStock(@Param("id") Integer id);
+
+    List<WareView> findRecommendOrderByCreateTime();
+
+    Integer setWareBelongTo(@Param("ids") Integer[] ids, @Param("mode") Integer mode, @Param("symbol") Integer symbol);
 
 }

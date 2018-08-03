@@ -26,6 +26,7 @@ public interface GoodsMapper {
     List<Goods> getReco();
 
     void cancelReco(Integer id);
+
     /**
      * 设置商品归属
      * @param ids
@@ -53,13 +54,11 @@ public interface GoodsMapper {
      */
     List<Goods> getEqHome();
 
-
     /**
      * 查询所有装备
      * @return
      */
     List<Goods> findAll();
-
 
     /**
      * 立即抢购
@@ -67,5 +66,4 @@ public interface GoodsMapper {
      * @return
      */
     BuyNowView findGoodsForBuyNow(@Param("goods_id")Integer id);
-
 }

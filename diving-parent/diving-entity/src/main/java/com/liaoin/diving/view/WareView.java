@@ -6,23 +6,22 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @Author: Allen
  * @Description:
- * @Date: Created in 2018/7/27 17:00
+ * @Date: Created in 2018/8/2 15:16
  */
 @Getter
 @Setter
 @ToString
-public class RecommendGoodsView {
+public class WareView {
     Integer id;
     String name;
+    BigDecimal oriprice;
     BigDecimal price;
-    BigDecimal money;
     BigDecimal discount;
-    Image image = new Image();
+    Integer stock;//计算库存
+    Image image = new Image();//获取图片
 //    List<Image> imageList = new ArrayList<>();
 }

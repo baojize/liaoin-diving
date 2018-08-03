@@ -76,6 +76,11 @@ public class Goods implements Serializable {
     @ApiModelProperty(value = "是否删除：1删除", hidden = true)
     private String isDelete;
 
+    @Column(name = "is_related")
+    @Field(index = FieldIndex.not_analyzed, store = true)
+    @ApiModelProperty("是否为周边物品：1周边")
+    private String isRelated;
+
     @Column(name = "create_time")
     @Temporal(TemporalType.TIMESTAMP)
     @Field(index = FieldIndex.not_analyzed, store = true)
@@ -104,11 +109,6 @@ public class Goods implements Serializable {
     @Field(index = FieldIndex.not_analyzed, store = true)
     @ApiModelProperty("库存数量")
     private Integer amount;
-
-    @Column(name = "is_related")
-    @Field(index = FieldIndex.not_analyzed, store = true)
-    @ApiModelProperty("是否为周边物品：1周边")
-    private String isRelated;
 
     /************************************************/
 

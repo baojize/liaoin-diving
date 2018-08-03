@@ -5,6 +5,7 @@ import com.liaoin.diving.common.PageHelp;
 import com.liaoin.diving.entity.Type;
 import com.liaoin.diving.entity.Ware;
 import com.liaoin.diving.entity.WareOrder;
+import com.liaoin.diving.view.WareView;
 
 import java.util.List;
 
@@ -54,4 +55,22 @@ public interface WareService {
 
     void save(WareOrder wareOrder);
 
+    /*-----------Allen-----------*/
+    List<WareView> findRecommendOrderByCreateTime(PageHelp pageHelp);
+
+    /**
+     * 逻辑删除
+     * @param ids
+     */
+    void delete(Integer[] ids);
+
+    /** 设置商品归属
+     *
+     * @param ids
+     * @param symbol
+     * @return
+     */
+    Integer setGoodsBelongTo(Integer[] ids, Integer mode, Integer symbol);
+
+    /*---------End-----------*/
 }

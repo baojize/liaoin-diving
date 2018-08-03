@@ -13,7 +13,6 @@
         join t_ware ware
         on ware.id = ts.ware_id
         where ware.id = #{id}
-
     </select>
     <select id="findType" resultType="com.liaoin.diving.entity.Type">
         select type.* from t_ware wa
@@ -26,7 +25,7 @@
     <select id="findById" resultType="com.liaoin.diving.entity.Ware"></select>
 
     <select id="findStock" resultType="java.lang.Integer">
-        select sum(stock) from t_type_size ts where ware_id = #{id}
+        SELECT sum(num) FROM t_repertory r WHERE r.ware_id = #{id}
     </select>
     <select id="findStock4TypeAndSize" resultType="java.lang.Integer">
         select stock from t_type_size ts where type_id = #{typeId} and size_id = #{sizeId}
@@ -35,8 +34,46 @@
         select * from t_ware ware
         join t_type type
         on ware.id = type.ware_id
-
     </select>
 
+    <!--Allen-->
+    <select id="findRecommendOrderByCreateTime" resultType="com.liaoin.diving.view.WareView">
+        SELECT *
+        FROM
+        t_ware
+        WHERE
+        is_recommend=1 AND is_sale=1 AND is_delete=0 ORDER BY create_time DESC
+    </select>
 
+    <update id="setWareBelongTo">
+            UPDATE t_ware SET
+            <if test="mode == 1">
+                `is_delete`
+            </if>
+            <if test="mode == 2">
+                `is_home`
+            </if>
+            <if test="mode == 3">
+                `is_recommend`
+            </if>
+            <if test="mode == 4">
+                `is_sale`
+            </if>
+            <if test="mode == 5">
+                `is_related`
+            </if>
+            =
+            <if test="symbol == 1">
+                1
+            </if>
+            <if test="symbol == 0">
+                0
+            </if>
+            WHERE id IN
+            <foreach collection="ids" item="id" index="index"
+                     open="(" close=")" separator=",">
+                #{id}
+            </foreach>
+    </update>
+    <!---->
 </mapper>

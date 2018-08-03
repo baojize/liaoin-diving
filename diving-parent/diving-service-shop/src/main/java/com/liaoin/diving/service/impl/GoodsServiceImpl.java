@@ -162,7 +162,6 @@ public class GoodsServiceImpl implements GoodsService {
     public PageBean<Goods> findByCategory(Pageable pageable, List<Integer> ids) {
         List<Goods> goodsList = new ArrayList<>();
         Page<Goods> page = goodsRepository.findByCategory_IdIn(ids, pageable);
-//        PageBean
         if (page.getTotalElements() == 0) {
             return null;
         }
@@ -186,6 +185,7 @@ public class GoodsServiceImpl implements GoodsService {
 
     /**
      * 设置装备推荐
+     *
      * @param id
      */
     @Override
@@ -259,5 +259,7 @@ public class GoodsServiceImpl implements GoodsService {
         Integer sign = goodsClassifyMapper.addOneGoodsClassify(goodsClassify);
         return sign;
     }
+
+
 }
 
